@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flash version="13.0" build="d260" platform="WIN" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="choicefigure/view/Sound001" mod="1436935446071" >
+        <def id="choicefigure.view:Sound001" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.media:Sound" type="i" /> 
+      </script>
+      <script name="choicefigure/view/Sound002" mod="1436935446071" >
+        <def id="choicefigure.view:Sound002" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.media:Sound" type="i" /> 
+      </script>
+      <script name="choicefigure/view/Sound003" mod="1436935446071" >
+        <def id="choicefigure.view:Sound003" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.media:Sound" type="i" /> 
+      </script>
+      <script name="choicefigure/view/Sound004" mod="1436935446071" >
+        <def id="choicefigure.view:Sound004" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.media:Sound" type="i" /> 
+      </script>
+      <script name="choicefigure/view/Sound005" mod="1436935446071" >
+        <def id="choicefigure.view:Sound005" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.media:Sound" type="i" /> 
+      </script>
+      <script name="choicefigure/view/BoyAsset" mod="1436935446071" >
+        <def id="choicefigure.view:BoyAsset" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+      </script>
+      <script name="choicefigure/view/GirlAsset" mod="1436935446071" >
+        <def id="choicefigure.view:GirlAsset" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+      </script>
+      <script name="choicefigure/view/MainFigureAsset" mod="1436935446071" >
+        <def id="choicefigure.view:MainFigureAsset" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+      </script>
+      <script name="choicefigure/view/SelectFigureAsset" mod="1436935446071" >
+        <def id="choicefigure.view:SelectFigureAsset" /> 
+        <dep id="flash.text:TextField" type="s" /> 
+        <dep id="flash.display:SimpleButton" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:MovieClip" type="i" /> 
+      </script>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>
