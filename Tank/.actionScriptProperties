@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <actionScriptProperties analytics="false" mainApplicationPath="TankStart.as" projectUUID="d0b8c090-6552-4bd3-b0d7-d75781b1087f" version="11">
-  <compiler additionalCompilerArguments="-locale zh_CN" autoRSLOrdering="true" copyDependentFiles="true" flex3CompatMode="true" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" useFlashSDK="false" verifyDigests="true" warn="true">
+  <compiler additionalCompilerArguments="-locale zh_CN" autoRSLOrdering="true" copyDependentFiles="true" flex3CompatMode="false" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" useFlashSDK="false" verifyDigests="true" warn="true">
     <compilerSourcePath/>
     <libraryPath defaultLinkType="1">
       <libraryPathEntry kind="4" path="">
@@ -14,8 +14,10 @@
       </libraryPathEntry>
       <libraryPathEntry kind="1" linkType="1" path="D:/NewProject/DDTClientAsset/asset"/>
       <libraryPathEntry kind="3" linkType="1" path="/NewProject_Road/bin/NewProject_Road.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="1" linkType="1" path="D:/NewProject/DDTClient/Loading/asset"/>
+      <libraryPathEntry kind="3" linkType="1" path="asset/ChoiceFigure.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="D:/NewProject/DDTClientAsset/lib/as3crypto.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/NewProject_Loader/bin/NewProject_Loader.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="1" linkType="1" path="asset"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>

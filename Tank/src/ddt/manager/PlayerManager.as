@@ -340,7 +340,7 @@
 			_self.beginChanges();
 			_self.ChargedMoney = e.pkg.readInt();
 			_self.VIPLevel = e.pkg.readInt();
-			global.traceStr("ChargedMoney"+_self.ChargedMoney.toString()+"VIPLevel"+_self.VIPLevel.toString());
+			//global.traceStr("ChargedMoney"+_self.ChargedMoney.toString()+"VIPLevel"+_self.VIPLevel.toString());
 			_self.commitChanges();
 		}
 		

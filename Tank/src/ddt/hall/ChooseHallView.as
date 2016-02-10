@@ -85,7 +85,7 @@
 			_asset = ClassUtils.CreatInstance("ddt.asset.hall.HallAsset") as MovieClip;
 			if(_asset == null)
 			{
-				global.traceStr("asset is null");
+				throw new Error("asset is null");
 			}
 			_asset.gotoAndStop(13);
 			addChild(_asset);

@@ -237,7 +237,7 @@ package ddt.room
 		{
 			if(!ShapeManager.ready)
 			{
-				var ml:ModuleLoader =  LoaderManager.Instance.createLoader("res/shape.swf",BaseLoader.MODULE_LOADER);
+				var ml:ModuleLoader =  LoaderManager.Instance.createLoader("shape.swf",BaseLoader.MODULE_LOADER);
 				LoaderManager.Instance.startLoad(ml);
 				if(ml.isSuccess)
 				{

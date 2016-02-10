@@ -401,7 +401,7 @@ package ddt.manager
 		
 		private function __beginLoad(event:CrazyTankSocketEvent):void
 		{
-			global.traceStr("beginLoad");
+			//global.traceStr("beginLoad");
 			if(_current)
 			{
 				 _current.maxTime = event.pkg.readInt();
@@ -497,7 +497,7 @@ package ddt.manager
 		{
 			if(_current)
 			{
-				global.traceStr("gameStart");
+				//global.traceStr("gameStart");
 				event.executed = false;
 				var pkg:PackageIn = event.pkg;
 				var len:int = pkg.readInt();

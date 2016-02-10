@@ -24,7 +24,7 @@ package ddt.view.characterII
 			loaders = [];
 			_recordStyle = info.Style.split(",");
 			_recordColor = info.Colors.split(",");
-			global.traceStr(info.Colors);
+			//global.traceStr(info.Colors);
 			loadPart(7);
 			loadPart(1);
 			loadPart(0);

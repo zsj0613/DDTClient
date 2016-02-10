@@ -485,7 +485,7 @@ package ddt.store.view.fusion
 		
 		private function __previewRequest() : void
 		{
-			global.traceStr("OnPreviewRequest");
+			//global.traceStr("OnPreviewRequest");
 			SocketManager.Instance.out.sendItemFusion(0);
 		}
 		

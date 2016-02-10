@@ -288,7 +288,7 @@ package ddt.menu
 					
 				}
 
-				mc_bg2.visible = btnFire.visible || btnInvite.visible || btnUp.visible || btnDown.visible;
+				mc_bg2.visible = btnInvite.visible || btnUp.visible || btnDown.visible;
 			}
 			else
 			{

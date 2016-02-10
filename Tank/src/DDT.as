@@ -3,7 +3,6 @@ package
 	import flash.display.Sprite;
 	import flash.events.ContextMenuEvent;
 	import flash.events.Event;
-	import flash.events.ProgressEvent;
 	import flash.events.StatusEvent;
 	import flash.external.ExternalInterface;
 	import flash.geom.Rectangle;
@@ -15,8 +14,7 @@ package
 	import flash.ui.ContextMenuItem;
 	import flash.utils.getDefinitionByName;
 	import flash.utils.getTimer;
-	import flash.utils.setTimeout;
-	
+	import flash.utils.setTimeout;	
 	import ddt.data.AccountInfo;
 	import ddt.data.ColorEnum;
 	import ddt.data.Config;
@@ -51,7 +49,6 @@ package
 	import ddt.manager.StatisticManager;
 	import ddt.manager.TaskManager;
 	import ddt.manager.TimeManager;
-	import ddt.manager.WorldBossManager;
 	import ddt.request.LoadLanguageAction;
 	import ddt.request.StatisticExitLoginTool;
 	import ddt.states.StateType;
@@ -63,12 +60,9 @@ package
 	import ddt.view.dailyconduct.TestingTipFrame;
 	import ddt.view.im.IMController;
 	import ddt.view.movement.MovementLeftView;
-	import ddt.view.userGuide.UserGuideControler;
-	
-	import org.aswing.KeyboardManager;
-	
+	import ddt.view.userGuide.UserGuideControler;	
+	import org.aswing.KeyboardManager;	
 	import road.loader.BaseLoader;
-	import road.loader.LoaderManager;
 	import road.manager.SoundManager;
 	import road.ui.controls.hframe.HAlertDialog;
 	import road.ui.controls.hframe.HBlackFrame;
