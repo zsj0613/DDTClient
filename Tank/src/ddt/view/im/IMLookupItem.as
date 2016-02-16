@@ -88,7 +88,7 @@ package ddt.view.im
 		
 		private function __delClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_info is CMFriendInfo)
 			{
 				MessageTipManager.getInstance().show("不能删除社区好友");
@@ -107,7 +107,7 @@ package ddt.view.im
 		{
 			if(_info == null)
 				return;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendDelFriend(_info.ID);
 		}
 		
@@ -134,7 +134,7 @@ package ddt.view.im
 		
 		private function cancelDel():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		public function dispose():void

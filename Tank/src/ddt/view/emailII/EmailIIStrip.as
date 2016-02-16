@@ -199,12 +199,12 @@ package ddt.view.emailII
 		
 		private function cancle():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function ok():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			MailManager.Instance.deleteEmail(_info);
 			clearItem();
 			MailManager.Instance.removeMail(info);
@@ -262,7 +262,7 @@ package ddt.view.emailII
 				return;
 			}
 			
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_info.IsRead)
 			{
 				MailManager.Instance.readEmail(_info);

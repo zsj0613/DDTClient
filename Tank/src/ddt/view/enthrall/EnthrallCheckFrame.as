@@ -81,7 +81,7 @@ package ddt.view.enthrall
 		{
 			close();
 			clear();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 //			SocketManager.Instance.out.sendCIDInfo(true);
 		}
 	}

@@ -117,7 +117,7 @@ package ddt.shop.view
 		
 		private function __comClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			_playerlist.visible = true;
 			stage.addEventListener(MouseEvent.CLICK,__stageClick);
@@ -132,7 +132,7 @@ package ddt.shop.view
 		
 		private function __okClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			var str:String = FilterWordManager.filterWrod(_text.text);//bret 09.8.2
 			
@@ -167,7 +167,7 @@ package ddt.shop.view
 		
 		private function __cancelClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 		

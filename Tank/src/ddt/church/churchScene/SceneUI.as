@@ -118,7 +118,7 @@
 		
 		private function __enterMoonScene(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 //			if(saluteLoaded)
 //			{
 				ChurchRoomManager.instance.currentScene = true;
@@ -191,7 +191,7 @@
 		
 		private function __hideClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switch(event.currentTarget)
 			{
 				case _showName:

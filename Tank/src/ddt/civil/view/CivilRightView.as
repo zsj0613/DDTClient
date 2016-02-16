@@ -119,13 +119,13 @@ package ddt.civil.view
 		
 		private function __btnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_controler.Register();
 		}
 		
 		private function __sexBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_currentPage = 1;
 			if(evt.currentTarget == _woManBtn)
 			{
@@ -149,7 +149,7 @@ package ddt.civil.view
 		
 		private function __leafBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switch(evt.currentTarget)
 			{
 				case _firstBtn:

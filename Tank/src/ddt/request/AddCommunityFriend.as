@@ -16,7 +16,7 @@ package ddt.request
 	{
 		public function AddCommunityFriend($friendId:String,$friendNickName: String)
 		{
-			if(StringHelper.isNullOrEmpty(PathManager.solveCommunityFriend))return;
+			if(StringHelper.IsNullOrEmpty(PathManager.solveCommunityFriend))return;
 			var loader:URLLoader  = new URLLoader();
 			loader.addEventListener(Event.COMPLETE,__addFriendComplete);
 			loader.addEventListener(IOErrorEvent.IO_ERROR,__addFriendError);

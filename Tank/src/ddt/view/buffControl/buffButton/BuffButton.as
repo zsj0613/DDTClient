@@ -103,7 +103,7 @@
 		override protected function clickHandler(evt:MouseEvent):void
 		{
 			if(!CanClick) return;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		protected function checkBagLocked() : Boolean

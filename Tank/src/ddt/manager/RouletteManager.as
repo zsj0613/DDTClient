@@ -153,7 +153,7 @@ package ddt.manager
 			}
 		}
 		
-		public static function get instance():RouletteManager
+		public static function get Instance():RouletteManager
 		{
 			if(_instance == null)
 			{

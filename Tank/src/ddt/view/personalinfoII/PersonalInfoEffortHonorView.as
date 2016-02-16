@@ -79,7 +79,7 @@ package ddt.view.personalinfoII
 		
 		private function __itemClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var honor:String = (evt.currentTarget as PersonalInfoEffortHonorItemView).honor;
 			var id:int = (evt.currentTarget as PersonalInfoEffortHonorItemView).id;
 			this.honor_txt.text = honor;
@@ -96,7 +96,7 @@ package ddt.view.personalinfoII
 		
 		private function __viewClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.target is BaseButton)return;
 			if(!bg.visible)
 			{

@@ -209,7 +209,7 @@ package ddt.roomlist
 		
 		private function __checkChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.type == "click" )
 			{
 				_pass_txt.enabled = _pass_txt.enabled  ? false : true ;
@@ -253,7 +253,7 @@ package ddt.roomlist
 					_roomType = 0;
 					break;
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private var descriptionTip:RoomIIPropTip;
@@ -287,7 +287,7 @@ package ddt.roomlist
 				{
 					MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.roomlist.RoomListIICreateRoomView.time"));
 		    		//MessageTipManager.getInstance().show("撮合房间固定回合时间：10秒");
-		    		SoundManager.instance.play("008");
+		    		SoundManager.Instance.play("008");
 			    	return;
 				}
 			}
@@ -297,7 +297,7 @@ package ddt.roomlist
 			this["time_" + index].gotoAndStop(2);
 			
 			_secondType = index;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __okClick(evt:Event):void
@@ -323,14 +323,14 @@ package ddt.roomlist
 				GameInSocketOut.sendCreateRoom(_name_txt.text,_roomType,_secondType,_pass_txt.text);
 				hide();
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __cancelClick(evt:MouseEvent):void
 		{
 //			_pass_check.setFocus();
 			hide();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		public function hide():void

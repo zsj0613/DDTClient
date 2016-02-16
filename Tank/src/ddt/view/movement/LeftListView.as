@@ -57,7 +57,7 @@ package ddt.view.movement
 		
 		private function __select(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var target:MovementStripView = event.target as MovementStripView;
 			MovementLeftView.Instance.model.currentInfo = target.info;
 			for each(var strip:MovementStripView in _strips)

@@ -50,7 +50,7 @@ package ddt.view.changeColor
 		
 		private function __changeColor(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
 				new BagLockedGetFrame().show();

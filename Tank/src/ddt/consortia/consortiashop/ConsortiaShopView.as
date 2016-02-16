@@ -115,13 +115,13 @@ package ddt.consortia.consortiashop
 		private function __selectLvHandler(evt : MouseEvent) : void
 		{
 			if(_currentLvBtn == evt.target)return;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switchBtn(evt.target as MovieClip);
 			
 		}
 		private function __openAssetManager(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var assetManager : ConsortiaAssetManagerFrame = new ConsortiaAssetManagerFrame();
 			assetManager.show();
 			_shopBgAsset.assetManagerEffect.visible = false;

@@ -134,7 +134,7 @@ package ddt.auctionHouse.view
 		
 		private function __cancel(event:MouseEvent):void
 		{
-			SoundManager.instance.play("043");
+			SoundManager.Instance.play("043");
 			_btClickLock = true;
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
@@ -171,12 +171,12 @@ package ddt.auctionHouse.view
 			{
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.auctionHouse.view.AuctionSellView.Choose"));
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_cancelBid_btn.enable = false;
 		}
 		private function __cannelNo() : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_cancelBid_btn.enable = true;
 		}
 		
@@ -190,14 +190,14 @@ package ddt.auctionHouse.view
 		
 		private function __next(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			_cancelBid_btn.enable = false;
 			dispatchEvent(new AuctionHouseEvent(AuctionHouseEvent.NEXT_PAGE));
 		}
 		
 		private function __pre(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			_cancelBid_btn.enable = false;
 			dispatchEvent(new AuctionHouseEvent(AuctionHouseEvent.PRE_PAGE));
 		}

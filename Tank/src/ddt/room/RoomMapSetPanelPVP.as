@@ -153,7 +153,7 @@ package ddt.room
 		
 		private function __itemClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("045");
+			SoundManager.Instance.play("045");
 			var item:RoomIIMapItem = evt.currentTarget as RoomIIMapItem;
 			for(var i:int = 0; i < _pics.length; i++)
 			{
@@ -208,13 +208,13 @@ package ddt.room
 			_asset["second_" + _secondType].gotoAndStop(1);
 			_secondType = index;
 			_asset["second_" + _secondType].gotoAndStop(2);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_hadChange = true;
 		}
 		
 		override protected function __confirmClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_hadChange)
 			{
 				_room.isRandMap =  ( _currentMapInfo.ID == 0 ? true : false );
@@ -237,7 +237,7 @@ package ddt.room
 		{
 			if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				
 				_currentGameType = _room.roomType;
 				if(_currentGameType == 1)

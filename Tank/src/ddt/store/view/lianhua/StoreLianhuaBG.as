@@ -176,7 +176,7 @@ package ddt.store.view.lianhua
 		
 		private function __lianhua(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!checkAidedMatieria())
 			{
 				MessageTipManager.getInstance().show("应该放三种不同的辅助材料!");
@@ -401,7 +401,7 @@ package ddt.store.view.lianhua
 		}
 		private function __openHelp(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			if(!_helpPage)initHelpPage();
 			_helpPage.show();

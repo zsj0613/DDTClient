@@ -145,7 +145,7 @@ package ddt.consortia.myconsortia
 		
 		private function __onItmeClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			this.dispatchEvent(new ConsortiaDataEvent(ConsortiaDataEvent.SELECT_CLICK_ITEM,this));
 		}
 		

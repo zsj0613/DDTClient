@@ -171,7 +171,7 @@ package ddt.church.churchScene{
 		{
 			if(ChurchRoomManager.instance.currentRoom.status == ChurchRoomInfo.WEDDING_ING)
 			{
-				SoundManager.instance.stopMusic();
+				SoundManager.Instance.stopMusic();
 				readyStartWedding();
 			}else
 			{
@@ -186,7 +186,7 @@ package ddt.church.churchScene{
 		
 		private function __stopWeddingMovie(event:Event):void
 		{
-			SoundManager.instance.playMusic("3002");
+			SoundManager.Instance.playMusic("3002");
 			MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("church.churchScene.SceneView.stopWeddingMovie"));
 			//MessageTipManager.getInstance().show("典礼现在结束");
 			(_sceneMap as WeddingSceneMap).stopWeddingMovie();

@@ -102,7 +102,7 @@ package ddt.tofflist.view
 		/**上一页**/
 		private function __pgupHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_currentPage --;
 			_orderList.items(_currentData,_currentPage); 
 			checkPageBtn();
@@ -111,7 +111,7 @@ package ddt.tofflist.view
 		private function __pgdnHandler(evt : MouseEvent) : void
 		{
 			if(!_currentData)return;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_currentPage ++;
 			_orderList.items(_currentData,_currentPage); 
 			checkPageBtn();

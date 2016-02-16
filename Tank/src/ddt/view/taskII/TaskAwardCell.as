@@ -60,7 +60,7 @@ package ddt.view.taskII
 		}
 		public function set selected(value:Boolean):void{
 			if(!_bg["selected"].visible && value){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			_bg["selected"].visible = value;
 			TaskManager.itemAwardSelected = this.info.TemplateID;

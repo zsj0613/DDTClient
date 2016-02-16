@@ -97,7 +97,7 @@ package ddt.view.common.church
 			e.stopImmediatePropagation();
 			if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(cancelBtn.enable)
 				{
 					if(cancelFunction != null)

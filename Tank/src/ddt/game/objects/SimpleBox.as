@@ -52,7 +52,7 @@ package ddt.game.objects
 		{
 			_canCollided = false;
 			_box.gotoAndPlay("finish");
-			SoundManager.instance.play("018");
+			SoundManager.Instance.play("018");
 			super.die();
 		}
 		

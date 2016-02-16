@@ -38,7 +38,7 @@ package ddt.shop.view
 		{
 			if(_doClick != null)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				_doClick(_info.NickName);
 			}
 		}

@@ -63,7 +63,7 @@ package ddt.view.emailII
 		
 		protected function btnSound():void
 		{
-			SoundManager.instance.play("043");
+			SoundManager.Instance.play("043");
 		}
 		
 		override public function dispose():void

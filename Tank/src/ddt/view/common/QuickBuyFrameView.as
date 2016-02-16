@@ -167,7 +167,7 @@ package ddt.view.common
 				addBtn.gotoAndStop(1);
 				addBtn.buttonMode = true;
 				if(this._stoneNumber > 1) {
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(this._stoneNumber == 2){
 					reduceBtn.gotoAndStop(2);
 					reduceBtn.buttonMode = false;
@@ -185,7 +185,7 @@ package ddt.view.common
 				reduceBtn.gotoAndStop(1);
 				reduceBtn.buttonMode = true;
 				if(this._stoneNumber < 99){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(this._stoneNumber == 98){
 					addBtn.gotoAndStop(2);
 					addBtn.buttonMode = false;

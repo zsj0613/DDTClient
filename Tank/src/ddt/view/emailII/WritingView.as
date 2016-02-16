@@ -84,15 +84,15 @@
 		 */		
 		private function isHasWrite():Boolean
 		{
-			if(!StringHelper.isNullOrEmpty(FilterWordManager.filterWrod(_sender.text)))
+			if(!StringHelper.IsNullOrEmpty(FilterWordManager.filterWrod(_sender.text)))
 			{
 				return true;
 			}
-			if(!StringHelper.isNullOrEmpty(FilterWordManager.filterWrod(_topic.text)))
+			if(!StringHelper.IsNullOrEmpty(FilterWordManager.filterWrod(_topic.text)))
 			{
 				return true;
 			}
-			if(!StringHelper.isNullOrEmpty(FilterWordManager.filterWrod(_ta.text)))
+			if(!StringHelper.IsNullOrEmpty(FilterWordManager.filterWrod(_ta.text)))
 			{
 				return true;
 			}

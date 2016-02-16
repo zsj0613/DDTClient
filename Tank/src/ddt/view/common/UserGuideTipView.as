@@ -42,7 +42,7 @@ package ddt.view.common
 		}
 		private function __okFunction() : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			this.dispatchEvent(new Event(Event.CLOSE));
 		}
 		override protected function __onKeyDownd(e:KeyboardEvent):void

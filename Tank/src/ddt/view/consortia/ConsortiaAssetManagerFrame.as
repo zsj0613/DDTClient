@@ -235,13 +235,13 @@ package ddt.view.consortia
 		}
 		private function __openOfferFrame(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			new MyConsortiaTax().show();
 			dispose();
 		}
 		private function __okBtnHandler() : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			__okFunction();
 		}
 		

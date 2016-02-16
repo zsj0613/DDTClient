@@ -109,7 +109,7 @@ package ddt.view.bagII
 		
 		private function onItemClick(e:ItemEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			selectedItemID = e.index;
 			hide();

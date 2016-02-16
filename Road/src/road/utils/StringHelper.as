@@ -57,7 +57,7 @@ package road.utils
 	 		return str.split(sourceWord).join(targetWord);
 	 	}
 	 	
-		public static function isNullOrEmpty(str:String):Boolean
+		public static function IsNullOrEmpty(str:String):Boolean
 		{
 			return str == null || str == "";
 		}

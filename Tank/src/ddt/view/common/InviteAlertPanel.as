@@ -78,7 +78,7 @@ package ddt.view.common
 		
 		private function __okClick(evt:MouseEvent = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			GameManager.Instance.setup();
 			if(_gameMode >2)//远征码头
 			{
@@ -92,13 +92,13 @@ package ddt.view.common
 		
 		private function __close(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 		
 		private function __cancelClick(evt:MouseEvent = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 		

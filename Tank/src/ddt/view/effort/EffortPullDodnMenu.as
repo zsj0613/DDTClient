@@ -56,14 +56,14 @@ package ddt.view.effort
 		
 		private function __upBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switchVisible();
 			currentType();
 		}
 		
 		private function __optionClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switch(evt.currentTarget.name)
 			{
 				case"option_1":

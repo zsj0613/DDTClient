@@ -70,7 +70,7 @@ package ddt.view.common.church
 		
 		private function __okClick(evt:MouseEvent = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 //			SocketManager.Instance.out.sendValidateMarry(_proposeTarget.ID);
 			
@@ -79,7 +79,7 @@ package ddt.view.common.church
 		
 		private function __close(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 

@@ -38,5 +38,9 @@
 		 * 温泉房间内
 		 */		
 		public static const HOT_SPRING_ROOM : String = "hotSpringRoom";
+		
+		
+		
+		public static const WORLD_BOSS_ROOM : String = "WorldBossRoom";
 	}
 }

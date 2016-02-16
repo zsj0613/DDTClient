@@ -65,7 +65,7 @@ package ddt.store.states
 		private function __changeToConsortia(evt:MouseEvent):void
 		{
 			if(_bg.gonghui.currentFrame == 1) return;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_bg.gonghui.gotoAndStop(1);
 			_bg.tiejiang.gotoAndStop(1);
 			_bg.assetManagerEffect.visible = true;
@@ -79,7 +79,7 @@ package ddt.store.states
 		public function __changeToBase(evt:MouseEvent):void
 		{
 			if(_bg.gonghui.currentFrame == 2) return;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_bg.gonghui.gotoAndStop(2);
 			_bg.tiejiang.gotoAndStop(2);
 			_bg.assetManagerEffect.visible = false;
@@ -92,7 +92,7 @@ package ddt.store.states
 		
 		private function __managerAsset(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var assetManager : ConsortiaAssetManagerFrame = new ConsortiaAssetManagerFrame();
 			assetManager.show();
 			_bg.assetManagerEffect.visible = false;

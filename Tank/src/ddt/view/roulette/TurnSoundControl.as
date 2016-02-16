@@ -36,8 +36,8 @@ package ddt.view.roulette
 		
 		private function _timerOne(evt:TimerEvent):void
 		{
-			SoundManager.instance.stop("124");
-			SoundManager.instance.play("124");
+			SoundManager.Instance.stop("124");
+			SoundManager.Instance.play("124");
 		}
 		
 		private function _timerComplete(evt:TimerEvent):void
@@ -52,14 +52,14 @@ package ddt.view.roulette
 				_timer.delay = 6000;
 				_timer.reset();
 				_timer.start();
-				SoundManager.instance.play("124");
+				SoundManager.Instance.play("124");
 			}
 		}
 		
 		public function playOneStep():void
 		{
 			var id:String = _oneArray[_number];
-			SoundManager.instance.play(id);
+			SoundManager.Instance.play(id);
 			_number = (_number>=4)?0:(_number+1);
 				
 		}
@@ -67,14 +67,14 @@ package ddt.view.roulette
 		public function playThreeStep(value:int):void
 		{
 			var id:String = _threeArray[value];
-			SoundManager.instance.play(id);
+			SoundManager.Instance.play(id);
 		}
 		
 		public function stop():void
 		{
 			_isPlaySound = false;
 			_timer.stop();
-			SoundManager.instance.stop("124");
+			SoundManager.Instance.stop("124");
 		}
 		
 		public function dispose():void

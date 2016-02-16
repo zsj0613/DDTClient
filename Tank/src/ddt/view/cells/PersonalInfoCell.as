@@ -77,7 +77,7 @@ package ddt.view.cells
 		private var temInfo:InventoryItemInfo;
 		private function sendDefy():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.canEquip(temInfo))
 			{
 				var toPlace:int = PlayerManager.Instance.getDressEquipPlace(temInfo);

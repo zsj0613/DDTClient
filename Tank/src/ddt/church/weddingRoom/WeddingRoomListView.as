@@ -109,25 +109,25 @@ package ddt.church.weddingRoom
 		
 		private function __nextClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(currentPage+1);
 		}
 		
 		private function __nextMoreClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(totalPage);
 		}
 		
 		private function __preClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(currentPage-1);
 		}
 		
 		private function __preMoreClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(1);
 		}
 		
@@ -203,7 +203,7 @@ package ddt.church.weddingRoom
 		
 		private function __itemClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			event.stopImmediatePropagation();
 			var item:WeddingRoomListStrip = event.currentTarget as WeddingRoomListStrip;
 			

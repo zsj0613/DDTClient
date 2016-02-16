@@ -46,7 +46,7 @@ package ddt.view.scenechatII
 			_selected = int(evt.currentTarget.name.slice(2,4));
 			if(_inGame)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				var pkg:PackageOut = new PackageOut(ePackageType.SCENE_FACE);
 				pkg.writeInt(_selected);
 				SocketManager.Instance.out.sendPackage(pkg);

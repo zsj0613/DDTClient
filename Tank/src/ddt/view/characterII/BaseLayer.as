@@ -80,7 +80,7 @@ package ddt.view.characterII
 			{
 				for(var i:int =0; i < _colors.length; i++)
 				{
-					if(!StringHelper.isNullOrEmpty(_colors[i]))
+					if(!StringHelper.IsNullOrEmpty(_colors[i]))
 					{
 						(_loaders[i] as BitmapLoader).color = Number(_colors[i]);
 					}

@@ -271,7 +271,7 @@ package ddt.data.game
 				super.die();
 				isSpecialSkill = false;
 				dander = 0;
-				SoundManager.instance.play("Sound042");
+				SoundManager.Instance.play("Sound042");
 			}
 		}
 		

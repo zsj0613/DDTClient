@@ -102,7 +102,7 @@ package ddt.view.chatsystem
 		
 		private function __onTextClicked(event:TextEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var data:Object = {};
 			var allProperties:Array = event.text.split("|");
 			var tipPos:Point;

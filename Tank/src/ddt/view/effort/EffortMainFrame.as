@@ -105,7 +105,7 @@ package ddt.view.effort
 		public function switchVisible(isSelf:Boolean = true) : void
 		{
 			if(this.parent){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				close();
 				if(parent)parent.removeEventListener(KeyboardEvent.KEY_DOWN,   __onKeyDownHandler);
 				removeEventListener(MouseEvent.CLICK     , __addStage);
@@ -133,7 +133,7 @@ package ddt.view.effort
 		override public function close():void
 		{
 			if(this.parent){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(_pullDownMenu && _pullDownMenu.parent)
 				{
 					_pullDownMenu.parent.removeChild(_pullDownMenu)

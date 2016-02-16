@@ -230,7 +230,7 @@ package ddt.view.taskII
 		}
 		private function __accedeTaskHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var questInfo:QuestInfo = TaskManager.getQuestByID(_taskPannelRight.info.QuestID);
 			if(questInfo && !questInfo.isCompleted)
 			{

@@ -57,7 +57,7 @@ package ddt.store.states
 		 * 设施管理按钮点击
 		 */
 		 private function assetBtnClickHandler(event:MouseEvent):void{
-		 	SoundManager.instance.play("008");
+		 	SoundManager.Instance.play("008");
 			var assetManager : ConsortiaAssetManagerFrame = new ConsortiaAssetManagerFrame();
 			assetManager.show();
 			_effectBtn.hoverEffect.visible = false;

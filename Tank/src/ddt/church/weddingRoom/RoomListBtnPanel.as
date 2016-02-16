@@ -66,7 +66,7 @@ package ddt.church.weddingRoom
 		
 		private function clickListener(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switch(event.currentTarget)
 			{
 				case creactBtn:

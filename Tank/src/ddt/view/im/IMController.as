@@ -111,7 +111,7 @@ package ddt.view.im
 					}
 					if(_panels[nick] == null || _panels[nick].nick == "")
 					{
-						SoundManager.instance.play("018");
+						SoundManager.Instance.play("018");
 						_panels[nick] = new InviteAlertPanel();
 						_panels[nick].info = o;
 					}
@@ -213,7 +213,7 @@ package ddt.view.im
 		
 		private function ___addBlack():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendAddFriend(_name,1);
 			_name = "";
 		}
@@ -221,14 +221,14 @@ package ddt.view.im
 		private function ___addFriend():void
 		{
 			
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendAddFriend(_name,0);
 			_name = "";
 		}
 		
 		private function playSound():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_name = "";
 		}
 		

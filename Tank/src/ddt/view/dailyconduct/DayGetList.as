@@ -80,7 +80,7 @@ package ddt.view.dailyconduct
 		private function __onClickClientHandler(e:MouseEvent):void
 		{
 			var isClientLogin:Boolean = LeavePage.IsDesktopApp; 
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(isClientLogin)
 			{
@@ -103,7 +103,7 @@ package ddt.view.dailyconduct
 		
 		private function __onClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendDailyAward(0);
 			_parent.btnEffect.visible = false;
 			_parent.allGetBtn.mouseChildren = false;

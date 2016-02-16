@@ -72,7 +72,7 @@ package ddt.view.taskII
 			addChild(btnOK);
 		}
 		private function __onBtnClicked(e:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			this.dispose();
 		}
 		public function update():void{

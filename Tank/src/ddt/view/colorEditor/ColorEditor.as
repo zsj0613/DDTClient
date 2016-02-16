@@ -200,27 +200,27 @@ package ddt.view.colorEditor
 		
 		private function __colorItemClick(event:Event):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			var item:ColorItem = event.currentTarget as ColorItem;
 			selectedColor = item.getColor();
 		}
 		
 		private function __skinItemClick(event:Event):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			var item:ColorItem = event.currentTarget as ColorItem;
 			selectedSkin = item.getColor();
 		}
 		
 		private function __colorEditClick(event:Event):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			editColor(selectedColor);
 		}
 		
 		private function __skinEditClick(event:Event):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			editSkin(selectedSkin);
 		}
 		

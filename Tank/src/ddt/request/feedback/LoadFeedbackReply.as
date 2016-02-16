@@ -40,7 +40,7 @@ package ddt.request.feedback
 				feedbackReplyInfo.questionTitle=xmllist[i].@Title;				
 				feedbackReplyInfo.questionContent=xmllist[i].@QuestionContent;
 				feedbackReplyInfo.replyContent=xmllist[i].@ReplyContent;
-				FeedbackManager.instance.feedbackReplyData.add(feedbackReplyInfo.questionId + "_" + feedbackReplyInfo.replyId, feedbackReplyInfo);
+				FeedbackManager.Instance.feedbackReplyData.add(feedbackReplyInfo.questionId + "_" + feedbackReplyInfo.replyId, feedbackReplyInfo);
 			}
 		}
 	}

@@ -121,7 +121,7 @@ package ddt.civil.view
 		
 		private function __onButtonClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var info:CivilPlayerInfo = _controler.currentcivilInfo
 			if(info && info.info)
 			{

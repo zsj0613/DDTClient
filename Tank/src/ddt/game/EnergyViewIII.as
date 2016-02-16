@@ -99,8 +99,8 @@ package ddt.game
 			{
 				if(_keyDown)
 				{
-					SoundManager.instance.stop("020");
-					SoundManager.instance.play("019");
+					SoundManager.Instance.stop("020");
+					SoundManager.Instance.play("019");
 					if(_self.shootType == 0)
 					{
 						_self.sendShootAction(_force);
@@ -147,11 +147,11 @@ package ddt.game
 			_force = _force > FORCE_MAX ? FORCE_MAX : _force;
 			strip.width = Math.ceil(STRIP_WIDTH / FORCE_MAX * _force);
 			_recordeWidth = strip.width;
-			SoundManager.instance.play("020",false,false);
+			SoundManager.Instance.play("020",false,false);
 			if(_force <= 0)
 			{
 				removeEventListener(Event.ENTER_FRAME,__enterFrame);
-				SoundManager.instance.stop("020");
+				SoundManager.Instance.stop("020");
 				_self.skip();
 			}
 		}

@@ -86,9 +86,9 @@ package ddt.view.im
 		}
 		private function __okClick(evt:Event = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var str:String = FilterWordManager.filterWrod(inputTxt);
-			if(!StringHelper.isNullOrEmpty(str))
+			if(!StringHelper.IsNullOrEmpty(str))
 			{
 				_controller.addFriend(inputTxt);
 				close();
@@ -103,7 +103,7 @@ package ddt.view.im
 		
 		private function __cancelClick(evt:MouseEvent = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			inputTxt = "";
 			close();
 		}

@@ -58,7 +58,7 @@ package ddt.view
 		
 		private function __downClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			navigateToURL(new URLRequest(PathManager.solveClienDownLoading()),"_blank");
 			this.hide()
 			this.visible = false;
@@ -69,7 +69,7 @@ package ddt.view
 			if(evt.keyCode == Keyboard.ESCAPE)
 			{
 				this.visible = false;
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 		}
 		
@@ -82,7 +82,7 @@ package ddt.view
 		override protected function __closeClick(e:MouseEvent):void
 		{
 			close();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			this.visible = false;
 		}
 

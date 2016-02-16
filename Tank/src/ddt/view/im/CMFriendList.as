@@ -129,7 +129,7 @@ package ddt.view.im
 		
 		private function __upPageBtnClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentType == 0)
 			{
 				_playCurrentPage--;
@@ -154,7 +154,7 @@ package ddt.view.im
 		
 		private function __downPageBtnClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentType == 0)
 			{
 				_playCurrentPage++;
@@ -272,7 +272,7 @@ package ddt.view.im
 		private function __playTitleClick(evt:MouseEvent):void
 		{
 			cleanCurrentSelectedItem();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_isExpandUnPlayList  = _isExpandUnPlayList ? false : true;
 			_isExpandHasPlayList = false;
 			if(_isExpandUnPlayList)
@@ -292,7 +292,7 @@ package ddt.view.im
 		private function __unplayTitleClick(evt:MouseEvent):void
 		{
 			cleanCurrentSelectedItem();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_isExpandHasPlayList = _isExpandHasPlayList ? false:true;
 			_isExpandUnPlayList  = false;
 			if(_isExpandHasPlayList)
@@ -329,7 +329,7 @@ package ddt.view.im
 		private function handleDate():void
 		{
 			// 因为要在点击时，再去加载数据，所以由外部实现
-			if(!StringHelper.isNullOrEmpty(PathManager.CommunityFriendList()))
+			if(!StringHelper.IsNullOrEmpty(PathManager.CommunityFriendList()))
 			{
 				if(PlayerManager.Instance.CMFriendList != null && PlayerManager.Instance.CMFriendList.length > 0)
 				{
@@ -502,7 +502,7 @@ package ddt.view.im
 		
 		private function __itemClick(e:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(_hasPlayList && _hasPlayList.selectedItem)
 			{

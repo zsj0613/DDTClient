@@ -116,7 +116,7 @@ package ddt.view.common.church
 		
 		private function __lookEquip(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			PersonalInfoManager.instance.addPersonalInfo(spouseID,PlayerManager.Instance.Self.ZoneID);
 		}
 		
@@ -137,7 +137,7 @@ package ddt.view.common.church
 		override protected function __closeClick(e:MouseEvent):void
 		{
 			__cancel();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 	}
 }

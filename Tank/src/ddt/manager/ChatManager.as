@@ -320,6 +320,7 @@ package ddt.manager
 			cm.zoneID = pkg.readInt();
 			cm.senderID = pkg.readInt();
 			cm.receiver = "";
+			cm.server = pkg.readUTF();
 			cm.sender = pkg.readUTF();
 			cm.msg = pkg.readUTF();
 			chat(cm);

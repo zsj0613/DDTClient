@@ -124,7 +124,7 @@ package ddt.view.common
 		{
 			if(hConfirmDialog && evt.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				this.removeEventListener(KeyboardEvent.KEY_DOWN ,__escKeyDown);
 				hConfirmDialog.hide();
 			}
@@ -173,7 +173,7 @@ package ddt.view.common
 		}
 		
 		private function _fillClick():void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			navigateToURL(new URLRequest(PathManager.solveFillPage()),"_blank");
 		}
 	}

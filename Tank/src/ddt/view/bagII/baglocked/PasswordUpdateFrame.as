@@ -112,7 +112,7 @@ package ddt.view.bagII.baglocked
 		
 		
 		private function updateBtnClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_musicDerail = false;
 			if(_bgAsset.yuanText.text == ""){
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.view.bagII.baglocked.originalNull"));
@@ -165,7 +165,7 @@ package ddt.view.bagII.baglocked
 		}
 		
 		private function cancelBtnClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_musicDerail = false;
 			close();
 		}
@@ -183,7 +183,7 @@ package ddt.view.bagII.baglocked
 		
 		override public function dispose():void{
 			if(_musicDerail){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			removeEventListener(Event.ADDED_TO_STAGE,addtoStageHandler);
 //			_bgAsset.newTextAgain.removeEventListener(FocusEvent.FOCUS_OUT,naFocusOutHandler);

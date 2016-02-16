@@ -274,7 +274,7 @@ package ddt.view
 		}
 		private function doCancel():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			hide();
 			revert();
 		}

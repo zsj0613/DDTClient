@@ -75,7 +75,7 @@ package ddt.view.bagII
 				if(cell && cell.info)	//Modified by Freeman
 				{
 					_dragTarget = cell;
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					_confirm = HConfirmDialog.show(LanguageMgr.GetTranslation("AlertDialog.Info"),LanguageMgr.GetTranslation("ddt.view.bagII.SellGoodsBtn.sure").replace("{0}", _dragTarget.itemInfo.Count * _dragTarget.itemInfo.ReclaimValue+(_dragTarget.itemInfo.ReclaimType==1 ? LanguageMgr.GetTranslation("shop.ShopIIShoppingCarItem.gold") : _dragTarget.itemInfo.ReclaimType==2 ? LanguageMgr.GetTranslation("ddt.gameover.takecard.gifttoken") : "")),true,confirmBack,cancelBack);
 				} 
 			}

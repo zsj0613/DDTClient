@@ -89,7 +89,7 @@ package ddt.consortia.myconsortia.frame
 						cancelFunction();
 					}else
 					{
-						SoundManager.instance.play("008");//修复1145号bug wicki 09.06.27
+						SoundManager.Instance.play("008");//修复1145号bug wicki 09.06.27
 						hide();
 					}
 				}

@@ -293,7 +293,7 @@ package ddt.manager
 		
 		public function changed():void
 		{
-			SoundManager.instance.setConfig(allowMusic,allowSound,musicVolumn,soundVolumn);
+			SoundManager.Instance.setConfig(allowMusic,allowSound,musicVolumn,soundVolumn);
 			for(var i:String in GameKeySets)
 			{
 				if(EquipType.RIGHT_PROP[int(int(i)-1)])

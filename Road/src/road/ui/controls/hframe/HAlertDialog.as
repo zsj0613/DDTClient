@@ -74,7 +74,7 @@ package road.ui.controls.hframe
 		override protected function __closeClick(e:MouseEvent):void
 		{
 			dispose();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(closeCallBackFunc != null)
 			{
 				closeCallBackFunc();

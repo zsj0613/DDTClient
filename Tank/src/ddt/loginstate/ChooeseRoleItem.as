@@ -71,7 +71,7 @@ package ddt.loginstate
 		
 		private function clickHandler(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_selected)
 			{
 				dispatchEvent(new Event(Event.SELECT));

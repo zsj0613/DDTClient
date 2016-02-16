@@ -40,7 +40,7 @@ package ddt.manager
 			return _lifeTime;
 		}
 		
-		public static function setup(stage:Stage):void
+		public static function Setup(stage:Stage):void
 		{
 			stage.addEventListener(Event.ENTER_FRAME,frameHandler);
 		}

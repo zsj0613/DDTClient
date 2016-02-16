@@ -45,12 +45,12 @@ package ddt.consortia.consortiadiplomatism
 		}
 		private function __acceptClick(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_okFn(_info.ID)
 		}
 		private function __rejectClick(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_canFun(_info.ID)
 //			if(this.parent)this.parent.removeChild(this); //bret 09.5.25
 		}

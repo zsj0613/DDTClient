@@ -99,7 +99,7 @@
 		
 		private function __sysOK():void
 		{	
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __socketData(event:SocketEvent):void
@@ -759,9 +759,9 @@
 						break;
 					
 					
-					case ePackageType.WORLDBOSS_CMD:
+					case ePackageType.WORLDBOSS_JOIN:
 					{
-						this.createWorldBossEvent(pkg);
+						dispatchEvent(new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_JOIN,pkg));
 						break;
 					}
 
@@ -778,98 +778,7 @@
 		}
 		
 		
-		private function createWorldBossEvent(param1:PackageIn) : void
-		{
-			var cmd:int = param1.readByte();
-			var event:CrazyTankSocketEvent = null;
-			switch(cmd)
-			{
-				case WorldBossPackageType.OPEN:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_INIT, param1);
-					break;
-				}
-				case WorldBossPackageType.OVER:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_OVER, param1);
-					break;
-				}
-				case WorldBossPackageType.CANENTER:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_ENTER, param1);
-					break;
-				}
-				case WorldBossPackageType.ENTER:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_ROOM, param1);
-					break;
-				}
-				case WorldBossPackageType.MOVE:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_MOVE, param1);
-					break;
-				}
-				case WorldBossPackageType.WORLDBOSS_EXIT:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_EXIT, param1);
-					break;
-				}
-				case WorldBossPackageType.WORLDBOSS_PLAYERSTAUTSUPDATE:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_PLAYERSTAUTSUPDATE, param1);
-					break;
-				}
-				case WorldBossPackageType.WORLDBOSS_BLOOD_UPDATE:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_BLOOD_UPDATE, param1);
-					break;
-				}
-				case WorldBossPackageType.WORLDBOSS_FIGHTOVER:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_FIGHTOVER, param1);
-					break;
-				}
-				case WorldBossPackageType.WORLDBOSS_ROOM_CLOSE:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_ROOMCLOSE, param1);
-					break;
-				}
-				case WorldBossPackageType.WORLDBOSS_PLAYER_REVIVE:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_PLAYERREVIVE, param1);
-					break;
-				}
-				case WorldBossPackageType.WORLDBOSS_RANKING:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_RANKING, param1);
-					break;
-				}
-				case WorldBossPackageType.WORLDBOSS_PRIVATE_INFO:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_PRIVATE_INFO, param1);
-					break;
-				}
-				case WorldBossPackageType.ASSISTANT:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_ASSISTANT, param1);
-					break;
-				}
-				case WorldBossPackageType.PlayerFightAssistant:
-				{
-					event = new CrazyTankSocketEvent(CrazyTankSocketEvent.WORLDBOSS_PLAYERFIGHTASSIATANT, param1);
-					break;
-				}
-				default:
-				{
-					break;
-				}
-			}
-			if (event)
-			{
-				dispatchEvent(event);
-			}
-			return;
-		}// end function
+		
 		
 		private function kitUser(msg:String):void
 		{

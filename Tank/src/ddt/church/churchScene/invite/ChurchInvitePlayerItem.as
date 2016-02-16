@@ -60,7 +60,7 @@ package ddt.church.churchScene.invite
 	
 		private function __mouseClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var roominfo:ChurchRoomInfo = ChurchRoomManager.instance.currentRoom;
 
 			if(_info is ConsortiaPlayerInfo)

@@ -64,7 +64,7 @@ package ddt.church.churchScene.menu
 		
 		private function __mouseClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			hide();
 		}
 		

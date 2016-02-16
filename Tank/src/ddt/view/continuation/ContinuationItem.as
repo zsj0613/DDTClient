@@ -123,7 +123,7 @@ package ddt.view.continuation
 		}
 		private function __selectRadioBtn(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.currentTarget == _dianquanRadioBtn)
 			{
 				updateCurrentShopItem(Price.MONEY);
@@ -144,7 +144,7 @@ package ddt.view.continuation
 		}
 		private function _comChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_currentShopItem.currentBuyType = _com.selectedItem.data;
 			dispatchEvent(new Event(CONDITION_CHANGE));
 		}
@@ -214,7 +214,7 @@ package ddt.view.continuation
 		}
 		private function __closeClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			filters=[new ColorMatrixFilter([
                         0.3086, 0.6094, 0.0820, 0, 0,
                         0.3086, 0.6094, 0.0820, 0, 0,
@@ -226,7 +226,7 @@ package ddt.view.continuation
 			evt.stopPropagation();
 			addEventListener(MouseEvent.CLICK,function(e:Event):void
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				mouseChildren=true;
 				_isDelete=false;
 				filters=null;

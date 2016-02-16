@@ -109,7 +109,7 @@ package ddt.consortia.myconsortia.frame
 		private function __ejiggerClickHandler(evt : MouseEvent) : void
 		{
 			
-	    	SoundManager.instance.play("008");
+	    	SoundManager.Instance.play("008");
 			evt.stopPropagation();
 			if(ejiggerBtn.currentFrame == 1)
 			{
@@ -133,7 +133,7 @@ package ddt.consortia.myconsortia.frame
 		private function __mouseClickHandler(evt : MouseEvent) : void
 		{
 			evt.stopPropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			selectItem();
 		}
 		public function selectItem() : void

@@ -71,7 +71,7 @@ package ddt.hotSpring.view.frame
 		private function okClick(evt:Event = null):void
 		{
 			okBtnEnable = false;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(inputTxt == "")
 			{
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.roomlist.RoomListIIPassInput.write"));
@@ -86,7 +86,7 @@ package ddt.hotSpring.view.frame
 		private function cancelClick(evt:MouseEvent = null):void
 		{
 			okBtnEnable = false;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			close();
 		}
 		

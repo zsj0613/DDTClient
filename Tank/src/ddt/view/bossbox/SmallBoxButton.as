@@ -115,7 +115,7 @@ package ddt.view.bossbox
 		
 		private function _click(e:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispatchEvent(new Event(SmallBoxButton.SMALLBOXBUTTON_CLICK));
 		}
 		

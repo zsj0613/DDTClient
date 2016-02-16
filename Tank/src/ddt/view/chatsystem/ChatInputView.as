@@ -202,7 +202,7 @@ package ddt.view.chatsystem
 		
 		private function __onChannelListBtnClicked(event:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_channelList.visible = true;
 		}
 		
@@ -213,7 +213,7 @@ package ddt.view.chatsystem
 		
 		private function __onEnterClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			sendCurrentText();
 		}
 		
@@ -263,7 +263,7 @@ package ddt.view.chatsystem
 		
 		private function __stagePanelClick (event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(stage)
 			{
 				stage.removeEventListener(MouseEvent.CLICK,__stagePanelClick);
@@ -421,7 +421,7 @@ package ddt.view.chatsystem
 		
 		private function panelClickLogic(panel:DisplayObject):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			panel.visible = true;
 			stage.addEventListener(MouseEvent.CLICK,__stagePanelClick);
 		}

@@ -1,6 +1,5 @@
 package ddt.view.chatsystem
 {
-	import ddt.data.goods.InventoryItemInfo;
 	import ddt.utils.Helpers;
 
 	public class ChatData
@@ -14,6 +13,7 @@ package ddt.view.chatsystem
 		public var senderID:int;
 		public var zoneID:int = -1;
 		public var type:int=-1;
+		public var server:String ="";
 		/**
 		 *  <Object{uint index,int TemplateID,,Number ItemID}>
 		 */		

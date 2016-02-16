@@ -291,7 +291,7 @@ package ddt.game
 		private function __fastChat(event:MouseEvent):void
 		{
 			event.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			ChatManager.Instance.switchVisible();
 			ChatManager.Instance.setFocus();
 		}
@@ -299,7 +299,7 @@ package ddt.game
 		private function __setBtn(event:MouseEvent):void
 		{
 			SetPannelView.Instance.switchVisible();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __keydown(event:KeyboardEvent):void
@@ -319,7 +319,7 @@ package ddt.game
 			{
 				_self.isSpecialSkill = true;
 				GameInSocketOut.sendGameCMDStunt();
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				updateDander(0);
 			}
 		}
@@ -347,7 +347,7 @@ package ddt.game
 		private function __face(event:MouseEvent):void
 		{
 			_facePannel.setVisible(true);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_facePannel.parent == null)
 				TipManager.AddTippanel(_facePannel);
 		}
@@ -355,7 +355,7 @@ package ddt.game
 		private function __im(event:MouseEvent):void
 		{
 			IMController.Instance.switchVisible();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __blood(event:LivingEvent):void
@@ -440,7 +440,7 @@ package ddt.game
 		
 		private function __exit(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			/**变鬼了随时退出**/
 			if(!_self.isLiving)
 			{
@@ -470,13 +470,13 @@ package ddt.game
 			{
 				mouseChildren = false;
 				GameInSocketOut.sendGamePlayerExit();
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 		}
 		
 		private function __cancel():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __die(event:LivingEvent):void

@@ -60,7 +60,7 @@ package ddt.view.changeColor
 		{
 			if(evt.data.itemInfo&&evt.data.itemInfo.NeedSex != ((_model.self.Sex==true)? 1 : 2))
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.view.changeColor.sexAlert"));
 			}else
 			{

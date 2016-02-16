@@ -219,7 +219,7 @@
 		private var temInfo:InventoryItemInfo;
 		private function sendDefy():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.canEquip(temInfo))
 			{
 				SocketManager.Instance.out.sendMoveGoods(temInfo.BagType,temInfo.Place,temInfo.BagType,place,temInfo.Count);
@@ -303,7 +303,7 @@
 		 */		
 		public function sellItem():void
 		{
-			SoundManager.instance.play("008");	
+			SoundManager.Instance.play("008");	
 			_confirm = HConfirmDialog.show(LanguageMgr.GetTranslation("AlertDialog.Info"),LanguageMgr.GetTranslation("ddt.view.bagII.SellGoodsBtn.sure").replace("{0}", itemInfo.Count * itemInfo.ReclaimValue+(itemInfo.ReclaimType==1 ? LanguageMgr.GetTranslation("shop.ShopIIShoppingCarItem.gold") : itemInfo.ReclaimType==2 ? LanguageMgr.GetTranslation("ddt.gameover.takecard.gifttoken") : "")),true,confirmSell,confirmCancel);
 		}
 		

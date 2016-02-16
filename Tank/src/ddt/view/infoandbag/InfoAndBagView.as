@@ -220,7 +220,7 @@ package ddt.view.infoandbag
 		}
 		private function __okClick():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_controller.switchVisible();
 		}
 		

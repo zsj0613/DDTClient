@@ -35,7 +35,7 @@ package ddt.view.changeColor
 			evt.stopImmediatePropagation();
 			if(evt.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				__close();
 			}
 		}

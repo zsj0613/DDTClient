@@ -155,7 +155,7 @@ package ddt.auctionHouse.view
 		}
 		private function __selectBidTimeII(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentTime != evt.currentTarget)_currentTime.revert();
 			switch(evt.currentTarget.name)
 			{
@@ -291,7 +291,7 @@ package ddt.auctionHouse.view
 			
 			if(!_cell.info || !_bag.parent){
 				_bag.open();
-				SoundManager.instance.play("047");
+				SoundManager.Instance.play("047");
 			}
 		}
 		
@@ -356,7 +356,7 @@ package ddt.auctionHouse.view
 		
 		private function __startBid(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			if(!_cell.info)
 			{
 				

@@ -22,7 +22,7 @@ package ddt.view.changeColor
 			if(this.itemInfo!=null)
 			{
 				TipManager.setCurrentTarget(null,null);
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(_bagCell.itemInfo && _bagCell.itemInfo.lock)
 				{
 					if(_bagCell.itemInfo.BagType == 0)

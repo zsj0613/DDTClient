@@ -85,12 +85,12 @@ package ddt.auctionHouse.view
 		
 		private function __nextPage(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			dispatchEvent(new AuctionHouseEvent(AuctionHouseEvent.NEXT_PAGE));
 		}
 		private function __prePage(evt : MouseEvent)  : void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			dispatchEvent(new AuctionHouseEvent(AuctionHouseEvent.PRE_PAGE));
 		}
 		
@@ -204,7 +204,7 @@ package ddt.auctionHouse.view
 		
 		private function __bid(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 //			_mouthful_btn.enable = false;
 			
 			//bid_btn.mouseEnabled = false;
@@ -254,7 +254,7 @@ package ddt.auctionHouse.view
 		
 		private function __mouthFull(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			_mouthful_btn.enable = false;
 			_bid_btn.enable      = false;
 			_btClickLock = true;

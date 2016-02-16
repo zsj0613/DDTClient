@@ -88,6 +88,7 @@
 		
 		private function init():void
 		{
+			SocketManager.Instance.out.sendUpdateRoomList(lookupEnumerate.ROOM_LIST,lookupEnumerate.ROOMLIST_DEFAULT);
 			refreshTimer = new Timer(1500,1);
 			refreshTimer.start();
 			
@@ -203,14 +204,14 @@
 	
 		private function __nextClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(currentPage+1,currentType);
 			SocketManager.Instance.out.sendUpdateRoomList(lookupEnumerate.ROOM_LIST,lookupEnumerate.ROOMLIST_DEFAULT);
 		}
 		
 		private function __preClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(currentPage-1,currentType);
 			SocketManager.Instance.out.sendUpdateRoomList(lookupEnumerate.ROOM_LIST,lookupEnumerate.ROOMLIST_DEFAULT);
 		}
@@ -313,7 +314,7 @@
 		
 		private function __sortBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			currentType = _sortbtns.indexOf(evt.currentTarget);
 			updatePage(1,currentType,true);
 //			sortList(_sortbtns.indexOf(evt.currentTarget));
@@ -329,7 +330,7 @@
 		
 		private function __showSortTip(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_roomModetip.visible && evt.currentTarget!= room_mode_btn)
 			{
 				_roomModetip.visible = false;
@@ -584,7 +585,7 @@
 		
 		public function gotoIntoRoom(info:SimpleRoomInfo):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(info.dungeonInfo && info.dungeonInfo.LevelLimits > PlayerManager.Instance.Self.Grade)
 			{

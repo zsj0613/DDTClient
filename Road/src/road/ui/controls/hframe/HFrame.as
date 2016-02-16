@@ -279,7 +279,7 @@ package road.ui.controls.hframe
 		
 		protected function __closeClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_closeFunction != null)
 			{
 				_closeFunction();

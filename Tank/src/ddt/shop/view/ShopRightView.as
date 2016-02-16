@@ -161,7 +161,7 @@ package ddt.shop.view
 			if(index != -1 && index != _currentType)
 			{
 				setType(index);
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 		}
 		
@@ -244,7 +244,7 @@ package ddt.shop.view
 			_currentPage = 1;
 			showThreeBtns(_currentType);
 			loadList();			
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __threeBtnClick(evt:MouseEvent):void
@@ -261,7 +261,7 @@ package ddt.shop.view
 			_three_btns[_currentThreeType].gotoAndStop(2);
 			_currentPage = 1;
 			loadList();			
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __itemClick(evt:MouseEvent):void
@@ -270,7 +270,7 @@ package ddt.shop.view
 			if(!item.shopItemInfo)return;
 			if(item.shopItemInfo.count == 0)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("shop.ShopIIModel.countOver"));
 				return;
 			}
@@ -320,7 +320,7 @@ package ddt.shop.view
 				{
 					i.selected = i == item;
 				}
-				SoundManager.instance.play("047");
+				SoundManager.Instance.play("047");
 			}
 		}
 		
@@ -329,7 +329,7 @@ package ddt.shop.view
 			var item:ShopGoodsItem = evt.currentTarget as ShopGoodsItem;
 			if(item.shopItemInfo && item.shopItemInfo.count == 0)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("shop.ShopIIModel.countOver"));
 				return;
 			}
@@ -350,7 +350,7 @@ package ddt.shop.view
 			setCurrentSex(target);
 			_currentPage = 1;
 			_controller.setFittingModel(_currentSex == 1);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		public function setCurrentSex(sex:int):void
@@ -368,7 +368,7 @@ package ddt.shop.view
 				_currentPage = ShopManager.Instance.getResultPages(8) + 1;
 			_currentPage --;
 			loadList();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __nextBtnClick(evt:MouseEvent):void
@@ -377,7 +377,7 @@ package ddt.shop.view
 				_currentPage = 0;
 			_currentPage ++;
 			loadList();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		public function loadList():void

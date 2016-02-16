@@ -587,7 +587,7 @@ package ddt.room
 		{
 			if(_self.isHost)
 			{
-				SoundManager.instance.play("045");
+				SoundManager.Instance.play("045");
 				if(_roomset.mapSetFlicker_mc.visible)
 				_roomset.mapSetFlicker();
 				_controller.showMapSet();
@@ -616,7 +616,7 @@ package ddt.room
 			{
 				_controller.showInvite();
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __RoomChanged(evt:RoomEvent):void
@@ -637,7 +637,7 @@ package ddt.room
 		
 		private function __teamSetClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("012");
+			SoundManager.Instance.play("012");
 			if(!_self.isReady || _self.isHost)
 			{
 				GameInSocketOut.sendGameTeam(int(_self.team % 2) + 1);			
@@ -652,11 +652,11 @@ package ddt.room
 		}
 		private function canceBack() : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		private function __cancelClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_self.isHost)
 			{
 				if(_pickupPanel)_pickupPanel.resetTimer();
@@ -670,7 +670,7 @@ package ddt.room
 		
 		private function __readyClick(evt:MouseEvent):void{
 			configRoomList();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_self.hasWeapon())
 			{
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.room.RoomIIController.weapon"));
@@ -744,10 +744,10 @@ package ddt.room
 		}
 		private function setClickVisible(b:Boolean):void
 		{
-			SoundManager.instance.stop("007");
+			SoundManager.Instance.stop("007");
 			if(b)
 			{
-				SoundManager.instance.play("007",false,true,10000);
+				SoundManager.Instance.play("007",false,true,10000);
 			}
 		}
 		private function configRoomList():void{
@@ -766,7 +766,7 @@ package ddt.room
 			configRoomList();
 			if(_self.info.WeaponID <= 0)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.room.RoomIIController.weapon"));
 				return;
 			}
@@ -774,7 +774,7 @@ package ddt.room
 				sendStartGame();
 			}else if(!_controller.setingAchieve && _room.roomType > 2)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.room.RoomIIView2.setRoomInfo"));
 				if(!_roomset.mapSetFlicker_mc.visible)
 				_roomset.mapSetFlicker();
@@ -782,7 +782,7 @@ package ddt.room
 			}
 			if(_room.roomType == 3)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(PlayerManager.Instance.Self.bagLocked)
 				{
 					new BagLockedGetFrame().show();
@@ -796,7 +796,7 @@ package ddt.room
 					_duplicateInfoPane.setMouseMoveUnListen();
 			}else if(_room.roomType == 4 && _playerlist.room.players.length == 1)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 //				HConfirmDialog.OK_LABEL = LanguageMgr.GetTranslation("ddt.room.RoomIIView2.affirm");
 				HConfirmDialog.show(LanguageMgr.GetTranslation("ddt.room.RoomIIView2.notenoughmoney.title"),LanguageMgr.GetTranslation("ddt.room.RoomIIView2.clewContent"),true,sendStartGame, cancelCallback,true,LanguageMgr.GetTranslation("ddt.room.RoomIIView2.affirm"));
 //				HConfirmDialog.show(LanguageMgr.GetTranslation("ddt.room.RoomIIView2.notenoughmoney.title"),"副本难度较大，适合2人以上团队挑战，\n\		确定要单人闯关吗？",true,sendStartGame, cancelCallback, "确认");
@@ -837,7 +837,7 @@ package ddt.room
 			}
 			_controller.startGame();
 			//global.traceStr("sendStartGame");
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function cancelCallback():void
@@ -878,7 +878,7 @@ package ddt.room
 		public function dispose():void
 		{
 			removeEvent();
-			SoundManager.instance.stop("007");
+			SoundManager.Instance.stop("007");
 			if( RoomManager.Instance.current && RoomManager.Instance.current.defyInfo)
 			{
 				RoomManager.Instance.current.defyInfo = null;

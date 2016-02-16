@@ -64,7 +64,7 @@ package ddt.view.bagII.baglocked
 		}
 		
 		private function completeBtnClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			new PasswordProtectionFrame("complete").show();
 			close();
 		}
@@ -82,7 +82,7 @@ package ddt.view.bagII.baglocked
 		
 		override public function dispose():void{
 			removeEventListener(Event.ADDED_TO_STAGE,addtoStageHandler);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			super.dispose();
 		}
 		

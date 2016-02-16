@@ -77,7 +77,7 @@ package ddt.view.bagII
 					if(cell.itemInfo.Count > 1 && cell.itemInfo.BagType != 11)
 					{
 						_dragTarget = cell;
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 						var win:BreakGoodsView = new BreakGoodsView(cell);
 						win.show();
 					}

@@ -161,7 +161,7 @@ package ddt.view.im
 		
 		private function __titleClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_isExpand)
 			{
 				if(!_onlineList)
@@ -331,7 +331,7 @@ package ddt.view.im
 		private function __itemClick(evt:MouseEvent):void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_onlineList.selectedItem) 
 			{
 				(_onlineList.selectedItem as IMConsortiaItem).selected = false;

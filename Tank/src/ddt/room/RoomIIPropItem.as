@@ -91,7 +91,7 @@ package ddt.room
 		{
 			if(_info == null)return;
 			var propInfo:PropInfo =  evt.currentTarget._info as PropInfo;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_isself && PlayerManager.Instance.Self.Gold < ShopManager.Instance.getShopItemByTemplateIDAndShopID(propInfo.Template.TemplateID,2).getItemPrice(1).goldValue)
 			{
 				new FastPurchaseGoldBox(LanguageMgr.GetTranslation("ddt.room.RoomIIView2.notenoughmoney.title"),LanguageMgr.GetTranslation("ddt.view.GoldInadequate"),EquipType.GOLD_BOX).show();

@@ -73,7 +73,7 @@ package ddt.view.bagII.baglocked
 		}
 		
 		private function mouseClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_bgAsset.textInput.text == ""){
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.view.bagII.baglocked.inputOriginalPassword"));
 				return;
@@ -107,7 +107,7 @@ package ddt.view.bagII.baglocked
 		}
 		
 		override public function dispose():void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			removeEventListener(Event.ADDED_TO_STAGE,addtoStageHandler);
 			_delBtn.removeEventListener(MouseEvent.CLICK,mouseClickHandler);
 			PlayerManager.Instance.Self.removeEventListener(BagEvent.AFTERDEL,delSuccessHandler);

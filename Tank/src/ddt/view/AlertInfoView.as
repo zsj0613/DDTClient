@@ -100,7 +100,7 @@ package ddt.view
 		
 		private function __okClickHandler(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_okFun!=null)
 			{
 				_okFun();
@@ -109,7 +109,7 @@ package ddt.view
 		
 		private function __cancelClickHandler(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_cancelFun!=null)
 			{
 				_cancelFun();

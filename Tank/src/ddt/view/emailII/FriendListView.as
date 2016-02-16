@@ -85,7 +85,7 @@ package ddt.view.emailII
 		
 		private function __btnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			var index:int = Number(evt.currentTarget.name.slice(4,5));  //index = 0;
 			bg.gotoAndStop(index + 1);

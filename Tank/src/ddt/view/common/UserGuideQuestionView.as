@@ -130,13 +130,13 @@ package ddt.view.common
 		}
 		private function __itemClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentItem)_currentItem.isSelect = false;
 			_currentItem = evt.currentTarget as UserGuideQuestionAnswerView;
 			_currentItem.isSelect = true;
 			if(answer == _currentItem.id)
 			{
-				SoundManager.instance.play("1001");
+				SoundManager.Instance.play("1001");
 				this.dispatchEvent(new Event(Event.CLOSE));
 				if(_NO == 3){
 					SocketManager.Instance.out.sendUserGuideProgress(48);

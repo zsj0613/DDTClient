@@ -11,7 +11,7 @@ package ddt.data
 		public var LOGIN_PATH:String = "";
 		public var XML_PATH:String ="";
 		public var SWF_PATH:String ="";
-		public static var GAME_BOXPIC : int; 
+		public static var GAME_BOXPIC : int = 1; 
 		
 		public static var ISTOPDERIICT : Boolean = false;//是否顶部跳转
 		public static var isUserAddFriend : Boolean = false;//是否使用加社区好友

@@ -73,7 +73,7 @@ package ddt.view.taskII
 			if(_data.list.length == 0){
 				return false;
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			TaskManager.currentCategory = questType;
 			expand();
 			updateView();

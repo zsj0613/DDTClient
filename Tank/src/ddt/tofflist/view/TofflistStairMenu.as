@@ -76,7 +76,7 @@ package ddt.tofflist.view
 		
 		private function __selectToolBarHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentBtn)_currentBtn.selected = false;
 			_currentBtn = evt.target.parent.parent as HFrameButton;
 			_currentBtn.selected = true;

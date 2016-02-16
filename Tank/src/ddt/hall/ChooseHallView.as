@@ -103,7 +103,7 @@
 				BossBoxManager.instance.addEventListener(BossBoxManager.LOADUSERBOXINFO_COMPLETE,__onBossBoxDataLoaded);
 			}
 			
-			SoundManager.instance.playMusic("062",true,false);
+			SoundManager.Instance.playMusic("062",true,false);
 			
 			BellowStripViewII.Instance.show();
 			BellowStripViewII.Instance.enabled = true;
@@ -204,7 +204,7 @@
 		
 		private function __btnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			switch(evt.currentTarget.name)
 			{
 				case "auction_mc":
@@ -342,14 +342,14 @@
 		
 		private function __roup(event:MouseEvent):void
 		{	
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			StateManager.setState(StateType.AUCTION);
 		}
 		
 		
 		private function __active(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			MovementLeftView.Instance.setup();
 			MovementLeftView.Instance.open();		
 			BellowStripViewII.Instance.clickMovement();  //bret 09.8.21

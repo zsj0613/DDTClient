@@ -143,7 +143,7 @@ package ddt.view.taskII
 		
 		private function __onClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_active();
 		}
 		protected function _active() : void

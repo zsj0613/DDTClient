@@ -183,7 +183,7 @@ package ddt.roomlist
 		
 		override public function enter(prev:BaseStateView,data:Object = null):void
 		{
-			SoundManager.instance.playMusic("062");
+			SoundManager.Instance.playMusic("062");
 			super.enter(prev,data);
 			StatisticManager.loginRoomListNum ++;
 			SocketManager.Instance.out.sendCurrentState(1);

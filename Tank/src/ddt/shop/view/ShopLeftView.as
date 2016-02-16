@@ -53,7 +53,7 @@ package ddt.shop.view
 		
 		private function __tabsClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var s:Sprite = evt.currentTarget as Sprite
 			setPanelVisible(s == trydress_btn ? ShopController.TRYPANEL : ShopController.SHOPCAR);
 		}

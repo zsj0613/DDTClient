@@ -51,7 +51,7 @@ package ddt.view.dailyconduct
 	    {
 	    	if(evt.keyCode == Keyboard.ESCAPE)
 	    	{
-	    		SoundManager.instance.play("008");
+	    		SoundManager.Instance.play("008");
 		    	BellowStripViewII.Instance.switchDailyConduct();
 	    	}
 	    }

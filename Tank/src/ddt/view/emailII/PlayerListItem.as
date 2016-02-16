@@ -55,7 +55,7 @@ package ddt.view.emailII
 		{
 			if(_fun != null)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				_fun(_info.NickName,_info.ID);
 			}
 		}

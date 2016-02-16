@@ -101,7 +101,7 @@
 		private var _isDes : Boolean = false;
 		private function __sortOnHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_isDes = (_isDes ? false : true);
             switch(evt.target.name)
             {

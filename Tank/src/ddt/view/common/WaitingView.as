@@ -71,13 +71,13 @@ package ddt.view.common
 			if(_cancelable)
 			{
 				hide();
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			dispatchEvent(new Event(WAITING_CANCEL));
 		}
 		private function __closeClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
             __mouseClick();
         }
 		public function set percent(p:Number):void

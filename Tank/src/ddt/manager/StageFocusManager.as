@@ -14,7 +14,7 @@ package ddt.manager
 		private var _setFocusLayer  : MouseClickTipView;
 		private static var instance : StageFocusManager; 
 		
-		public static function getInstance():StageFocusManager{
+		public static function Instance():StageFocusManager{
 			if(instance == null){
 				instance = new StageFocusManager();
 			}

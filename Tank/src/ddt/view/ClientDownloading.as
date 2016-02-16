@@ -70,7 +70,7 @@ package ddt.view
 					_dialog.visible = true;
 				}
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		private function __assetOver(evt:Event):void
 		{

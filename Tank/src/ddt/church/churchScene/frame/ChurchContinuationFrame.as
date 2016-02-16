@@ -69,7 +69,7 @@ package ddt.church.churchScene.frame
 		
 		private function __secondClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("043");
+			SoundManager.Instance.play("043");
 			var index:Number = Number(event.currentTarget.name.slice(4,5));
 			
 			resetSecondBtn();

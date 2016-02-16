@@ -50,7 +50,7 @@ package ddt.game.actions
 					{
 						movie = new MovieClipWrapper(new LoseAsset(),true,true);
 					}
-					SoundManager.instance.play("040");
+					SoundManager.Instance.play("040");
 					movie.x = 500;
 					movie.y = 360;
 					_map.gameView.addChild(movie);

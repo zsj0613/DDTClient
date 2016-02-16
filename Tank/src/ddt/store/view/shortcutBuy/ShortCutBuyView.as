@@ -141,14 +141,14 @@ package ddt.store.view.shortcutBuy
 		
 		
 		private function clickHandlerDian(e:MouseEvent):void {
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			priceStr = "0" + LanguageMgr.GetTranslation("ddt.auctionHouse.view.AuctionBrowseView.stipple");
 			_firstShow = false;
 			updateCost();
 		}
 		
 		private function clickHandlerLi(e:MouseEvent):void {
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			priceStr = "0" + LanguageMgr.GetTranslation("ddt.gameover.takecard.gifttoken");
 			_firstShow = false;
 			updateCost();

@@ -174,7 +174,7 @@ package ddt.view.dailyconduct
 		
 		private function __pullDown(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_password_mc.pass_txt.text == "" && _info.HasKey == 1 )
 			{
 				

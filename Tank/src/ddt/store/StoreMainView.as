@@ -211,7 +211,7 @@ package ddt.store
 		{
 			SocketManager.Instance.out.sendClearStoreBag();
 			if(playMusic){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			_composePanel.hide();
 			_strengthPanel.hide();
@@ -226,7 +226,7 @@ package ddt.store
 		
 		private function __openAssetManager(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var assetManager : ConsortiaAssetManagerFrame = new ConsortiaAssetManagerFrame();
 			assetManager.show();
 			ConsortiaAssetManagerFrame.setConsortiaAssetState(true);

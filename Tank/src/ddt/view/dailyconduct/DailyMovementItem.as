@@ -42,7 +42,7 @@ package ddt.view.dailyconduct
 		private var _isSelect : Boolean = false;
 		private function __mouseClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			setText();
 			this.dispatchEvent(new DailyConductEvent(DailyConductEvent.LINK,_info));
 		}

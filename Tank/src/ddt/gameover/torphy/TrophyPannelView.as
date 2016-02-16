@@ -151,7 +151,7 @@ package ddt.gameover.torphy
 		}
 		private function __confirm(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(StateManager.currentStateType != StateType.MISSION_RESULT)
 			{
 				StateManager.setState(PlayerManager.gotoState);

@@ -78,7 +78,7 @@ package ddt.store.view.storeBag
 				    {
 				    	timer.stop();
 				    	dispatchEvent(new CellEvent(CellEvent.DOUBLE_CLICK,evt.currentTarget,true));
-				    	SoundManager.instance.play("008");
+				    	SoundManager.Instance.play("008");
 				    	currentTarget = null;
 				    }
 			    }

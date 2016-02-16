@@ -72,7 +72,7 @@ package ddt.game.actions
 				{
 					_living.info.pos = p;
 					_living.doAction(_action);
-					SoundManager.instance.play("044",false,false);
+					SoundManager.Instance.play("044",false,false);
 					if(!_living.info.isHidden){
 						_living.map.animateSet.addAnimation(new BaseSetCenterAnimation(_living.x,_living.y - 150,0,false,AnimationLevel.MIDDLE));
 					}

@@ -164,8 +164,8 @@ package ddt.view.im
 		{
 //			trace("邀请");
 			MessageTipManager.getInstance().show("已通过社区消息发送邀请");
-			SoundManager.instance.play("008");
-			if(!StringHelper.isNullOrEmpty(PathManager.CommunityInvite()))
+			SoundManager.Instance.play("008");
+			if(!StringHelper.IsNullOrEmpty(PathManager.CommunityInvite()))
 			{
 				var req:URLRequest = new URLRequest(PathManager.CommunityInvite());
 				
@@ -257,14 +257,14 @@ package ddt.view.im
 
 		private function __jumpToWebPage(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			navigateToURL(new URLRequest(_info.PersonWeb));
 		}
 		
 		private function __addFriendHandler(e:MouseEvent):void
 		{
 //			SocketManager.Instance.out.sendAddFriend(_info.NickName,0);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			IMController.Instance.addFriend(_info.NickName);
 		}
 		

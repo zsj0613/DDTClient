@@ -70,7 +70,7 @@ package ddt.store
 		
 		override public function dispose():void
 		{
-			SoundManager.instance.resumeMusic();
+			SoundManager.Instance.resumeMusic();
 			_controller.dispose();
 			_controller = null;
 			if(_container.parent) _container.parent.removeChild(_container);

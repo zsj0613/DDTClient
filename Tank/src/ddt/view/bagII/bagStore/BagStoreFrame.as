@@ -100,7 +100,7 @@ package ddt.view.bagII.bagStore
 			if(evt.keyCode == Keyboard.ESCAPE && BagStoreFrame.isTabStore)
 			{
 				evt.stopImmediatePropagation();
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				close();
 			}
 		}

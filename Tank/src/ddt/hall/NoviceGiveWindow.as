@@ -44,7 +44,7 @@ package ddt.hall
 			if(parent)
 			this.parent.removeChild(this);
 			BagIIView.DEFAULT_SHOW_TYPE = 1;
-			SoundManager.instance.play("003");
+			SoundManager.Instance.play("003");
 		}
 		
 		override public function show() : void

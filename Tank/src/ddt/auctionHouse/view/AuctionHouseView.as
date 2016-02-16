@@ -294,19 +294,19 @@ package ddt.auctionHouse.view
 		
 		private function __browse(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			_controller.setState(AuctionState.BROWSE);
 		}
 		
 		private function __buy(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			_controller.setState(AuctionState.BUY);
 		}
 		
 		private function __sell(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			_controller.setState(AuctionState.SELL);
 		}
 		
@@ -324,7 +324,7 @@ package ddt.auctionHouse.view
 		
 		private function __showDescription(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_desctrptionFrame.show();
 		}
 		

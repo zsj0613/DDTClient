@@ -83,7 +83,7 @@ package ddt.game.actions
 			{
 				_isShoot = true;
 				
-				SoundManager.instance.play(_info.ShootSound);
+				SoundManager.Instance.play(_info.ShootSound);
 				for (var i:int = 0;i<_bombs.length;i++)
 				{
 					for(var j:int = 0;j<_bombs[i].Actions.length;j++)

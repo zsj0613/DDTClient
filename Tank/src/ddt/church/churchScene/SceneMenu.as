@@ -246,46 +246,46 @@ package ddt.church.churchScene
 			switch((event.currentTarget as DisplayObject).name)
 			{
 				case "churchManageBtn":
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					swicthSubMenuVisible();
 				break;
 				case "startWeddingBtn":
 					if(startWeddingBtn.enabled == true)
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 					}
 					HConfirmDialog.show(LanguageMgr.GetTranslation("ddt.view.task.TaskCatalogContentView.tip"),LanguageMgr.GetTranslation("are.you.sure.to.marry"),true,startWedding);
 				break;
 				case "continuationBtn":
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					_controler.continuation();
 				break;
 				case "guestListBtn":
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					switchVisibleGuestList();
 				break;
 				case "inviteGuestBBtn":
 					if(inviteGuestBBtn.enabled == true)
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 					}
 					switchVisibleInvite();
 				break;
 				case "inviteGuestBtn":
 					if(inviteGuestBtn.enabled == true)
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 					}
 					switchVisibleInvite();
 				break;
 				case "presentBtn":
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					_controler.present();
 				break;
 				case "useFireBtn":
 					if(useFireBtn.enabled == true)
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 					}
 					switchVisibleFireList();
 				break;
@@ -295,26 +295,26 @@ package ddt.church.churchScene
 				case "exitBtn":
 					if(exitBtn.enabled == true)
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 					}
 					exit();
 				break;
 				case "leaveBtn":
 					if(leaveBtn.enabled == true)
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 					}
 					HConfirmDialog.show("提示","是否确定离开当前婚礼房间",true,_exit);
 //					StateManager.setState(StateType.CHURCH_ROOMLIST);
 					break;
 				case "switchBtn":
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					switchMenuStatus();
 				break;
 				case "modifyBtn":
 					if(modifyBtn.enabled == true)
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 					}
 					switchModifyVisible();
 				break;

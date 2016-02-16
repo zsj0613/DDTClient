@@ -190,7 +190,7 @@ package ddt.fightLib
 		
 		private function __btnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if((evt.currentTarget as HSelectableShineButton).selected) return;
 			for each(var btn:HSelectableShineButton in _infoBtns)
 			{
@@ -248,7 +248,7 @@ package ddt.fightLib
 		
 		private function __btnClickII(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(FightLibManager.Instance.currentInfo == null)
 			{
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.fightLib.ChooseFightLibTypeView.selectFightLibInfo"));
@@ -365,7 +365,7 @@ package ddt.fightLib
 		
 		private function __start(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(FightLibManager.Instance.currentInfo == null)
 			{
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.fightLib.ChooseFightLibTypeView.selectFightLibInfo"));
@@ -401,7 +401,7 @@ package ddt.fightLib
 		
 		private function __cancel(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			GameInSocketOut.sendCancelWait();
 			cancelBtn.visible = false;
 			startBtn.visible = true;

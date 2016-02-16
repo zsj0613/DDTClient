@@ -175,7 +175,7 @@ package ddt.room
 		}
 		private function __itemClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("045");
+			SoundManager.Instance.play("045");
 			var item:RoomIIMapItem = evt.currentTarget as RoomIIMapItem;
 			{
 				if(item.info is DungeonInfo)
@@ -283,7 +283,7 @@ package ddt.room
 			currentRoomType(mode);
 			
 			//			permissionBtnStatus(1);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			//if(_currentRoomType == 3)
 			//{
 			//	_permissionType =1;
@@ -563,12 +563,12 @@ package ddt.room
 			_permissionType = index;
 			_hadChange = true;
 			permissionBtnStatus(_permissionType);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		override protected function __confirmClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_hadChange && _currentMapInfo && _permissionType!=-1 && _permissionType!=-2 && _currentMapInfo.ID != 10000)
 			{
 				_room.isRandMap =  ( _currentMapInfo.ID == 0 ? true : false );
@@ -600,7 +600,7 @@ package ddt.room
 		{
 			if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				_permissionType = _room.hardLevel+1;
 				_currentRoomType = -1;
 				

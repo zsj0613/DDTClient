@@ -30,7 +30,7 @@ package ddt.game.actions
 		{
 			if(_isPrepare) return;
 			_isPrepare = true;
-			SoundManager.instance.play("010",true);
+			SoundManager.Instance.play("010",true);
 			_player.startMoving();		
 		}
 		

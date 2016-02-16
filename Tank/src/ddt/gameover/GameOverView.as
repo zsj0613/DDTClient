@@ -119,7 +119,7 @@ package ddt.gameover
 				showUpgradeClew();
 			}
 			
-			SoundManager.instance.play(_self.isWin ? "063" : "064");
+			SoundManager.Instance.play(_self.isWin ? "063" : "064");
 			
 			_game.addEventListener(GameInfo.REMOVE_ROOM_PLAYER,__removePlayer);
 			
@@ -146,7 +146,7 @@ package ddt.gameover
 			
 			if(playSound)
 			{
-				SoundManager.instance.play("1001");
+				SoundManager.Instance.play("1001");
 			}
 		}
 		
@@ -199,8 +199,8 @@ package ddt.gameover
 			PlayerManager.Instance.Self.TempBag.removeEventListener(BagEvent.UPDATE,__getTempItem);
 			
 			BgView.Instance.showBtnBg(true);
-			SoundManager.instance.stop("064");
-			SoundManager.instance.stop("063");
+			SoundManager.Instance.stop("064");
+			SoundManager.Instance.stop("063");
 						
 			experienceDispose();
 			

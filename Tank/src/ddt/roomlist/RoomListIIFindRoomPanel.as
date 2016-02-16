@@ -78,7 +78,7 @@ package ddt.roomlist
 		
 		private function __checkChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.type == "click" )
 			{
 				_asset.pass_input.visible = _asset.pass_input.visible  ? false : true ;

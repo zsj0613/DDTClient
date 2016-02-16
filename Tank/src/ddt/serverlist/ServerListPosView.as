@@ -182,7 +182,7 @@ package ddt.serverlist
 		
 		private function __closeF11(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			f11Cite_mc.play();
 			LanguageMgr.GetTranslation("ddt.serverlist.ServerListPosView.close")
 		}
@@ -190,12 +190,12 @@ package ddt.serverlist
 		private function __ok(event:MouseEvent):void
 		{
 			tryLoginServer();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}	
 		
 		private function __exit(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			//if(LeavePage.IsDesktopApp)
 			//{
 			//	ExternalInterface.call("WindowReturn");

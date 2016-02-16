@@ -81,7 +81,7 @@ package road.ui.controls.hframe
 		override protected function __closeClick(e:MouseEvent):void
 		{
 			close();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		protected function __onKeyDownd(e:KeyboardEvent):void
@@ -94,7 +94,7 @@ package road.ui.controls.hframe
 			{
 				if(_okBtn.enable)
 				{
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					if(_okFunction != null)
 						_okFunction();
 				}
@@ -102,7 +102,7 @@ package road.ui.controls.hframe
 			{
 				if(_cancelBtn.enable)
 				{
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					if(_cancelFunction != null)
 					{
 						_cancelFunction();
@@ -212,7 +212,7 @@ package road.ui.controls.hframe
 		private function __ok(e:MouseEvent):void
 		{
 			e.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_okFunction != null)
 			{
 				_okFunction();
@@ -228,7 +228,7 @@ package road.ui.controls.hframe
 		private function __cancel(e:MouseEvent):void
 		{
 			e.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_cancelFunction != null)
 			{
 				_cancelFunction();

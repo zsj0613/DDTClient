@@ -144,7 +144,7 @@ package ddt.view.common
 		
 		private function __selectRadioBtn(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.currentTarget == _dianquanRadioBtn)
 			{
 				updateCurrentShopItem(Price.MONEY);
@@ -177,13 +177,13 @@ package ddt.view.common
 			{
 				if(okBtn.enable)
 				{
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					if(okFunction != null)
 						okFunction();
 				}
 			}else if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				close();
 			}
 		}

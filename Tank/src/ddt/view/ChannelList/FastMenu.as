@@ -121,7 +121,7 @@ package ddt.view.ChannelList
 		{
 			e.stopImmediatePropagation();
 			_currentClick = e.target._currentClick;
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			
 			switch(e.target._currentClick)
 			{

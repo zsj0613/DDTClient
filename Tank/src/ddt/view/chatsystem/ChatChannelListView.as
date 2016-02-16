@@ -16,7 +16,7 @@ package ddt.view.chatsystem
 		
 		private function __itemClickHandler(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var currentChannel:int = int(chanelMap[(e.currentTarget as SimpleButton).name]);
 			dispatchEvent(new ChatEvent(ChatEvent.INPUT_CHANNEL_CHANNGED,currentChannel));
 		}

@@ -62,7 +62,7 @@ package ddt.tofflist.view
 		private var _isSelect : Boolean;
 		private function __itemClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_isSelect)isSelect = true
 		}
 		private function __itemMouseOverHandler(evt : MouseEvent) : void

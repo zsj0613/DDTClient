@@ -90,6 +90,8 @@
 					return "ddt.hotSpring.controller.HotSpringRoomListController";
 				case StateType.HOT_SPRING_ROOM:
 					return "ddt.hotSpring.controller.HotSpringRoomController";
+				case StateType.WORLD_BOSS_ROOM:
+					return "ddt.WorldBoss.WorldBossRoomController";
 			}
 			return null;
 		}

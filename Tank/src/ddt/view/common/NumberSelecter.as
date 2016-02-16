@@ -86,13 +86,13 @@ package ddt.view.common
 		
 		private function reduceBtnClickHandler(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			number -= 1;
 		}
 		
 		private function addBtnClickHandler(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			number += 1;
 		}
 		

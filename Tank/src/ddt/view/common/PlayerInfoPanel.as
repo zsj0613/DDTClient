@@ -34,7 +34,7 @@ package ddt.view.common
 			e.stopImmediatePropagation();
 			if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				close();
 			}
 		}

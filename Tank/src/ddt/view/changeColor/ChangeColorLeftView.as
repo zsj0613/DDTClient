@@ -168,19 +168,19 @@
 		
 		private function __hideHatChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_model.self.setHatHide(_hideHat.selected);
 		}
 		
 		private function __hideGalssChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_model.self.setGlassHide(_hideGlass.selected);
 		}
 		
 		private function __hideSuitChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_model.self.setSuiteHide(_hideSuit.selected);
 		}
 		
@@ -250,7 +250,7 @@
 		
 		public function setCurrentItem(cell:BagCell):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_cell.bagCell==null&&cell.info!=null)
 			{
 				_cell.bagCell = cell;

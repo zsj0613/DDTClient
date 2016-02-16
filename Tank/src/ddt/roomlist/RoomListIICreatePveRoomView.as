@@ -227,18 +227,18 @@ package ddt.roomlist
 				GameInSocketOut.sendCreateRoom(_name_txt.text,_roomType,2,_pass_txt.text);
 				hide();
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __cancelClick(evt:Event):void
 		{
 			hide();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __checkChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.type == "click" )
 			{
 				_pass_txt.enabled = _pass_txt.enabled  ? false : true ;
@@ -295,7 +295,7 @@ package ddt.roomlist
 		    			break;
 //				}
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private var descriptionTip:RoomIIPropTip;

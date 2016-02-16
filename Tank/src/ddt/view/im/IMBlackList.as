@@ -103,7 +103,7 @@ package ddt.view.im
 		
 		private function __titlerClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_isExpand)
 			{
 				if(!_onlineList)
@@ -189,7 +189,7 @@ package ddt.view.im
 			if(!_fr){
 				_fr= new AddBlackListFrame(_controller);
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_fr.show();
 		}
 		
@@ -233,7 +233,7 @@ package ddt.view.im
 		
 		private function __itemClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_onlineList.selectedItem) 
 			{
 				(_onlineList.selectedItem as IMBlackItem).selected = false;

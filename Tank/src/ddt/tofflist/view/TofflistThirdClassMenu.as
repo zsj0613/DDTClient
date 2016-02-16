@@ -56,7 +56,7 @@ package ddt.tofflist.view
 		}
 		private function __selectMenuHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentItem)_currentItem.selected = false;
 			_currentItem = evt.target.parent.parent as HFrameButton;
 			_currentItem.selected = true;

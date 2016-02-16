@@ -37,7 +37,7 @@ package ddt.church.churchScene.fire
 		{
 			if(playSound)
 			{
-				SoundManager.instance.play("117");
+				SoundManager.Instance.play("117");
 			}
 			
 			if(_fire)

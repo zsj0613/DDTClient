@@ -64,7 +64,7 @@ package ddt.church.churchScene.scene
 		{
 			super(scene, data, bg, mesh, acticle, sky);
 			
-			SoundManager.instance.playMusic("3003");
+			SoundManager.Instance.playMusic("3003");
 			
 			initSaulte();
 		}
@@ -180,7 +180,7 @@ package ddt.church.churchScene.scene
 				playSound = !(Math.round(Math.random()*9)%3)?true:false;
 				if(playSound)
 				{
-					SoundManager.instance.play("118");
+					SoundManager.Instance.play("118");
 				}
 			}
 		}

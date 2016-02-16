@@ -74,7 +74,7 @@ package ddt.view.bagII
 				if(cell)
 				{
 					_dragTarget = cell;
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					_confirm = HConfirmDialog.show(LanguageMgr.GetTranslation("AlertDialog.Info"),LanguageMgr.GetTranslation("ddt.view.bagII.DeleteGoodsBtn.sure"),true,confirmBack,cancelBack);
 //					ConfirmDialog.show("提示","确定删除此物品？",true,confirmBack,cancelBack);
 					_confirm.addEventListener(Event.REMOVED, __removeHandler);

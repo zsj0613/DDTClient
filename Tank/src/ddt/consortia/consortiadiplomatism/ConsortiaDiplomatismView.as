@@ -162,7 +162,7 @@ package ddt.consortia.consortiadiplomatism
 		}
 		private function __upPageHandler(evt : MouseEvent) : void
 		{
-	    	SoundManager.instance.play("008");
+	    	SoundManager.Instance.play("008");
 			if(_currentPage > 1)
 			{
 				_controler.loadAllyList((--_currentPage),_type,keyName);
@@ -174,7 +174,7 @@ package ddt.consortia.consortiadiplomatism
 		}
 		private function __downPageHandler(evt:MouseEvent):void
 	    {
-	    	SoundManager.instance.play("008");
+	    	SoundManager.Instance.play("008");
 			_makePeaceBtnAsset.enable = false;
 			_declareWarBtnsAsset.enable = false;
 	    	if(_currentPage < _totalPage)
@@ -183,7 +183,7 @@ package ddt.consortia.consortiadiplomatism
 	    }
 		private function __startSearchHandler(evt : MouseEvent) : void
 		{
-	    	SoundManager.instance.play("008");
+	    	SoundManager.Instance.play("008");
 			if(searchTxt.text == LanguageMgr.GetTranslation("ddt.consortia.consortiadiplomatism.ConsortiaDiplomatismView.searchTxt"))
 			//if(searchTxt.text == "请输入公会名称")
 			{
@@ -332,7 +332,7 @@ package ddt.consortia.consortiadiplomatism
 		}
 		private function __consortiaTypeSearchHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_makePeaceBtnAsset.enable = false;
 			_declareWarBtnsAsset.enable = false;
 			_currentPage = 1;
@@ -360,7 +360,7 @@ package ddt.consortia.consortiadiplomatism
 		}
 		private function __diplomatismWarHander(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("1001");
+			SoundManager.Instance.play("1001");
 			_declareWarBtnsAsset.enable = false;
 			_makePeaceBtnAsset.enable   = false;
 			if(this._consortiaList.currentItem)
@@ -372,7 +372,7 @@ package ddt.consortia.consortiadiplomatism
 		
 		private function __diplomatismPeaceHander(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("1001");
+			SoundManager.Instance.play("1001");
 			_declareWarBtnsAsset.enable = false;
 			_makePeaceBtnAsset.enable   = false;
 			if(this._consortiaList.currentItem)

@@ -215,7 +215,7 @@ package ddt.menu
 		private function __openPersonalHomePage(evt : MouseEvent) : void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var loginName : String 
 			if(_info){
 				loginName = _info.LoginName;
@@ -323,7 +323,7 @@ package ddt.menu
 		
 		private function __mouseClick(event:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			hide();
 		}
 		

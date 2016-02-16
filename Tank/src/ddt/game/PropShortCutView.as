@@ -62,7 +62,7 @@ package ddt.game
 		{
 			if((event.target as SimpleButton).alpha == 0)return;
 			_index = int((event.target as SimpleButton).name.slice(5,6));
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			deleteProp();
 //			HConfirmDialog.show(LanguageMgr.GetTranslation("AlertDialog.Info"),LanguageMgr.GetTranslation("ddt.game.PropShortCutView.prop"),true,deleteProp,null);
 			
@@ -75,7 +75,7 @@ package ddt.game
 		private function deleteProp():void
 		{
 			GameInSocketOut.sendThrowProp(_index);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			stage.focus = null;
 		}
 		

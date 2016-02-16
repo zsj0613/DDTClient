@@ -208,7 +208,7 @@ package ddt.consortia.club
 		private var _consortiaClubPage : int = 1;
 		private function __searchConsortiaClubHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			this._applyJoinBtnAccect.enable = false;
 			if(evt.target.name == "randomSearchBtnAccect")
 			{
@@ -247,7 +247,7 @@ package ddt.consortia.club
 		/*查看记录(申请记录/邀请记录)*/
 		private function __selectRecordClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.target.name == "applyNoteBtnAccect")
 			{
 				_applyRecordList.displayRecordType(2);
@@ -260,7 +260,7 @@ package ddt.consortia.club
 		/*加入申请*/
 		private function __applyJoinClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_clubList.currentSelectItem.info.OpenApply)
 			{
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.consortia.club.ConsortiaClubView.applyJoinClickHandler"));
@@ -275,7 +275,7 @@ package ddt.consortia.club
 		/*创建公会*/
 		private function __createConsortiaClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var createConsortia :CreatConsortiaFrame  = new CreatConsortiaFrame(_contro);
 			TipManager.AddTippanel(createConsortia,true);
 		}
@@ -306,7 +306,7 @@ package ddt.consortia.club
 			evt.stopPropagation();
 			if(evt.keyCode == Keyboard.ENTER)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				_applyJoinBtnAccect.enable = false;
 				if(searchTxt.text != LanguageMgr.GetTranslation("ddt.consortia.club.searchTxt"))
 				//if(searchTxt.text != "请输入公会名称")

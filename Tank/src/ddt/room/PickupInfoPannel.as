@@ -56,7 +56,7 @@ package ddt.room
 		}
 		private function __selectConsortiaHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.selfRoomPlayerInfo.isHost)
 			{
 				GameInSocketOut.sendGameStyle(1);
@@ -64,7 +64,7 @@ package ddt.room
 		}
 		private function __selectLibertyHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.selfRoomPlayerInfo.isHost)
 			{
 				GameInSocketOut.sendGameStyle(0);

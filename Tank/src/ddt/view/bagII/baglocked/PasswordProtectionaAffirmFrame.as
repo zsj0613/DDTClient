@@ -88,7 +88,7 @@ package ddt.view.bagII.baglocked
 		private function keyDownHandler(event:KeyboardEvent):void{
 			event.stopImmediatePropagation();
 			if(event.keyCode == Keyboard.ESCAPE){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				close();
 			}else if(event.keyCode == Keyboard.ENTER)
 			{
@@ -97,13 +97,13 @@ package ddt.view.bagII.baglocked
 		}
 		
 		private function backBtnClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispatchEvent(new BagEvent(BagEvent.BACK_STEP,new Dictionary()));
 			this.visible = false;
 		}
 		
 		private function finishClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_bgAsset.aText.text != _data.passwordAnswer || _bgAsset.aTextTwo.text != _data.passwordAnswerTwo){
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.view.bagII.baglocked.answerDiffer"));
 				return;

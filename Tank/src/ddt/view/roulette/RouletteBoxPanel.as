@@ -29,7 +29,7 @@ package ddt.view.roulette
 			_templateIDList = templateIDList;
 			_keyCount = keyCount;
 			//SoundManager.instance.playMusic("065");
-			SoundManager.instance.pauseMusic();
+			SoundManager.Instance.pauseMusic();
 			initView();
 		}
 		
@@ -51,7 +51,7 @@ package ddt.view.roulette
 			evt.stopImmediatePropagation();
 			if(evt.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				__close();
 			}
 		}
@@ -70,7 +70,7 @@ package ddt.view.roulette
 		}
 		override public function dispose():void
 		{
-			SoundManager.instance.resumeMusic();
+			SoundManager.Instance.resumeMusic();
 			this.removeEventListener(KeyboardEvent.KEY_DOWN,__keyDown);
 			_view.dispose();
 			super.dispose();

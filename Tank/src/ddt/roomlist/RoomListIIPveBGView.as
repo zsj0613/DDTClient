@@ -74,6 +74,7 @@ package ddt.roomlist
 		
 		private function init():void
 		{
+			SocketManager.Instance.out.sendUpdateRoomList(lookupEnumerate.DUNGEON_LIST,lookupEnumerate.DUNGEON_LIST_DEFAULT);
 			refreshTimer = new Timer(1500,1);
 			refreshTimer.start();
 			
@@ -183,7 +184,7 @@ package ddt.roomlist
 		
 		private function __sortBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			currentType = _sortbtns.indexOf(evt.currentTarget);
 			updatePage(1,currentType,true);
 			closeSortTip();
@@ -192,7 +193,7 @@ package ddt.roomlist
 		
 		private function __showSortTip(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_MapTip.visible && evt.currentTarget != maplist_Btn)
 			{
 				_MapTip.visible = false;
@@ -221,27 +222,27 @@ package ddt.roomlist
 		
 		private function __nextClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(currentPage+1,currentType);
 			SocketManager.Instance.out.sendUpdateRoomList(lookupEnumerate.DUNGEON_LIST,lookupEnumerate.DUNGEON_LIST_DEFAULT);
 		}
 		
 		private function __nextMoreClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(totalPage,currentType);
 		}
 		
 		private function __preClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(currentPage-1,currentType);
 			SocketManager.Instance.out.sendUpdateRoomList(lookupEnumerate.DUNGEON_LIST,lookupEnumerate.DUNGEON_LIST_DEFAULT);
 		}
 		
 		private function __preMoreClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updatePage(1,currentType);
 		}
 		
@@ -541,7 +542,7 @@ package ddt.roomlist
 		
 		public function gotoIntoRoom(info:SimpleRoomInfo):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendGameLogin(2,-1,info.ID,"");
 		}
 		

@@ -55,7 +55,7 @@ package ddt.loginstate
 		
 		public function goIntoGame(e:MouseEvent = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(selectedInfo.Rename || selectedInfo.ConsortiaRename)
 			{
 				var modifyNameFrame:ModifyNameFrame

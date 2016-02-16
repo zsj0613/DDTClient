@@ -68,7 +68,7 @@ package ddt.view.enthrall
 		
 		private function popFrame(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_manager.showCIDCheckerFrame();
 		}
 		

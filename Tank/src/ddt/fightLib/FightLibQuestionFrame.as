@@ -126,7 +126,7 @@ package ddt.fightLib
 		
 		private function __selectAnswer(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.currentTarget == _answerBtn1)
 			{
 				GameInSocketOut.sendFightLibAnswer(_id,0);
@@ -144,14 +144,14 @@ package ddt.fightLib
 		
 		private function __reAnswer(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			GameInSocketOut.sendFightLibReanswer();
 			FightLibManager.Instance.reAnswerNum --;
 		}
 		
 		private function __viewTutorial(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			FightLibManager.Instance.script.restart();
 			GameInSocketOut.sendClientScriptStart();
 			close();

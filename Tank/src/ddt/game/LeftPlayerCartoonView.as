@@ -334,7 +334,7 @@ package ddt.game
 		{
 			if(_info && _info.isSelf && leftCite.skip_btn.visible )
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				skip();
 			}
 		}

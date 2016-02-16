@@ -113,9 +113,9 @@ package ddt.hotSpring.controller
 			roomVO.maxCount=pkg.readInt();
 			roomVO.roomIsPassword=(roomVO.roomPassword!="" && roomVO.roomPassword.length>0);
 			
-			if(roomVO.roomID==HotSpringManager.instance.roomCurrently.roomID)
+			if(roomVO.roomID==HotSpringManager.Instance.roomCurrently.roomID)
 			{
-				HotSpringManager.instance.roomCurrently=roomVO;
+				HotSpringManager.Instance.roomCurrently=roomVO;
 			}
 		}
 		
@@ -189,7 +189,7 @@ package ddt.hotSpring.controller
 			var pkg:PackageIn = event.pkg;
 			var msg:String=pkg.readUTF();
 			
-			HotSpringManager.instance.roomCurrently=null;
+			HotSpringManager.Instance.roomCurrently=null;
 			dispose();
 			StateManager.setState(StateType.HOT_SPRING_ROOM_LIST);
 			

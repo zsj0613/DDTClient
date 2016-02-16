@@ -50,7 +50,7 @@ package ddt.hotSpring.view.frame
 			this.cancelFunction=cancelRoomEdit;
 			this.closeCallBack=cancelRoomEdit;
 			
-			if(!HotSpringManager.instance.roomCurrently || HotSpringManager.instance.roomCurrently.playerID!=PlayerManager.Instance.Self.ID)
+			if(!HotSpringManager.Instance.roomCurrently || HotSpringManager.Instance.roomCurrently.playerID!=PlayerManager.Instance.Self.ID)
 			{
 				dispose();
 				super.close();
@@ -97,7 +97,7 @@ package ddt.hotSpring.view.frame
 			_roomEditAsset.addChild(_chkIsPassword);
 			_roomEditAsset.removeChild(_roomEditAsset.chkIsPasswordPos);
 			
-			_roomEditAsset.txtRoomName.text=HotSpringManager.instance.roomCurrently.roomName;
+			_roomEditAsset.txtRoomName.text=HotSpringManager.Instance.roomCurrently.roomName;
 			
 			setEvent();
 		}
@@ -152,7 +152,7 @@ package ddt.hotSpring.view.frame
 			
 			var roomVO:HotSpringRoomInfo = new HotSpringRoomInfo();
 			roomVO.roomName = _roomEditAsset.txtRoomName.text;
-			roomVO.roomPassword = _chkIsPassword.selected ? _txtRoomPassword.text : HotSpringManager.instance.roomCurrently.roomPassword ? HotSpringManager.instance.roomCurrently.roomPassword : "";
+			roomVO.roomPassword = _chkIsPassword.selected ? _txtRoomPassword.text : HotSpringManager.Instance.roomCurrently.roomPassword ? HotSpringManager.Instance.roomCurrently.roomPassword : "";
 			roomVO.roomIntroduction="";
 
 			if(_callBack!=null) _callBack();

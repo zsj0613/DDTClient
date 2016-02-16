@@ -4,14 +4,14 @@ package ddt.view.chatsystem
 	import flash.text.TextFormat;
 	import flash.utils.Dictionary;
 	
-	import road.utils.StringHelper;
-	
 	import ddt.data.QualityType;
 	import ddt.data.goods.ItemTemplateInfo;
 	import ddt.manager.ItemManager;
 	import ddt.manager.LanguageMgr;
 	import ddt.manager.PlayerManager;
 	import ddt.utils.Helpers;
+	
+	import road.utils.StringHelper;
 
 	public class ChatFormats
 	{
@@ -50,7 +50,12 @@ package ddt.view.chatsystem
 			var channelClickTag:String = creatChannelTag(data.channel);
 			var senderClickTag:String = creatSenderTag(data);
 			var contentClickTag:String = creatContentTag(data);
-			data.htmlMessage = channelTag[0]+channelClickTag+senderClickTag+contentClickTag+channelTag[1]+"<BR>";
+			var serverstr:String = "";
+			if(data.type ==ChatInputView.CROSS_BUGLE)
+			{
+				serverstr = Helpers.enCodeString("["+data.server+"]");
+			}
+			data.htmlMessage = channelTag[0]+channelClickTag+serverstr+senderClickTag+contentClickTag+channelTag[1]+"<BR>";
 //			data.htmlMessage = decodeURI(decodeURI(data.htmlMessage));
 		}
 		public static function creatBracketsTag(source:String,clickType:int,args:Array = null):String

@@ -209,7 +209,7 @@ package ddt.view.common
 		 */		
 		public function showFeedbackNavigation(state:Boolean):void
 		{
-			FeedbackManager.instance.showNavigation(this, posFeedbackBtn.x, posFeedbackBtn.y, state);
+			FeedbackManager.Instance.showNavigation(this, posFeedbackBtn.x, posFeedbackBtn.y, state);
 		}
 		
 		public function hide():void
@@ -480,7 +480,7 @@ package ddt.view.common
 //		private var _tutorial : EnterTutorialFrame;
 		private function __openTutorial(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 //			if(_tutorial && _tutorial.parent)return;
 //			_tutorial = new EnterTutorialFrame();
 //			UIManager.setChildCenter(_tutorial);
@@ -492,7 +492,7 @@ package ddt.view.common
 		//bret 09.5.13 *********************************************
 		private function __collectionWeb(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(LeavePage.IsDesktopApp) return;
 			if(ExternalInterface.available)
 			ExternalInterface.call("addfavorite",PathManager.solveLogin(),siteName);
@@ -502,7 +502,7 @@ package ddt.view.common
 		private var dailyConduct : DailyConductFrame;
 		private function __dailyConductHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switchDailyConduct();
 		}
 		
@@ -574,7 +574,7 @@ package ddt.view.common
 		
 		private function __goBack(event:MouseEvent):void
 		{
-			SoundManager.instance.play("015");
+			SoundManager.Instance.play("015");
 			if(_callBackFun != null)
 			{
 				_callBackFun();
@@ -587,7 +587,7 @@ package ddt.view.common
 	
 		public function __player(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			openBag();
 		}
 		
@@ -641,19 +641,19 @@ package ddt.view.common
 			goEmailBtn.glow = false;
 			_unReadEmail = false;
 			MailManager.Instance.switchVisible();
-			SoundManager.instance.play("003");
+			SoundManager.Instance.play("003");
 		}
 
 		private function __showIM(evt:MouseEvent):void
 		{
 			IMController.Instance.switchVisible();
-			SoundManager.instance.play("003");
+			SoundManager.Instance.play("003");
 		}
 
 		private function __gotoServer(event:MouseEvent):void
 		{
 			event.stopImmediatePropagation();
-			SoundManager.instance.play("003");
+			SoundManager.Instance.play("003");
 //			MovementLeftView.Instance.open();
 //			clickMovement();
 			FastMenu.Instance.switchVisible();
@@ -668,13 +668,13 @@ package ddt.view.common
 		private function __gotoShop(evt:MouseEvent):void
 		{
 			StateManager.setState(StateType.SHOP);
-			SoundManager.instance.play("003");
+			SoundManager.Instance.play("003");
 		}
 		
 		private function __setting(event:MouseEvent):void
 		{
 			SetPannelView.Instance.switchVisible();
-			SoundManager.instance.play("003");
+			SoundManager.Instance.play("003");
 		}
 
 		private function __task(event:MouseEvent):void
@@ -684,7 +684,7 @@ package ddt.view.common
 //			TaskCatalogView.Instance.switchVisible();
 			
             TaskMainFrame.Instance.switchVisible();
-			SoundManager.instance.play("003");
+			SoundManager.Instance.play("003");
 		}
 		
 		private function __responseMail(event:CrazyTankSocketEvent):void
@@ -702,7 +702,7 @@ package ddt.view.common
 		
 		private function __helpClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			new LittleHelpFrame().show();
 		}
 		

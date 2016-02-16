@@ -164,7 +164,7 @@ package ddt.church.churchScene.frame
 			{
 				if(cancelBtn.enable)
 				{
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					if(cancelFunction != null)
 					{
 						cancelFunction();

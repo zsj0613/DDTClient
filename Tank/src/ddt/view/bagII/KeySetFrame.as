@@ -105,7 +105,7 @@ package ddt.view.bagII
 		private function onItemClick(e:ItemEvent):void
 		{
 			e.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var tempCell:KeySetItem = e.currentTarget as KeySetItem;
 			_currentSet = tempCell;
 			

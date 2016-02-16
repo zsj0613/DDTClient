@@ -92,13 +92,13 @@ package ddt.hotSpring.view.frame
 		
 		private function __refleshClick(evt:MouseEvent = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			updateList();
 		}
 		
 		private function __closeClickHandler(evt:Event = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			hideAndClose();
 			if(_callBack!=null) _callBack();
 		}
@@ -110,7 +110,7 @@ package ddt.hotSpring.view.frame
 		
 		private function getFriendList(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentTab == 0)return;
 			_currentTab = 0;
 			_bg.bg.gotoAndStop(1);
@@ -120,7 +120,7 @@ package ddt.hotSpring.view.frame
 		
 		private function getConsortiaList(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentTab == 1)return;
 			_currentTab = 1;
 			_bg.bg.gotoAndStop(2);

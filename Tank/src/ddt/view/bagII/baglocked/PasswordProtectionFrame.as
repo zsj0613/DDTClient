@@ -180,7 +180,7 @@ package ddt.view.bagII.baglocked
 		}
 		
 		private function nextBtnClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_bgAsset.questionText.text == _tempTextOne || _bgAsset.questionTextTwo.text == _tempTextTwo){
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.view.bagII.baglocked.selectQustion"));
 				return;
@@ -205,7 +205,7 @@ package ddt.view.bagII.baglocked
 		}
 		
 		private function backBtnClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispatchEvent(new BagEvent(BagEvent.BACK_STEP,new Dictionary()));
 			this.visible = false;
 		}
@@ -246,7 +246,7 @@ package ddt.view.bagII.baglocked
 			_bgAsset.questionText.removeEventListener(Event.CHANGE,textChangeHandler);
 			_bgAsset.questionTextTwo.removeEventListener(Event.CHANGE,textChangeHandler);
 			removeEventListener(KeyboardEvent.KEY_DOWN,keyDownHandler);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			super.dispose();
 			BagStore.Instance.passwordOpen = true;
 			if(_passwordSimpleGrid){

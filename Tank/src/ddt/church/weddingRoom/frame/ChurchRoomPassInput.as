@@ -72,7 +72,7 @@ package ddt.church.weddingRoom.frame
 		private function __okClick(evt:Event = null):void
 		{
 			okBtnEnable = false;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(inputTxt == "")
 			{
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.roomlist.RoomListIIPassInput.write"));
@@ -85,7 +85,7 @@ package ddt.church.weddingRoom.frame
 		private function __cancelClick(evt:MouseEvent = null):void
 		{
 			okBtnEnable = false;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 		override public function show():void

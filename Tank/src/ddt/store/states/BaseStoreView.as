@@ -140,7 +140,7 @@ package ddt.store.states
 			evt.stopImmediatePropagation();	
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				new BagLockedGetFrame().show();
 				return;
 			}
@@ -329,7 +329,7 @@ package ddt.store.states
 		 */
 		 private function appearHoleTips(info:InventoryItemInfo):void{
 		 	//CategoryId为1帽子 5衣服 7为武器
-		 	SoundManager.instance.play("1001");
+		 	SoundManager.Instance.play("1001");
 		 	if(info.CategoryID == 1){
 		 		if(info.StrengthenLevel == 3){
 		 			MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("store.states.hatOpenProperty"));

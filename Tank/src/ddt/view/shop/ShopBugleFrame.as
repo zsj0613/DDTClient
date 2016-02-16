@@ -78,7 +78,7 @@ package ddt.view.shop
 		}
 		private function __okHandler() : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
 				new BagLockedGetFrame().show();
@@ -114,7 +114,7 @@ package ddt.view.shop
 		}
 		private function __cancelHandler() : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 		
@@ -178,7 +178,7 @@ package ddt.view.shop
 		}
 		private function __onClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			selectItem(evt.currentTarget as ShopItemView);
 		}
 		private function selectItem(item : ShopItemView) : void

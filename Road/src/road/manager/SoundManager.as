@@ -41,7 +41,7 @@
 		
 		public static var SITE_MAIN:String = "";
 		
-		public static function get instance():SoundManager
+		public static function get Instance():SoundManager
 		{
 			if(_instance == null)
 			{

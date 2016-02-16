@@ -62,7 +62,7 @@ package ddt.hotSpring.view
 		 */		
 		private function inviteGuest(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_roomInviteView)
 			{
 				if(_roomInviteView.parent) _roomInviteView.parent.removeChild(_roomInviteView);
@@ -93,7 +93,7 @@ package ddt.hotSpring.view
 		 */		
 		private function guestList(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_roomGuestListView)
 			{
 				if(_roomGuestListView.parent) _roomGuestListView.parent.removeChild(_roomGuestListView);
@@ -124,7 +124,7 @@ package ddt.hotSpring.view
 		 */		
 		private function roomConfig(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_roomEditView)
 			{
 				if(_roomEditView.parent) _roomEditView.parent.removeChild(_roomEditView);
@@ -150,7 +150,7 @@ package ddt.hotSpring.view
 		 */		
 		private function backRoomList(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_controller.roomPlayerRemoveSend();
 		}
 		
@@ -159,7 +159,7 @@ package ddt.hotSpring.view
 		 */		
 		private function switchMenu(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			btnSwitchMenu.gotoAndStop(_menuIsOpen ? 1 : 2);
 			addEventListener(Event.ENTER_FRAME,menuShowOrHide);
 		}

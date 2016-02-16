@@ -148,7 +148,7 @@ package ddt.view.roulette
 		private function initEvent():void
 		{
 		//	SocketManager.Instance.addEventListener(CrazyTankSocketEvent.LOTTERY_GET_ITEM , _getItem);
-			RouletteManager.instance.addEventListener(RouletteEvent.ROULETTE_KEYCOUNT_UPDATE , _keyUpdate);
+			RouletteManager.Instance.addEventListener(RouletteEvent.ROULETTE_KEYCOUNT_UPDATE , _keyUpdate);
 			_turnControl.addEventListener(TurnControl.TURNCOMPLETE , _turnComplete);
 			_startButton.addEventListener(MouseEvent.CLICK , _turnClick);
 			_buyKeyButton.addEventListener(MouseEvent.CLICK , _buyKeyClick);
@@ -189,7 +189,7 @@ package ddt.view.roulette
 		
 		private function _turnClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!isTurn)
 			{
 				if(needKeyCount <= keyCount)
@@ -198,7 +198,7 @@ package ddt.view.roulette
 		//			SocketManager.Instance.out.sendStartTurn();
 				}
 				else
-					RouletteManager.instance.showBuyRouletteKey(_needKeyCount[_selectNumber]);
+					RouletteManager.Instance.showBuyRouletteKey(_needKeyCount[_selectNumber]);
 			}
 		}
 		
@@ -209,9 +209,9 @@ package ddt.view.roulette
 		
 		private function _buyKeyClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var i:int = (_needKeyCount[_selectNumber] == 0)?1:_needKeyCount[_selectNumber];
-			RouletteManager.instance.showBuyRouletteKey(i);
+			RouletteManager.Instance.showBuyRouletteKey(i);
 		}
 		
 		/**
@@ -229,7 +229,7 @@ package ddt.view.roulette
 			_goodsList[turnSlectedNumber].selected = false;
 			_winTimeOut = setTimeout(_updateTurnList , 3100);
 			_glintView.showOneCell(_selectedGoodsNumberInTemplateIDList , 3000);
-			SoundManager.instance.play("126");
+			SoundManager.Instance.play("126");
 		}
 		
 		/**
@@ -239,13 +239,13 @@ package ddt.view.roulette
 		private function _updateTurnList():void
 		{
 			_moveToSelctView();
-			SoundManager.instance.play("125");
+			SoundManager.Instance.play("125");
 			_isCanClose = true;
 			if(_selectedItemType >= 5)
 			{
 				_glintView.showTwoStep(7500);
 				//SoundManager.instance.pauseMusic();
-				SoundManager.instance.play("063");
+				SoundManager.Instance.play("063");
 				_glintView.addEventListener(RouletteGlintView.BIGGLINTCOMPLETE , _bigGlintComplete);
 			}
 			else
@@ -261,7 +261,7 @@ package ddt.view.roulette
 			selectNumber++;
 			isTurn = (_selectNumber >= 8)?true:false;
 			//SoundManager.instance.resumeMusic();
-			SoundManager.instance.stop("063");
+			SoundManager.Instance.stop("063");
 		}
 		
 		/**
@@ -393,7 +393,7 @@ package ddt.view.roulette
 		
 		public function dispose():void
 		{
-			RouletteManager.instance.removeEventListener(RouletteEvent.ROULETTE_KEYCOUNT_UPDATE , _keyUpdate);
+			RouletteManager.Instance.removeEventListener(RouletteEvent.ROULETTE_KEYCOUNT_UPDATE , _keyUpdate);
 		//	SocketManager.Instance.removeEventListener(CrazyTankSocketEvent.LOTTERY_GET_ITEM , _getItem);
 			_turnControl.removeEventListener(TurnControl.TURNCOMPLETE , _turnComplete);
 			_startButton.removeEventListener(MouseEvent.CLICK , _turnClick);

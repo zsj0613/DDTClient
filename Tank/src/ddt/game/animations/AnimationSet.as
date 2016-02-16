@@ -90,7 +90,10 @@ package ddt.game.animations
 		
 		public function clear():void
 		{
-			_current.cancel();
+			if(_current!=null)
+			{
+				_current.cancel();
+			}
 			_current = null;
 		}
 		

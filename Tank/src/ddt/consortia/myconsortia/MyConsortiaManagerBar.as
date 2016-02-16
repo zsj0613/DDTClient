@@ -177,7 +177,7 @@ package ddt.consortia.myconsortia
 		
 		private function __onClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var name:String = getName(evt);
 			switch(name)
 			{

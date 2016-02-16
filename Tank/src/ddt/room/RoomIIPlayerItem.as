@@ -168,7 +168,7 @@ package ddt.room
 		
 		private function __figureClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispatchEvent(new Event(SHOWINFO));
 //			RightMenu.show(_info.info);
 
@@ -517,7 +517,7 @@ package ddt.room
 			{
 				if(RoomManager.Instance.current.canKitPlayer())
 				{
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					GameInSocketOut.sendGameRoomKick(_place);
 				}
 			}
@@ -535,7 +535,7 @@ package ddt.room
 			//evt.target.height
 			//RightMenu.Instance.y  -= mouseY - evt.target.y
 				
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 //			dispatchEvent(new Event(SHOWINFO));
 		}
 		
@@ -557,7 +557,7 @@ package ddt.room
 			{
 				dispatchEvent(new Event(Event.CLOSE));
 			}
-			SoundManager.instance.play("009");
+			SoundManager.Instance.play("009");
 		}
 		
 		private function __updateGrade(evt:PlayerPropertyEvent):void
@@ -620,7 +620,7 @@ package ddt.room
 				{
 					dispatchEvent(new Event(Event.OPEN));
 				}
-				SoundManager.instance.play("009");
+				SoundManager.Instance.play("009");
 			}
 		}
 		
@@ -634,13 +634,13 @@ package ddt.room
 		
 		private function __addFriendClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			IMController.Instance.addFriend(_info.info.NickName);
 		}
 		
 		private function playSound():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __signalMouseOver(evt:MouseEvent):void

@@ -85,7 +85,7 @@ package ddt.game
 		}
 		private function __openHelpHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_missionHelp.switchVisible();
 		}
 		public function barrierInfoHandler(evt : CrazyTankSocketEvent) : void

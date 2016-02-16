@@ -45,15 +45,15 @@ package ddt.view.bossbox
 		
 		private function init():void
 		{
-			SoundManager.instance.pauseMusic();
-			SoundManager.instance.play("1001");
+			SoundManager.Instance.pauseMusic();
+			SoundManager.Instance.play("1001");
 			setTimeout(startMusic,3000);
 		}
 		
 		private function startMusic():void
 		{
-			SoundManager.instance.resumeMusic();
-			SoundManager.instance.stop("1001");
+			SoundManager.Instance.resumeMusic();
+			SoundManager.Instance.stop("1001");
 		}
 		
 		private function initEvent():void
@@ -63,7 +63,7 @@ package ddt.view.bossbox
 		
 		private function _boxClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			downBossBox.gotoAndPlay("openBox");
 			
 			removeEvent();

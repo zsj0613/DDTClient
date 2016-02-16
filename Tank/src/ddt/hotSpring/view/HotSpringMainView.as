@@ -60,7 +60,7 @@ package ddt.hotSpring.view
 		{
 			BellowStripViewII.Instance.show();
 			BellowStripViewII.Instance.enabled = true;
-			SoundManager.instance.playMusic("062");
+			SoundManager.Instance.playMusic("062");
 			
 			_mainViewAsset=new MainViewAsset();
 			addChild(_mainViewAsset);
@@ -155,7 +155,7 @@ package ddt.hotSpring.view
 		 */		
 		private function getPageList(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switch(evt.target)
 			{
 				case _mainViewAsset.pageFirst://首页
@@ -178,7 +178,7 @@ package ddt.hotSpring.view
 		 */	
 		private function createRoom(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
@@ -241,7 +241,7 @@ package ddt.hotSpring.view
 		 */		
 		private function quickEnterRoom(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
 				new BagLockedGetFrame().show();

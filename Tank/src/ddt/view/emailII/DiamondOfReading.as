@@ -124,7 +124,7 @@ package ddt.view.emailII
 		 */		
 		private function __distill(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");//bret 09.6.11
+			SoundManager.Instance.play("008");//bret 09.6.11
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
 				new BagLockedGetFrame().show();

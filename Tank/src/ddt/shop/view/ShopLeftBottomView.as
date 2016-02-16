@@ -340,13 +340,13 @@ package ddt.shop.view
 		
 		private function __shopCarBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			changeToShopCarView();
 		}
 		
 		private function __colorBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			changeToColorView();
 			if(_model.fittingSex)
 			{

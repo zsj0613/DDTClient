@@ -135,7 +135,7 @@ package ddt.store.view.embed
 		
 		private function __embedBackoutBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			_embedBackoutBtn.mouseEnabled=false;
 			_embedBackoutBtn.isAction=true;
@@ -296,7 +296,7 @@ package ddt.store.view.embed
 		//拆除镶嵌
 		private function __EmbedBackoutFrame(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			if(_embedStoneCell && evt.type==MouseEvent.CLICK)
 			{
@@ -648,7 +648,7 @@ package ddt.store.view.embed
 		}
 		private function __openHelp(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			if(!_helpPage)initHelpPage();
 			_helpPage.show();

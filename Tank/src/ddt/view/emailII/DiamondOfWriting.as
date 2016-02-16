@@ -106,7 +106,7 @@ package ddt.view.emailII
 		
 		private function __click(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispatchEvent(new EmailIIEvent(EmailIIEvent.SHOW_BAGFRAME));
 			if(_annex)
 			{

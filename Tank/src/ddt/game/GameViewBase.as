@@ -223,7 +223,7 @@ package ddt.game
 			//防沉迷状态灯
 			EnthrallManager.getInstance().gameState(vaneX-VaneView.RandomVaneOffset/2);
 			
-			SoundManager.instance.playGameBackMusic(_map.info.BackMusic);
+			SoundManager.Instance.playGameBackMusic(_map.info.BackMusic);
 			
 			_arrowUp = new SpringArrowView(Direction.UP,_map);
 			_arrowDown = new SpringArrowView(Direction.DOWN,_map);
@@ -491,7 +491,7 @@ package ddt.game
 		public function gameOver():void
 		{
 			_tool.gameOver();
-			SoundManager.instance.stopMusic();
+			SoundManager.Instance.stopMusic();
 			setPropBarClickEnable(false,false);
 			_selfUsedProp.clearItems();
 			_leftCiteII.gameOver();
@@ -524,7 +524,7 @@ package ddt.game
 		/* 隐藏工具条 Freeman 10.7.16 */
 		private function __hide(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_arrow.hideState)
 			{
 				_arrow.alpha = _tool.alpha = _energy.alpha = _selfPropBar.alpha = _rightPropItem.alpha =   .5;

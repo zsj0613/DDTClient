@@ -29,7 +29,7 @@ package ddt.data
 			return rsaEncry3(rsa,src);
 		}
 		
-		public static function generateRsaKey(m:String,e:String):RSAKey
+		public static function GenerateRsaKey(m:String,e:String):RSAKey
 		{
 			return generateRsaKey2(Base64.decodeToByteArray(m),Base64.decodeToByteArray(e));
 		}

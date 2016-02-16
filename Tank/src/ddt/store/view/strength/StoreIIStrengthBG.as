@@ -375,7 +375,7 @@ package ddt.store.view.strength
 		private function __strengthClick(evt:MouseEvent):void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.Gold >= SharedManager.Instance.StrengthMoney)
 			{
 				if(_items[5].info != null && _items[5].itemInfo.StrengthenLevel >=4 && _items[3].info == null)
@@ -570,7 +570,7 @@ package ddt.store.view.strength
 		}
 		private function __openHelp(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			if(!_helpPage)initHelpPage();
 			_helpPage.show();

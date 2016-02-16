@@ -139,7 +139,7 @@ package ddt.hall
 		
 		private function __click(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if((e.currentTarget as MovieClip).name == "affiche")
 			{
 				_list.visible = false;
@@ -161,7 +161,7 @@ package ddt.hall
 		private function __close(e:MouseEvent):void
 		{
 			__visible();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __onPopChange(e:PlayerPropertyEvent) : void

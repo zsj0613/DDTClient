@@ -62,7 +62,7 @@ package ddt.store
 				    {
 				    	_timer.stop();
 						SocketManager.Instance.out.sendMoveGoods(BagInfo.STOREBAG,index,itemBagType,-1);
-				    	if(!mouseSilenced)SoundManager.instance.play("008");
+				    	if(!mouseSilenced)SoundManager.Instance.play("008");
 				    }
 			    }
 		    	else
@@ -77,7 +77,7 @@ package ddt.store
 		{
 			if(_info && !locked && stage && allowDrag)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			dragStart();
 		}

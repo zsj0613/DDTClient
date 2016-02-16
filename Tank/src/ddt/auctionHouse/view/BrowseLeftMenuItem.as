@@ -115,7 +115,7 @@ package ddt.auctionHouse.view
 			switch(e.type)
 			{
 				case MouseEvent.CLICK:
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				accect.gotoAndStop(2);
 				if(_isOpen){
 					addRollEvent();

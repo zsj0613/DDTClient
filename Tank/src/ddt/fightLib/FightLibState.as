@@ -43,7 +43,7 @@ package ddt.fightLib
 		
 		override public function enter(prev:BaseStateView,data:Object = null):void
 		{
-			SoundManager.instance.playMusic("065");
+			SoundManager.Instance.playMusic("065");
 			if(RoomManager.Instance.current == null)
 			{
 				GameInSocketOut.sendCreateRoom("",5);

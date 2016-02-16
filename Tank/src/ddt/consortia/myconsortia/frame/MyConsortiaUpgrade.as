@@ -102,7 +102,7 @@ package ddt.consortia.myconsortia.frame
 		{
 			if(_currentBtn == evt.currentTarget)return;
 			_currentBtn = evt.currentTarget as MovieClip;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switch(_currentBtn.name)
 			{
 				case "consortiaGrade":
@@ -562,7 +562,7 @@ package ddt.consortia.myconsortia.frame
 		
 		private function __openRichesTip() : void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			var tipFrame : ConosritaRichesTipsFrame = new ConosritaRichesTipsFrame();
 			tipFrame.show();
 		}

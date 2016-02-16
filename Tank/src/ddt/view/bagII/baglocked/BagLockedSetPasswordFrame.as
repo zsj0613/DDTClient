@@ -82,7 +82,7 @@ package ddt.view.bagII.baglocked
 		}
 		
 		private function onNextStepBtnClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_musicDerail = false;
 			if(_bgAsset.psw.text != _bgAsset.repsw.text){
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.view.bagII.baglocked.diffrent"));
@@ -139,7 +139,7 @@ package ddt.view.bagII.baglocked
 	
 		override public function dispose():void{
 			if(_musicDerail){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			BagStore.Instance.passwordOpen = true;
 			removeEventListener(Event.ADDED_TO_STAGE,addtoStageHandler);

@@ -35,7 +35,7 @@ package ddt.view.effort
 			y = (Config.GAME_HEIGHT) / 2 - this.height/2;
 			TipManager.AddTippanel(this);
 			this.play();
-			SoundManager.instance.play("121");
+			SoundManager.Instance.play("121");
 		}
 		
 		private function initEvent():void

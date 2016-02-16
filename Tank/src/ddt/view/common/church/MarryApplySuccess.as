@@ -51,7 +51,7 @@ package ddt.view.common.church
 		
 		private function __onKeyDown(evt:KeyboardEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.keyCode == Keyboard.ESCAPE)
 			{
 				__ok(null);
@@ -69,7 +69,7 @@ package ddt.view.common.church
 		
 		private function __ok(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 			if(parent)parent.removeChild(this);
 		}

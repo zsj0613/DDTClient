@@ -466,7 +466,7 @@ package ddt.game.smallmap
 			var oldRateY:Number = _rateY;
 			update();
 			updateChildPos(oldRateX,oldRateY);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __smallMap(event:MouseEvent):void
@@ -476,7 +476,7 @@ package ddt.game.smallmap
 			var oldRateY:Number = _rateY;
 			update();
 			updateChildPos(oldRateX,oldRateY);
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function updateChildPos(oldRateX:Number,oldRateY:Number):void

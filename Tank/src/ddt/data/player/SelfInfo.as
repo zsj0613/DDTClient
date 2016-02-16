@@ -513,7 +513,6 @@
 			super.Grade = value;
 			if(IsUpdate && PathManager.solveExternalInterfaceEnabel() &&sendedGrade.indexOf(value)==-1)
 			{
-				ExternalInterfaceManager.sendToAgent(2,ID,NickName,ServerManager.Instance.zoneName,Grade);
 				sendedGrade.push(Grade);
 			}	
 		}

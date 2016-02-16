@@ -41,8 +41,8 @@ package ddt.store
 				addChild(_successTip);
 				_successTip.play();
 			}
-			SoundManager.instance.pauseMusic();
-			SoundManager.instance.play("063");
+			SoundManager.Instance.pauseMusic();
+			SoundManager.Instance.play("063");
 			_timer.start();
 		}
 		
@@ -53,8 +53,8 @@ package ddt.store
 				addChild(_failTip);
 				_failTip.play();
 			}
-			SoundManager.instance.pauseMusic();
-			SoundManager.instance.play("064");
+			SoundManager.Instance.pauseMusic();
+			SoundManager.Instance.play("064");
 			_timer.start();
 		}
 		
@@ -66,9 +66,9 @@ package ddt.store
 		private function __timerComplete(evt:TimerEvent):void
 		{
 			_timer.reset();
-			SoundManager.instance.resumeMusic();
-			SoundManager.instance.stop("063");
-			SoundManager.instance.stop("064");
+			SoundManager.Instance.resumeMusic();
+			SoundManager.Instance.stop("063");
+			SoundManager.Instance.stop("064");
 		}
 		
 		private function removeTips():void
@@ -85,9 +85,9 @@ package ddt.store
 			_failTip.addFrameScript(41,null);
 			_timer.removeEventListener(TimerEvent.TIMER_COMPLETE,__timerComplete);
 			_timer = null;
-			SoundManager.instance.resumeMusic();
-			SoundManager.instance.stop("063");
-			SoundManager.instance.stop("064");
+			SoundManager.Instance.resumeMusic();
+			SoundManager.Instance.stop("063");
+			SoundManager.Instance.stop("064");
 			removeTips();
 			if(parent)parent.removeChild(this);
 		}

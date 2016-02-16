@@ -321,7 +321,7 @@ package road.ui.controls.hframe
 		
 		protected function onKeyDown(e:KeyboardEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			e.stopImmediatePropagation();
 			if(e.keyCode == Keyboard.ENTER)
 			{
@@ -333,7 +333,7 @@ package road.ui.controls.hframe
 		}
 		protected function onBtnClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(stopClickEvent)
 			{
 				e.stopImmediatePropagation();

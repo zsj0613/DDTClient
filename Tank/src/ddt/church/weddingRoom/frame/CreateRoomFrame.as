@@ -211,7 +211,7 @@ package ddt.church.weddingRoom.frame
 			{
 				if(cancelBtn.enable)
 				{
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					if(cancelFunction != null)
 					{
 						cancelFunction();
@@ -250,7 +250,7 @@ package ddt.church.weddingRoom.frame
 
 		private function __secondClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("043");
+			SoundManager.Instance.play("043");
 			
 			var index:Number = Number(event.currentTarget.name.slice(4,5));
 			

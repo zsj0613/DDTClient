@@ -56,7 +56,7 @@ package ddt.hall
 	
 		private function __btnOkClick(event:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			doClosing();
 			LoaderSavingManager.cacheAble = true;
 			LoaderSavingManager.saveFilesToLocal();
@@ -74,7 +74,7 @@ package ddt.hall
 		{
 			if(evt.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 		    	disagree();
 			}
 		}

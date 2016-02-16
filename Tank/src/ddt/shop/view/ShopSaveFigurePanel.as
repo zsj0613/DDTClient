@@ -154,7 +154,7 @@ package ddt.shop.view
 		
 		private function __payClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
@@ -321,7 +321,7 @@ package ddt.shop.view
 		
 		private function __nopayClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 		

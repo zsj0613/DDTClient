@@ -107,12 +107,12 @@ package ddt.loginstate
 		{
 			if(e.keyCode == Keyboard.ENTER)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				commitName();
 			}
 			else if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				dispose();
 			}
 		}
@@ -160,7 +160,7 @@ package ddt.loginstate
 		
 		public function commitName():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!textFouceHandler())
 			{
 				_inputText.text = "";

@@ -74,7 +74,7 @@ package ddt.roomlist
 		
 		private function __joinDacoityClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(isClickJoin)
 			{
 				MyTimer.start();
@@ -86,7 +86,7 @@ package ddt.roomlist
 		
 		private function __joinChallengeBOSSClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(isClickJoin)
 			{
 				MyTimer.start();
@@ -98,14 +98,14 @@ package ddt.roomlist
 		
 		private function __lookupClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			_controller.showFindRoom();
 		}
 		
 		private function __allBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_hadGetRoom)
 			{
 				GameInSocketOut.sendGetAllRoom();
@@ -117,13 +117,13 @@ package ddt.roomlist
 		
 		private function __waitingBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_controller.setRoomShowMode(1);
 		}
 		
 		private function __createPveRoomClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_controller.showCreateView();
 		}
 		

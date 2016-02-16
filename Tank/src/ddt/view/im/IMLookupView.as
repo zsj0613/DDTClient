@@ -304,7 +304,7 @@ package ddt.view.im
 				_currentItem     = evt.currentTarget as IMLookupItem;
 				dispatchEvent(new Event(Event.CHANGE));
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(result.selectedItem) 
 			{
 				(result.selectedItem as IMLookupItem).selected = false;

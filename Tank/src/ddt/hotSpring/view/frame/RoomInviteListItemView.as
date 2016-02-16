@@ -60,7 +60,7 @@ package ddt.hotSpring.view.frame
 		
 		private function __mouseClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(_info is ConsortiaPlayerInfo)
 			{

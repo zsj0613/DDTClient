@@ -204,7 +204,7 @@ package ddt.game.playerThumbnail
 		
 		protected function clickHandler(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			PersonalInfoManager.instance.addPersonalInfo(_info.playerInfo.ID,_info.playerInfo.ZoneID);
 		}
 		

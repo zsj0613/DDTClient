@@ -87,7 +87,7 @@ package ddt.view.taskII
 				disposeNewQuest();
 			
 			if(this.parent){//show -> dispose
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				this.parent.removeChild(this);
 				_asset.dispose();
 				_asset = null;

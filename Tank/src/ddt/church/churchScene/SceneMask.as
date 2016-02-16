@@ -51,7 +51,7 @@ package ddt.church.churchScene
 			_totalTimes--;
 			if(_totalTimes%2&&_totalTimes>=0)
 			{
-				SoundManager.instance.play("050");
+				SoundManager.Instance.play("050");
 			}
 			
 			countDownMovie.nextFrame();
@@ -64,7 +64,7 @@ package ddt.church.churchScene
 		
 		private function __timerComplete(event:TimerEvent):void
 		{
-			SoundManager.instance.playMusic("3001");
+			SoundManager.Instance.playMusic("3001");
 			_timer.removeEventListener(TimerEvent.TIMER,__timerAlarm);
 			_timer.removeEventListener(TimerEvent.TIMER_COMPLETE,__timerComplete);
 			

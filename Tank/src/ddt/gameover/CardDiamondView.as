@@ -100,7 +100,7 @@ package ddt.gameover
 		
 		private function __payClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			MessageTipManager.getInstance().show("您的翻牌次数已经用完，您可以通过升级VIP获得更多翻牌次数");
 //			HConfirmDialog.show("购买1次翻牌机会", "本次购买翻牌将扣除您100点券,确定要购买吗?", true, paymentTakeCard);
 		}
@@ -118,7 +118,7 @@ package ddt.gameover
 			_count = count;
 			 
 			card_mc.gotoAndPlay(3);
-			SoundManager.instance.play("048");
+			SoundManager.Instance.play("048");
 			canClick(false);
 		}
 		
@@ -189,7 +189,7 @@ package ddt.gameover
 		{
 			if(allowClick)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				GameInSocketOut.sendGameTakeOut(_index);
 				canClick(false);
 			}

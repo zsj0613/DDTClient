@@ -167,7 +167,7 @@ package ddt.game.actions
 				if(_info is LocalPlayer && !fastModel)
 				{
 					KeyboardManager.getInstance().reset();
-					SoundManager.instance.play("016");
+					SoundManager.Instance.play("016");
 					var _turnMovie:MovieClipWrapper = new MovieClipWrapper(new TurnAsset(),true,true);
 					_turnMovie.repeat = false;
 					_turnMovie.x = 440;
@@ -176,7 +176,7 @@ package ddt.game.actions
 				}
 				else
 				{
-					SoundManager.instance.play("038");
+					SoundManager.Instance.play("038");
 					changePlayer();
 				}
 			}

@@ -63,7 +63,7 @@ package ddt.view.emailII
 			if(evt.keyCode == Keyboard.ESCAPE)
 			{
 				evt.stopImmediatePropagation();
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				this.dispatchEvent(new EmailIIEvent(EmailIIEvent.ESCAPE_KEY));
 			}
 		}

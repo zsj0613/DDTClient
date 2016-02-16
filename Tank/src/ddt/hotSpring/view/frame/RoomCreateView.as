@@ -136,12 +136,12 @@ package ddt.hotSpring.view.frame
 			switch(evt.target)
 			{
 				case _roomCreateAsset.btnRoom1://4人房
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					_maxCount=4;
 					_roomCreateAsset.btnRoom1.gotoAndStop(2);
 					break;
 				case _roomCreateAsset.btnRoom2://8人房
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					_maxCount=8;
 					_roomCreateAsset.btnRoom2.gotoAndStop(2);
 					break;

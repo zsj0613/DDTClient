@@ -57,7 +57,7 @@ package ddt.consortia.club
 		}
 		private function __recordBtClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_type == "applyRecord")
 			{
 				_controler.sendDeleteTryinRecord(_info.ID);

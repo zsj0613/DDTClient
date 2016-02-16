@@ -88,7 +88,7 @@ package ddt.serverlist
 			
 			
 			//*******************************************************************************************
-			SoundManager.instance.playMusic("062");
+			SoundManager.Instance.playMusic("062");
 			BellowStripViewII.Instance.show();
 			BellowStripViewII.Instance.enabled = false;
 			_needLoginConsortia = PlayerManager.Instance.Self.ConsortiaID == 0;
@@ -190,7 +190,7 @@ package ddt.serverlist
 			{
 				_asset.box.selectedItem =  item;
 			}
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 		}
 		
 		private function __complete(loader:LoadServerListAction):void

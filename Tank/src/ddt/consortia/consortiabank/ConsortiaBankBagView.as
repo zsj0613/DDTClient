@@ -201,7 +201,7 @@ package ddt.consortia.consortiabank
 			var index:int = int(evt.currentTarget.name.slice(-1));
 			if(_currentList == _lists[index])return;
 			index == 0 ? _breakBtn.enable = false : _breakBtn.enable = true;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			tabs.gotoAndStop(index + 1);
 			_currentList.visible = false;
 			_currentList = _lists[index];
@@ -213,7 +213,7 @@ package ddt.consortia.consortiabank
 			var index:int = 0;
 			if(_currentList == _lists[index])return;
 			index == 0 ? _breakBtn.enable = false : _breakBtn.enable = true;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			tabs.gotoAndStop(index + 1);
 			_currentList.visible = false;
 			_currentList = _lists[index];
@@ -265,7 +265,7 @@ package ddt.consortia.consortiabank
 			
 			if(!(state&STATE_SELL)){
 				state|=STATE_SELL;
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				_sellBtn.dragStart(evt.stageX,evt.stageY);
 				dispatchEvent(new Event("sellstart"));
 				stage.addEventListener(MouseEvent.CLICK,__onStageClick_SellBtn);
@@ -289,7 +289,7 @@ package ddt.consortia.consortiabank
 		{
 			if(_breakBtn.enable)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(PlayerManager.Instance.Self.bagLocked)
 				{
 					new BagLockedGetFrame().show();
@@ -307,7 +307,7 @@ package ddt.consortia.consortiabank
 			if(_controller.getEnabled() && !_sellBtn.isActive)
 			{
 				evt.stopImmediatePropagation();
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				var cell:BagCell = evt.data as BagCell;
 				var info:InventoryItemInfo;
 				if(cell)
@@ -347,7 +347,7 @@ package ddt.consortia.consortiabank
 		
 		private function __cellDoubleClick(evt:CellEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var checkNum : int = _consortiaBank.checkConsortiaStoreCell();
 			if(checkNum  > 0)
 			{
@@ -393,7 +393,7 @@ package ddt.consortia.consortiabank
 		
 		private function __bankCellDoubleClick(evt:CellEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
@@ -447,7 +447,7 @@ package ddt.consortia.consortiabank
 		
 		private function createBreakWin(cell:BagCell):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var win:BreakGoodsView = new BreakGoodsView(cell);
 			win.show();
 		}

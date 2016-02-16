@@ -155,7 +155,7 @@ package ddt.church.churchScene.frame
 		
 		private function closeHandler(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(parent)
 			{
 				parent.removeChild(this);

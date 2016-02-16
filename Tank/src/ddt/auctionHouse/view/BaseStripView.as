@@ -218,7 +218,7 @@ package ddt.auctionHouse.view
 		{
 			if(!_isSelect)	
 			{
-				SoundManager.instance.play("047");
+				SoundManager.Instance.play("047");
 				dispatchEvent(new AuctionHouseEvent(AuctionHouseEvent.SELECT_STRIP));
 			}
 			isSelect = true;	

@@ -74,7 +74,7 @@ package ddt.missionresult
 		}
 		override public function enter(prev:BaseStateView, data:Object=null):void
 		{
-			SoundManager.instance.playMusic("065");
+			SoundManager.Instance.playMusic("065");
 			_game = data as GameInfo;
 			if(_game == null)
 			{
@@ -269,7 +269,7 @@ package ddt.missionresult
 			
 			if(playSound)
 			{
-				SoundManager.instance.play("1001");
+				SoundManager.Instance.play("1001");
 			}
 		}
 		

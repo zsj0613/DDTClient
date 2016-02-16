@@ -184,7 +184,7 @@ package ddt.view.movement
 		
 		override public function close():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			super.close();
 			removeEvent();
 			_right.close();

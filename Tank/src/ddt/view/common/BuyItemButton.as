@@ -74,7 +74,7 @@ package ddt.view.common
 		override protected function clickHandler(evt:MouseEvent):void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			super.clickHandler(null);
 			if(PlayerManager.Instance.Self.bagLocked)
 			{

@@ -51,7 +51,7 @@ package ddt.church.weddingRoom
 			addEvent();
 			BellowStripViewII.Instance.show();
 			BellowStripViewII.Instance.enabled = true;
-			SoundManager.instance.playMusic("062");
+			SoundManager.Instance.playMusic("062");
 		}
 		
 		private function init():void

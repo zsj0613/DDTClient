@@ -76,7 +76,7 @@ package ddt.view.bossbox
 		
 		private function cellClickHandler(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			for each(var cell:BoxAwardsCell in _cells)
 			{
 				cell.selected = false;

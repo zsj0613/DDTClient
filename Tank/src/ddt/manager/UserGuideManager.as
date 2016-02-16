@@ -312,7 +312,7 @@ package ddt.manager
 			(guideMC["doneBtn"] as SimpleButton).addEventListener(MouseEvent.CLICK,__onBtnClicked);
 		}
 		private function __onBtnClicked(e:Event):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			hideMask();
 		}
 		private function showMask(pos:String):void{

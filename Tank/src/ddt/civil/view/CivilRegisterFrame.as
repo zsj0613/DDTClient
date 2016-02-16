@@ -246,7 +246,7 @@ package ddt.civil.view
 			e.stopImmediatePropagation();
 			if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(cancelBtn.enable)
 				{
 					if(cancelFunction != null)
@@ -264,7 +264,7 @@ package ddt.civil.view
 		override protected function __closeClick(e:MouseEvent):void
 		{
 			__cancel();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __getSelfInfo(e:Event):void

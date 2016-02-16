@@ -287,7 +287,7 @@ package ddt.roomlist
 		
 		private function __itemClickHandler(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_list.selectedItem = e.currentTarget as DisplayObject;
 			_currentShowPlayerInfo = (e.currentTarget as RoomListIIPlayerItem).info;
 		}

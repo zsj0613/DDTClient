@@ -163,7 +163,7 @@
 				e.stopImmediatePropagation();
 			}else
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(_fireAuto)
 				{
 					selected = !selected;

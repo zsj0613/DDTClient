@@ -88,7 +88,7 @@ package ddt.tofflist.view
 		
 		private function __lookBtnClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(TofflistModel.firstMenuType == TofflistStairMenu.PERSONAL && _info)
 			{
 				PersonalInfoManager.instance.addPersonalInfo(_info.ID , PlayerManager.Instance.Self.ZoneID);

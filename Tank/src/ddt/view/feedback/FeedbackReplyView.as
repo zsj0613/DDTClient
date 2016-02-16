@@ -116,7 +116,7 @@ package ddt.view.feedback
 		 */		
 		private function endSubmit():void
 		{
-			FeedbackManager.instance.openFeedbackAppraisalView(_feedbackReplyInfo);
+			FeedbackManager.Instance.openFeedbackAppraisalView(_feedbackReplyInfo);
 			
 			dispose();
 			this.close();
@@ -127,7 +127,7 @@ package ddt.view.feedback
 		 */
 		private function continueSubmit():void
 		{
-			FeedbackManager.instance.openFeedbackSubmitContinueView(_feedbackReplyInfo);
+			FeedbackManager.Instance.openFeedbackSubmitContinueView(_feedbackReplyInfo);
 			dispose();
 			this.close();
 		}

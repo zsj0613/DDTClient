@@ -232,7 +232,7 @@ package ddt.shop.view
 		
 		private function __presentClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(_model.hasFreeItems())
 			{
@@ -253,7 +253,7 @@ package ddt.shop.view
 		
 		private function __buyClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if((_model.totalMoney > 0 || _model.totalGift > 0 || _model.totalMedal > 0) && PlayerManager.Instance.Self.bagLocked)
 			{
 				new BagLockedGetFrame().show();
@@ -338,7 +338,7 @@ package ddt.shop.view
 		
 		private function __repealClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_bottomView.TriedItem)
 			{
 				_controller.removeTempEquip(_bottomView.TriedItem);
@@ -398,7 +398,7 @@ package ddt.shop.view
 		{
 			if(!muteLock)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			_model.currentModel.setHatHide(_hidehat.selected);
 		}
@@ -407,7 +407,7 @@ package ddt.shop.view
 		{
 			if(!muteLock)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			_model.currentModel.setGlassHide(_hideGlass.selected);
 		}
@@ -416,7 +416,7 @@ package ddt.shop.view
 		{
 			if(!muteLock)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			_model.currentModel.setSuiteHide(_hideSuites.selected);
 		}
@@ -486,7 +486,7 @@ package ddt.shop.view
 	
 		private function __saveClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_savepanel = new ShopSaveFigurePanel(_controller,_model,_model.currentTempList,1);
 			UIManager.setChildCenter(_savepanel);
 		    _savepanel.setPanelVisible(true,1);
@@ -495,13 +495,13 @@ package ddt.shop.view
 		
 		private function __revert(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_controller.revertToDefault();
 		}
 		
 		private function __restoreClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_controller.restoreAllItemsOnBody();
 		}
 		

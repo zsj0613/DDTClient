@@ -290,12 +290,12 @@ package ddt.room
 			if(evt.currentTarget.name == "helpBtn" && _isShowHelp)
 			{
 				helpBtn.gotoAndStop(2);
-				SoundManager.instance.play("119");
+				SoundManager.Instance.play("119");
 			}
 			else if(_isShowNote)
 			{
 				noteBtn.gotoAndStop(2);
-				SoundManager.instance.play("119");
+				SoundManager.Instance.play("119");
 			}
 		}
 		
@@ -335,13 +335,13 @@ package ddt.room
 		
 		private function __onOpenNote(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("045");
+			SoundManager.Instance.play("045");
 			dispatchEvent(new Event(OPEN_NOTE));
 		}
 		
 		private function __onOpenHelp(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("045");
+			SoundManager.Instance.play("045");
 			_context.switchPane();
 		}
 		

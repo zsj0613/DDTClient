@@ -62,7 +62,7 @@ package ddt.game.actions
 					}
 					mc.addChild(infoPane);
 					movie = new MovieClipWrapper(mc,true,true);
-					SoundManager.instance.play("040");
+					SoundManager.Instance.play("040");
 					movie.x = 500;
 					movie.y = 360;
 					_map.gameView.addChild(movie);

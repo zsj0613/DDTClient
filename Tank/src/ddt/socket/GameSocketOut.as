@@ -1805,6 +1805,7 @@
 		
 		public function sendJoinWorldBoss():void
 		{
+			var pkg:PackageOut = new PackageOut(ePackageType.WORLDBOSS_JOIN);
 		}
 
 	}

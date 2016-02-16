@@ -231,7 +231,7 @@ package ddt.manager
 		public static function IsNullorEmpty(str:String):Boolean
 		{
 			str = StringHelper.trim(str);
-			return StringHelper.isNullOrEmpty(str);
+			return StringHelper.IsNullOrEmpty(str);
 		}
 		
 		/**

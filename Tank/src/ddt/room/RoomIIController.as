@@ -90,7 +90,7 @@ package ddt.room
 			GameManager.Instance.reset();
 			
 			currentState = 0;
-			SoundManager.instance.playMusic("065");
+			SoundManager.Instance.playMusic("065");
 			
 			_self = PlayerManager.selfRoomPlayerInfo;
 			
@@ -272,17 +272,17 @@ package ddt.room
 			}
 			else if(_room.roomType == 2)
 			{
-				SoundManager.instance.play("045");
+				SoundManager.Instance.play("045");
 				_mapsetPanel  = new RoomMapSetPanelDanger(this,_room);
 			}
 			else if(_room.roomType == 1)
 			{
-				SoundManager.instance.play("045");
+				SoundManager.Instance.play("045");
 				_mapsetPanel = new RoomMapSetPanelPVP(this,_room);
 			}
 			else
 			{
-				SoundManager.instance.play("045");
+				SoundManager.Instance.play("045");
 				_mapsetPanel = new RoomMapSetPanelDuplicate(this,_room);
 			}
 			UIManager.setChildCenter(_mapsetPanel);
@@ -329,7 +329,7 @@ package ddt.room
 		{
 			if(_self.info.WeaponID <= 0)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.room.RoomIIController.weapon"));
 				return false;
 			}
@@ -374,7 +374,7 @@ package ddt.room
 			{
 				if(!_self.hasWeapon())
 				{
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.room.RoomIIController.weapon"));
 					return false;
 				}

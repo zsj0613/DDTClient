@@ -119,7 +119,7 @@ package ddt.church.weddingRoom.frame
 			evt.stopImmediatePropagation();
 			if(evt.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				hide();
 			}else if(evt.keyCode == Keyboard.ENTER)
 			{
@@ -142,7 +142,7 @@ package ddt.church.weddingRoom.frame
 		
 		private function __enter(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_info.isLocked)
 			{
 				var _passinput:ChurchRoomPassInput = new ChurchRoomPassInput();;
@@ -158,7 +158,7 @@ package ddt.church.weddingRoom.frame
 		
 		private function __cancel(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 		

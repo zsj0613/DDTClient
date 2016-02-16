@@ -108,7 +108,7 @@
 		private var time : int = 0;
 		private function __consortiaShopHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switch(evt.target.name)
 			{
 				case "shop7_mc":
@@ -132,7 +132,7 @@
 		}
 		private function sendConsortiaShop() : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var items:Array = [_info.GoodsID];
 			var types:Array = [time];
 			var colors:Array = [""];
@@ -143,7 +143,7 @@
 		}
 		private function cannel() : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		/**检查财富是否足够**/
 		private function checkMoney() : Boolean

@@ -62,7 +62,7 @@ package ddt.game
 		
 		private function __closeHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(this.currentLabel != "out")this.gotoAndPlay("out");
 		}
 		private function __setText() : void

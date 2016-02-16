@@ -182,7 +182,7 @@ package ddt.view.feedback
 				MessageTipManager.getInstance().show("感谢您的评价！");
 				
 				//提交成功以后，从回复列表中去除当前 的回复
-				FeedbackManager.instance.feedbackReplyData.remove(_feedbackReplyInfo.questionId + "_" + _feedbackReplyInfo.replyId);
+				FeedbackManager.Instance.feedbackReplyData.remove(_feedbackReplyInfo.questionId + "_" + _feedbackReplyInfo.replyId);
 				
 				dispose();
 				this.close();

@@ -72,7 +72,7 @@ package ddt.view.im
 		private function __openPersonalHomePage(evt : MouseEvent) : void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var loginName : String;
 			if(_info is ConsortiaPlayerInfo)
 			{
@@ -103,20 +103,20 @@ package ddt.view.im
 		
 		private function __delClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			HConfirmDialog.show(LanguageMgr.GetTranslation("ddt.view.emailII.WritingView.tip"),LanguageMgr.GetTranslation("ddt.view.im.IMBlackItem.sure"),true,deleteFriend,cancelDel);
 		}
 		
 		private function deleteFriend():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendDelFriend(_info.ID);
 		}
 		
 		private function cancelDel():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		public function dispose():void

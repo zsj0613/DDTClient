@@ -208,7 +208,7 @@ package ddt.store.view.Compose
 		
 		private function __buyStone(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			
 			if(PlayerManager.Instance.Self.bagLocked)
@@ -258,7 +258,7 @@ package ddt.store.view.Compose
 		private function __composeClick(evt:MouseEvent):void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.Gold < SharedManager.Instance.ComposeMoney)
 			{
 				new FastPurchaseGoldBox(LanguageMgr.GetTranslation("ddt.room.RoomIIView2.notenoughmoney.title"),LanguageMgr.GetTranslation("ddt.view.GoldInadequate"),EquipType.GOLD_BOX).show();	
@@ -399,7 +399,7 @@ package ddt.store.view.Compose
 		}
 		private function __openHelp(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			if(!_helpPage)initHelpPage();
 			_helpPage.show();

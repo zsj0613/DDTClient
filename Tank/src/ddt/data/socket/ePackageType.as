@@ -1174,7 +1174,7 @@
 		
 		public static const VIP_UPDATE:int = 0x1a;
 		
-		public static const WORLDBOSS_CMD:int = 0x1b;
+		public static const WORLDBOSS_JOIN:int = 0x1b;
 	}
 }
 

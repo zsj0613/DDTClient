@@ -1,6 +1,9 @@
 package ddt.manager
 {
 	import ddt.events.CrazyTankSocketEvent;
+	import ddt.states.StateType;
+
+	//import ddt.events.CrazyTankSocketEvent;
 	public class WorldBossManager
 	{
 			private static var _instance:WorldBossManager;
@@ -15,11 +18,12 @@ package ddt.manager
 			
 			public function setup() : void
 			{
-				SocketManager.Instance.addEventListener(CrazyTankSocketEvent.WORLDBOSS_INIT, this.__init);
+				SocketManager.Instance.addEventListener(CrazyTankSocketEvent.WORLDBOSS_JOIN, this.__join);
 			}
 			
-			public function __init():void
+			public function __join(e:CrazyTankSocketEvent):void
 			{
+				StateManager.setState(StateType.WORLD_BOSS_ROOM);
 			}
 	}
 }

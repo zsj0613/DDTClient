@@ -103,7 +103,7 @@ package ddt.consortia.myconsortia.frame
 						cancelFunction();
 					}else
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 						hide();
 					}
 				}

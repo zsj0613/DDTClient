@@ -23,7 +23,7 @@ package ddt.loginstate
 			SocketManager.Instance.isLogin = false;
 			_login = new LoginPosView();
 			addChild(_login);
-			SoundManager.instance.playMusic("062");
+			SoundManager.Instance.playMusic("062");
 		}
 		
 		override public function getType():String

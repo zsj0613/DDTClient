@@ -115,7 +115,7 @@ package ddt.view.bagII.baglocked
 		}
 		
 		private function delBtnClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_musicDerail = false;
 			if(_bgAsset.delAnswer.text == "" || _bgAsset.delAnswerTwo.text == ""){
 				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.view.bagII.baglocked.inputAnswer"));
@@ -133,7 +133,7 @@ package ddt.view.bagII.baglocked
 		}
 		
 		private function cancelBtnClickHandler(event:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_musicDerail = false;
 			close();
 		}
@@ -147,7 +147,7 @@ package ddt.view.bagII.baglocked
 		
 		override public function dispose():void{
 			if(_musicDerail){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			removeEventListener(Event.ADDED_TO_STAGE,addtoStageHandler);
 			_delBtn.removeEventListener(MouseEvent.CLICK,delBtnClickHandler);

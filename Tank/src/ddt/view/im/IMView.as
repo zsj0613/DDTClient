@@ -169,7 +169,7 @@ package ddt.view.im
 		{
 			if(!_cmFriendList)
 			{
-				if(!StringHelper.isNullOrEmpty(PathManager.CommunityFriendList()))
+				if(!StringHelper.IsNullOrEmpty(PathManager.CommunityFriendList()))
 				{
 					if(PlayerManager.Instance.CMFriendList != null && PlayerManager.Instance.CMFriendList.length > 0)
 					{
@@ -386,12 +386,12 @@ package ddt.view.im
 		{
 			SimpleLoading.instance.hide();
 			_controller.hide();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 	
 		private function __bgCellClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.currentTarget == _bg.btn_1)
 			{
 				_bg.btn_1.gotoAndStop(1);
@@ -475,7 +475,7 @@ package ddt.view.im
 				if(!_fr){
 					_fr= new AddFriendFrame(_controller);	
 				}
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(_fr.parent)
 				{
 					_fr.hide();
@@ -492,7 +492,7 @@ package ddt.view.im
 			{
 				if(_cmFriendList &&_cmFriendList.currentSelectedItem && _cmFriendList.currentSelectedItem.info && _cmFriendList.currentSelectedItem.info.IsExist)
 				{
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					IMController.Instance.addFriend(_cmFriendList.currentSelectedItem.info.NickName);
 				}
 			}
@@ -507,7 +507,7 @@ package ddt.view.im
 			{
 				_fr.hide();
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_addBlackList.show();
 		}
 		
@@ -540,8 +540,8 @@ package ddt.view.im
 				_inviteBtn.enable = true;
 			}
 			MessageTipManager.getInstance().show("已通过社区消息发送邀请");
-			SoundManager.instance.play("008");
-			if(!StringHelper.isNullOrEmpty(PathManager.CommunityInvite()))
+			SoundManager.Instance.play("008");
+			if(!StringHelper.IsNullOrEmpty(PathManager.CommunityInvite()))
 			{
 				var req:URLRequest = new URLRequest(PathManager.CommunityInvite());
 				
@@ -564,7 +564,7 @@ package ddt.view.im
 		private function __cancel(evt:MouseEvent):void
 		{
 			_controller.hide();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function setContent(content:IDisposeable):void{
@@ -587,7 +587,7 @@ package ddt.view.im
 			e.stopImmediatePropagation();
 			if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				close();
 			}
 		}

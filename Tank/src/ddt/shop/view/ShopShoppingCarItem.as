@@ -71,13 +71,13 @@ package ddt.shop.view
 		
 		private function __closeClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispatchEvent(new Event(DELETE_ITEM));
 		}
 		
 		private function _comChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_shopItemInfo.currentBuyType = _com.selectedItem.data;
 			dispatchEvent(new Event(CONDITION_CHANGE));
 		}

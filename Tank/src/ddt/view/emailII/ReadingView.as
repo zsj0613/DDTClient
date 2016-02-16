@@ -626,7 +626,7 @@ package ddt.view.emailII
 		 */		
 		private function __nextPage(event:MouseEvent):void
 		{
-			SoundManager.instance.play("045");
+			SoundManager.Instance.play("045");
 			MailManager.Instance.setPage(false,_list.canChangePage());
 			MailManager.Instance.changeSelected(null);
 			if(_levelIcon) {
@@ -639,7 +639,7 @@ package ddt.view.emailII
 		 */		
 		private function __lastPage(event:MouseEvent):void
 		{
-			SoundManager.instance.play("045");
+			SoundManager.Instance.play("045");
 			MailManager.Instance.setPage(true,_list.canChangePage());
 			MailManager.Instance.changeSelected(null);
 			if(_levelIcon) {
@@ -667,7 +667,7 @@ package ddt.view.emailII
 		}
 		
 		private function __help(e:MouseEvent):void {
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			e.stopImmediatePropagation();
 			if(!_helpPage) {
 				initHelpPage();

@@ -89,7 +89,7 @@ package ddt.view
 		
 		private function __textInput(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(nameInputCheck())
 		    {
 			    new LoadCheckName(_asset.nameInput_txt.text,setCheckTxt).loadSync();
@@ -100,7 +100,7 @@ package ddt.view
 		
 		private function __nameBtnClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_isCanRework = false;
 			if(nameInputCheck())
 			{
@@ -113,7 +113,7 @@ package ddt.view
 		
 		private function __okClick():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_isCanRework = false;
 			if(_asset.nameInput_txt.text == "")
 			{
@@ -144,14 +144,14 @@ package ddt.view
 		
 		private function reworkNameComplete():void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			HAlertDialog.show(LanguageMgr.GetTranslation("ddt.view.task.TaskCatalogContentView.tip"),LanguageMgr.GetTranslation("ddt.view.ReworkNameView.reworkNameComplete"));
 //			HConfirmDialog.show("提示","改名成功，新名字将在24小时内启用。");
 		}
 		
 		private function __cancelClick():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 		

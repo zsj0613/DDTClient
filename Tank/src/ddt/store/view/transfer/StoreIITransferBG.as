@@ -203,7 +203,7 @@ package ddt.store.view.transfer
 		 */
 		private function __transferHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			var item1 : TransferItemCell = _items[0] as TransferItemCell;
 			var item2 : TransferItemCell = _items[1] as TransferItemCell;
@@ -384,7 +384,7 @@ package ddt.store.view.transfer
 		}
 		private function __openHelpHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			if(!_helpPage)initHelpPage();
 			_helpPage.show();

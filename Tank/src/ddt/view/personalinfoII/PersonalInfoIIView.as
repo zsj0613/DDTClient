@@ -367,20 +367,20 @@ package ddt.view.personalinfoII
 		}
 		private function __addFriend(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			IMController.Instance.addFriend(_info.NickName);
 		}
 		
 		private function __openBagStore(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			BagStore.Instance.show();
 			dispatchEvent(new Event(BagStore.OPEN_BAGSTORE));
 		}
 		
 		private function __effortBtnClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			EffortManager.Instance.isSelf = true;
 			EffortMainFrame.Instance.switchVisible();
 		}
@@ -717,7 +717,7 @@ package ddt.view.personalinfoII
 			{
 				evt.stopImmediatePropagation();
 				if(cell.itemInfo){
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 				}
 				
 				if(PlayerManager.Instance.Self.bagLocked)
@@ -753,18 +753,18 @@ package ddt.view.personalinfoII
 		
 		private function __hideHatChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendHideLayer(EquipType.HEAD,_hidehat.selected);
 		}
 		private function __hideGlassChnage(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendHideLayer(EquipType.GLASS,_hideGlass.selected);
 		}
 		
 		private function __hideSuitesChange(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendHideLayer(EquipType.SUITS,_hideSuites.selected);
 		}
 		private function get levelIcon():LevelIcon{

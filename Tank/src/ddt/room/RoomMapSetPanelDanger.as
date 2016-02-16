@@ -163,7 +163,7 @@ package ddt.room
 			_levelBtn5.removeEventListener(MouseEvent.CLICK,      __onClickLevelHandler);
 		}
 		private function __onClickPermission1(evt:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_permissionBtn1 == _currentPermission)return;
 			_permissionType = 0;
 			if(_currentPermission)_currentPermission.selected = false;
@@ -172,7 +172,7 @@ package ddt.room
 			_hadChange = true;
 		}
 		private function __onClicklevel1(evt:MouseEvent):void{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_levelBtn1 == _currentLevelBtn)return;
 			var $levelType : int = 1;
 			$levelType = 1;
@@ -186,7 +186,7 @@ package ddt.room
 		}
 		private function __onClickPermissionHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.currentTarget == _currentPermission)return;
 			switch(evt.currentTarget)
 			{
@@ -211,7 +211,7 @@ package ddt.room
 		}
 		private function __onClickLevelHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.currentTarget == _currentLevelBtn)return;
 			var $levelType : int = 1;
 			switch(evt.currentTarget)
@@ -241,7 +241,7 @@ package ddt.room
 		}
 		override protected function __confirmClick(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_hadChange)
 			{
 				GameInSocketOut.sendGameRoomSetUp(_room.mapId,_room.roomType,2,_permissionType,_levelType);
@@ -253,7 +253,7 @@ package ddt.room
 		{
 			if(evt.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				hide();
 			}
 		}

@@ -112,7 +112,7 @@ package ddt.game.actions
 					_times = 0;
 					_tempSpeed = 0;
 					_living.map.animateSet.addAnimation(new ShockMapAnimation(_living,25,10));
-					SoundManager.instance.play("078");
+					SoundManager.Instance.play("078");
 					return;
 				}
 				setPoint(_tempSpeed);
@@ -151,7 +151,7 @@ package ddt.game.actions
 			{
 				executeAtOnce();
 				_living.map.animateSet.addAnimation(new ShockMapAnimation(_living,25,10));
-				SoundManager.instance.play("078");
+				SoundManager.Instance.play("078");
 			}
 			else
 			{

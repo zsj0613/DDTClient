@@ -65,7 +65,7 @@ package ddt.game.actions
 				{
 					_player.info.pos = pos;
 					_player.body.doAction(GameCharacter.WALK);
-					SoundManager.instance.play("044",false,false);
+					SoundManager.Instance.play("044",false,false);
 					_player.map.animateSet.addAnimation(new BaseSetCenterAnimation(_player.x,_player.y - 150,0,false,AnimationLevel.MIDDLE));
 					_count ++;
 					if(_count >= 20)

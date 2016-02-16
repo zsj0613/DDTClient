@@ -97,7 +97,7 @@ package ddt.consortia.consortiabank
 		
 		private function __resultHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 //			dispose();
 			if(parent)this.parent.removeChild(this);
 		}

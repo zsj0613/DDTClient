@@ -54,9 +54,9 @@ package ddt.view.common
 		{
 			if(_shiner)
 			{
-				if(!SoundManager.instance.isPlaying("044")&&playSound)
+				if(!SoundManager.Instance.isPlaying("044")&&playSound)
 				{
-					SoundManager.instance.play("044",false,true,100);
+					SoundManager.Instance.play("044",false,true,100);
 				}
 				_shiner.play();
 			}
@@ -66,7 +66,7 @@ package ddt.view.common
 		{
 			if(_shiner)
 			{
-				SoundManager.instance.stop("044");
+				SoundManager.Instance.stop("044");
 				_shiner.gotoAndStop(1);
 			}
 		}

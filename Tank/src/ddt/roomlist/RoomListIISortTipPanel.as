@@ -44,7 +44,7 @@ package ddt.roomlist
 		protected function __itemClick(evt:MouseEvent):void
 		{
 			_controller.closeSortTip();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		private function __itemMouseOver(evt : MouseEvent) : void
 		{

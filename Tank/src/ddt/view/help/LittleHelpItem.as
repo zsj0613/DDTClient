@@ -34,7 +34,7 @@ package ddt.view.help
 		
 		private function __click(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_backFunction();
 		}
 		

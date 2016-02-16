@@ -96,7 +96,7 @@ package ddt.invite
 		
 		private function __refleshClick(evt:MouseEvent = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentTab == 0)
 				_controller.refleshList(_currentTab,++_refleshCount);
 			else
@@ -105,7 +105,7 @@ package ddt.invite
 		
 		private function __closeClickHandler(evt:Event = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			hideAndClose();
 		}
 	
@@ -116,7 +116,7 @@ package ddt.invite
 		
 		private function __hallClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentTab == 0)return;
 			_currentTab = 0
 			_bg.bg.gotoAndStop(1);
@@ -125,7 +125,7 @@ package ddt.invite
 		
 		private function __friendClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentTab == 1)return;
 			_currentTab = 1;
 			_bg.bg.gotoAndStop(2);
@@ -163,7 +163,7 @@ package ddt.invite
 		
 		private function __consortiaClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentTab == 2)return;
 			_currentTab = 2;
 			_bg.bg.gotoAndStop(3);

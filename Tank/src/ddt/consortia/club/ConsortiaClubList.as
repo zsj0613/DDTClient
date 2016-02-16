@@ -83,7 +83,7 @@ package ddt.consortia.club
 		{
 			if(!(evt.currentTarget as ConsortiaItem).isApply)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 		    	if(_currentInfo)_currentInfo.selectStatus = false;
 		    	_currentInfo = evt.target as ConsortiaItem;
 			    _currentInfo.selectStatus = true;

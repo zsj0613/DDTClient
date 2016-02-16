@@ -137,7 +137,7 @@ package ddt.consortia.myconsortia
 		}
 		
 		private function __cancelEdit(e:MouseEvent):void {
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_text.text = dealPlacard(_lastText);
 			_cancelBtn.enable = _editBut.enable = false;
 		}
@@ -157,7 +157,7 @@ package ddt.consortia.myconsortia
 		
 		private function __sendUpDataDisplayBord(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var b:ByteArray = new ByteArray();
 			b.writeUTF(StringHelper.trim(_text.textField.text));
 			if(b.length >300)

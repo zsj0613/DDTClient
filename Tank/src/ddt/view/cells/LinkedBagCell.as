@@ -38,7 +38,7 @@ package ddt.view.cells
 		{
 			if(_info && !locked && stage && allowDrag)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 			}
 			dragStart();
 		}
@@ -89,7 +89,7 @@ package ddt.view.cells
 				    {
 				    	_timer.stop();
 				    	dispatchEvent(new CellEvent(CellEvent.DOUBLE_CLICK,this,true));
-				    	if(!mouseSilenced)SoundManager.instance.play("008");
+				    	if(!mouseSilenced)SoundManager.Instance.play("008");
 				    }
 			    }
 		    	else

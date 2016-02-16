@@ -279,7 +279,7 @@ package ddt.auctionHouse.view
 		
 		private function __next(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			dispatchEvent(new AuctionHouseEvent(AuctionHouseEvent.NEXT_PAGE));
 			_bid_btn.enable = false;
 			_mouthful_btn.enable = false;
@@ -287,7 +287,7 @@ package ddt.auctionHouse.view
 		
 		private function __pre(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			dispatchEvent(new AuctionHouseEvent(AuctionHouseEvent.PRE_PAGE));
 			_bid_btn.enable = false;
 			_mouthful_btn.enable = false;
@@ -322,7 +322,7 @@ package ddt.auctionHouse.view
 		
 		private function __bid(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			_btClickLock = true;
 			checkPlayerMoney();
 			_bid_btn.enable = false;
@@ -400,7 +400,7 @@ package ddt.auctionHouse.view
 
 		private function __mouthFull(event:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			_btClickLock = true;
 			_mouthful_btn.enable = false;
 			_bid_btn.enable = false;//_bidMoney.getData() <= PlayerManager.Instance.Self.Money;

@@ -67,7 +67,7 @@ package ddt.view.common.church
 		override public function show():void
 		{
 			super.show();
-			SoundManager.instance.play("018");
+			SoundManager.Instance.play("018");
 //			UIManager.setChildCenter(this);
 //			TipManager.AddTippanel(this);
 			isShowed = true;
@@ -75,20 +75,20 @@ package ddt.view.common.church
 		
 		private function __okClick(evt:MouseEvent = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			StateManager.setState(StateType.CHURCH_ROOMLIST);
 			hide();
 		}
 		
 		private function __close(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			hide();
 		}
 		
 		private function __cancelClick(evt:MouseEvent = null):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			hide();
 		}
 		

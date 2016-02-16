@@ -103,12 +103,12 @@
 		 */		
 		protected function initialize():void
 		{
-			_sysDateTime=HotSpringManager.instance.playerEnterRoomTime;
+			_sysDateTime=HotSpringManager.Instance.playerEnterRoomTime;
 			_mapVO=new MapVO();
 			
 			BellowStripViewII.Instance.hide();
 			
-			SoundManager.instance.playMusic("3004");
+			SoundManager.Instance.playMusic("3004");
 			
 			_sceneBackBox=new Sprite();
 			addChild(_sceneBackBox);
@@ -135,7 +135,7 @@
 			_mouseMovie.stop();
 			_hotSpringViewAsset.addChild(_mouseMovie);
 			
-			_roomMenuView=new RoomMenuView(_controller, _model, HotSpringManager.instance.roomCurrently.playerID==PlayerManager.Instance.Self.ID);
+			_roomMenuView=new RoomMenuView(_controller, _model, HotSpringManager.Instance.roomCurrently.playerID==PlayerManager.Instance.Self.ID);
 			_roomMenuView.x=1000-_roomMenuView.width;
 			_roomMenuView.y=600-_roomMenuView.height-10;
 			addChild(_roomMenuView);
@@ -154,20 +154,20 @@
 			_roomTimeAsset.y=10;
 			addChild(_roomTimeAsset);
 			
-			_roomTimeAsset.RoomNumber.lblNumber.text=HotSpringManager.instance.roomCurrently.roomNumber.toString();
-			if(HotSpringManager.instance.roomCurrently.roomType==1 || HotSpringManager.instance.roomCurrently.roomType==2)
+			_roomTimeAsset.RoomNumber.lblNumber.text=HotSpringManager.Instance.roomCurrently.roomNumber.toString();
+			if(HotSpringManager.Instance.roomCurrently.roomType==1 || HotSpringManager.Instance.roomCurrently.roomType==2)
 			{//公共房间不显示房间有效时间，只显示玩家时间
 				_roomTimeAsset.gotoAndStop(2);
-				_roomTimeAsset.PlayerTime.lblPlayerTime.text=HotSpringManager.instance.playerEffectiveTime + LanguageMgr.GetTranslation("ddt.hotSpring.room.time.minute");
+				_roomTimeAsset.PlayerTime.lblPlayerTime.text=HotSpringManager.Instance.playerEffectiveTime + LanguageMgr.GetTranslation("ddt.hotSpring.room.time.minute");
 			}
 			else
 			{
 				_roomTimeAsset.gotoAndStop(1);
-				_roomTimeAsset.RoomTime.lblRoomTime.text= HotSpringManager.instance.roomCurrently.effectiveTime+ LanguageMgr.GetTranslation("ddt.hotSpring.room.time.minute");
+				_roomTimeAsset.RoomTime.lblRoomTime.text= HotSpringManager.Instance.roomCurrently.effectiveTime+ LanguageMgr.GetTranslation("ddt.hotSpring.room.time.minute");
 			}
 			
 			//聊天窗体
-			ChatManager.Instance.state = HotSpringManager.instance.roomCurrently.roomType==1 ? ChatManager.CHAT_HOTSPRING_ROOM_GOLD_VIEW : ChatManager.CHAT_HOTSPRING_ROOM_VIEW;
+			ChatManager.Instance.state = HotSpringManager.Instance.roomCurrently.roomType==1 ? ChatManager.CHAT_HOTSPRING_ROOM_GOLD_VIEW : ChatManager.CHAT_HOTSPRING_ROOM_VIEW;
 			_chatFrame = ChatManager.Instance.view;
 			addChild(_chatFrame);
 			_chatFrame.addEventListener(Event.ADDED_TO_STAGE, setChatFrameFocus);
@@ -319,7 +319,7 @@
 				_roomRenewalFeeView=null;
 			}
 			
-			_roomRenewalFeeView = new RoomRenewalFeeView(_controller, HotSpringManager.instance.roomCurrently);
+			_roomRenewalFeeView = new RoomRenewalFeeView(_controller, HotSpringManager.Instance.roomCurrently);
 			TipManager.AddTippanel(_roomRenewalFeeView,true);
 			_roomRenewalFeeView.setFoucs();
 		}
@@ -329,7 +329,7 @@
 		 */		
 		private function roomPlayerContinueIncept(event:CrazyTankSocketEvent):void
 		{
-			_roomPlayerContinueConfirmView = new RoomPlayerContinueConfirmView(_controller, HotSpringManager.instance.roomCurrently);
+			_roomPlayerContinueConfirmView = new RoomPlayerContinueConfirmView(_controller, HotSpringManager.Instance.roomCurrently);
 			TipManager.AddTippanel(_roomPlayerContinueConfirmView,true);
 			_roomPlayerContinueConfirmView.setFoucs();
 		}
@@ -373,10 +373,10 @@
 		{
 			var pkg:PackageIn = evt.pkg;
 			var effectiveTime:int=pkg.readInt();
-			HotSpringManager.instance.roomCurrently.effectiveTime=effectiveTime;
-			HotSpringManager.instance.playerEffectiveTime=effectiveTime;
+			HotSpringManager.Instance.roomCurrently.effectiveTime=effectiveTime;
+			HotSpringManager.Instance.playerEffectiveTime=effectiveTime;
 			
-			if(HotSpringManager.instance.roomCurrently.roomType==1 || HotSpringManager.instance.roomCurrently.roomType==2)
+			if(HotSpringManager.Instance.roomCurrently.roomType==1 || HotSpringManager.Instance.roomCurrently.roomType==2)
 			{//公共房间不显示房间有效时间，只显示玩家时间
 				_roomTimeAsset.gotoAndStop(2);
 				_roomTimeAsset.PlayerTime.lblPlayerTime.text=effectiveTime + LanguageMgr.GetTranslation("ddt.hotSpring.room.time.minute");
@@ -617,7 +617,7 @@
 		 */		
 		private function roomToolMenu(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switch(evt.target)
 			{
 				case _roomToolMenuAsset.btnShowName://显示/隐藏玩家
@@ -831,7 +831,7 @@
 			_expUpAsset.x=(_selfPlayer.playerWitdh-75)/2-_selfPlayer.playerWitdh/2;
 			_expUpAsset.y=_selfPlayer.playerVO.currentlyArea==1 ? -_selfPlayer.playerHeight-30 : -_selfPlayer.playerHeight+33;
 			_selfPlayer.addChild(_expUpAsset);
-			_expUpAsset.ExpMsg.lblMsg.text="EXP " + _model.getExpUpValue(HotSpringManager.instance.roomCurrently.roomType, PlayerManager.Instance.Self.Grade).toString();
+			_expUpAsset.ExpMsg.lblMsg.text="EXP " + _model.getExpUpValue(HotSpringManager.Instance.roomCurrently.roomType, PlayerManager.Instance.Self.Grade).toString();
 			
 			_expUpAsset.removeEventListener(Event.ENTER_FRAME, expUpEnterFrame);
 			_expUpAsset.addEventListener(Event.ENTER_FRAME, expUpEnterFrame);

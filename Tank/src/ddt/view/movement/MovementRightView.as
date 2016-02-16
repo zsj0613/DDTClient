@@ -272,14 +272,14 @@ package ddt.view.movement
 		
 		override public function close():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			super.close();
 			removeEvent();
 		}
 		
 		private function __confirm():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_asset.password_mc.pass_txt.text == ""&&_info.HasKey==1 )
 			{
 				

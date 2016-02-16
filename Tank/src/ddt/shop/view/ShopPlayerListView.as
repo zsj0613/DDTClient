@@ -63,7 +63,7 @@ package ddt.shop.view
 				btn_1.buttonMode = false;
 				setList(PlayerManager.Instance.consortiaMemberList);
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 				
 		}
 		

@@ -102,7 +102,7 @@ package ddt.game
 			super.enter(prev,data);
 			Memory.gc();
 			BgView.Instance.showGameBack(true);
-			StageFocusManager.getInstance().setActiveFocus(_map);
+			StageFocusManager.Instance().setActiveFocus(_map);
 			_gameInfo.resetResultCard();
 			_gameInfo.livings.addEventListener(DictionaryEvent.REMOVE,__removePlayer);
 			PlayerManager.Instance.Self.FightBag.addEventListener(BagEvent.UPDATE,__selfObtainItem);
@@ -185,7 +185,7 @@ package ddt.game
 		{
 			Memory.gc();
 			BgView.Instance.showGameBack(false);
-			SoundManager.instance.stopMusic();
+			SoundManager.Instance.stopMusic();
 			TipManager.clearTipLayer();
 			TipManager.clearNoclearLayer();
 			UIManager.clear();
@@ -193,7 +193,7 @@ package ddt.game
 			EnthrallManager.getInstance().outGame();//防沉迷 状态灯
 			_gameInfo.livings.removeEventListener(DictionaryEvent.REMOVE,__removePlayer);
 			_gameInfo.removeAllMonsters();
-			StageFocusManager.getInstance().setActiveFocus(null);
+			StageFocusManager.Instance().setActiveFocus(null);
 			SocketManager.Instance.removeEventListener(CrazyTankSocketEvent.PLAYER_SHOOT,__shoot);
 			SocketManager.Instance.removeEventListener(CrazyTankSocketEvent.PLAYER_START_MOVE,__startMove);
 			SocketManager.Instance.removeEventListener(CrazyTankSocketEvent.PLAYER_CHANGE,__playerChange);
@@ -311,7 +311,7 @@ package ddt.game
 		
 		private function __passStory(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_passStoryBtn.visible = false;
 			GameInSocketOut.sendPassStory();
 		}
@@ -1027,7 +1027,7 @@ package ddt.game
 			if(playSound && _soundPlayFlag)
 			{
 				_soundPlayFlag = false;
-				SoundManager.instance.play("1001");
+				SoundManager.Instance.play("1001");
 			}
 		}
 		private function __forstPlayer(event:CrazyTankSocketEvent):void
@@ -1048,17 +1048,17 @@ package ddt.game
 		{
 			var soundID:String = event.pkg.readUTF();
 //			SoundManager.instance.initSound(soundID);
-			SoundManager.instance.play(soundID);
+			SoundManager.Instance.play(soundID);
 		}
 		
 		private function __controlBGM(evt:CrazyTankSocketEvent):void
 		{
 			if(evt.pkg.readBoolean())
 			{
-				SoundManager.instance.resumeMusic();
+				SoundManager.Instance.resumeMusic();
 			}else
 			{
-				SoundManager.instance.pauseMusic();
+				SoundManager.Instance.pauseMusic();
 			}
 		}
 		

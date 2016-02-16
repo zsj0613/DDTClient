@@ -1151,6 +1151,8 @@
     <classEntry path="global"/>
     <classEntry path="ddt.manager.WorldBossManager"/>
     <classEntry path="ddt.data.socket.WorldBossPackageType"/>
+    <classEntry path="ddt.WorldBoss.WorldBossRoomController"/>
+    <classEntry path="ddt.WorldBoss.WorldBossRoomView"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

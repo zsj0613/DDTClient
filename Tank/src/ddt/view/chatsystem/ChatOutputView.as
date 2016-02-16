@@ -157,7 +157,7 @@ package ddt.view.chatsystem
 		
 		private function __channelPanelSelected(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(event.currentTarget == _btnPrivate)
 			{
 				channel = CHAT_OUPUT_PRIVATE;
@@ -178,7 +178,7 @@ package ddt.view.chatsystem
 		
 		private function __clearnClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_model.reset();
 			updateCurrnetChannel();
 			_slink_mc.visible = false;
@@ -190,12 +190,12 @@ package ddt.view.chatsystem
 			//goBottom();
 			_currentOffset = 0;
 			updateCurrnetChannel();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __lockClick(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			isLock = !isLock;
 			if(_channelSelectVisible)setChannelBtnVisible(!_isLock);
 		}
@@ -227,7 +227,7 @@ package ddt.view.chatsystem
 		
 		private function __scrollDownDown(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_timerRolldown.start();
 			scrollDown();
 		}
@@ -239,7 +239,7 @@ package ddt.view.chatsystem
 		
 		private function __scrollUpDown(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_timerRollUp.start();
 			scrollUp();
 		}

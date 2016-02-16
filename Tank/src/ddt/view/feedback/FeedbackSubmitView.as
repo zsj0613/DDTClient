@@ -595,11 +595,11 @@ package ddt.view.feedback
 		private function confirmSubmit():void
 		{
 			if(_questionTypeValue<=0
-				|| StringHelper.isNullOrEmpty(_questionContent.text)
-				|| StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeBase.txtQuestionTitle.text)
-				|| StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeBase.txtOccurrenceDateYear.text)
-				|| StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeBase.txtOccurrenceDateMonth.text)
-				|| StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeBase.txtOccurrenceDateDay.text)
+				|| StringHelper.IsNullOrEmpty(_questionContent.text)
+				|| StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeBase.txtQuestionTitle.text)
+				|| StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeBase.txtOccurrenceDateYear.text)
+				|| StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeBase.txtOccurrenceDateMonth.text)
+				|| StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeBase.txtOccurrenceDateDay.text)
 			)
 			{
 				MessageTipManager.getInstance().show("请填写完整必填项。");
@@ -627,7 +627,7 @@ package ddt.view.feedback
 					break;
 				case 3://物品道具消失类-异常消失
 				case 4://物品道具消失类-被盗
-					if(StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtGoodsGetMethod.text) || StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtGoodsGetDate.text))
+					if(StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtGoodsGetMethod.text) || StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtGoodsGetDate.text))
 					{
 						MessageTipManager.getInstance().show("请填写完整必填项。");
 						return;
@@ -637,7 +637,7 @@ package ddt.view.feedback
 					_feedbackInfo.goods_get_date=_feedbackSubmitViewAsset.questionType.questionTypeView.txtGoodsGetDate.text;
 					break;
 				case 5://充值卡类
-					if(StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtChargeOrderId.text) || StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtChargeMethod.text) || StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtChargeMoneys.text))
+					if(StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtChargeOrderId.text) || StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtChargeMethod.text) || StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtChargeMoneys.text))
 					{
 						MessageTipManager.getInstance().show("请填写完整必填项。");
 						return;
@@ -658,10 +658,10 @@ package ddt.view.feedback
 					_feedbackInfo.report_url=_feedbackSubmitViewAsset.questionType.questionTypeView.txtReportUrl.text;
 					break;
 				case 9://服务投诉
-					if(StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtUserFullName.text)
-						|| StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtUserPhone.text)
-						|| StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtComplaintsTitle.text)
-						|| StringHelper.isNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtComplaintsSource.text)
+					if(StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtUserFullName.text)
+						|| StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtUserPhone.text)
+						|| StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtComplaintsTitle.text)
+						|| StringHelper.IsNullOrEmpty(_feedbackSubmitViewAsset.questionType.questionTypeView.txtComplaintsSource.text)
 					)
 					{
 						MessageTipManager.getInstance().show("请填写完整必填项。");

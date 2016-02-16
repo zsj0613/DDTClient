@@ -363,7 +363,7 @@ package ddt.church.player
 				isExcuteingFire = true;
 				fire.y = -100;
 				addChild(fire);
-				SoundManager.instance.play("117");
+				SoundManager.Instance.play("117");
 			}else
 			{
 				dispatchEvent(new ChurchPlayerEvent(ChurchPlayerEvent.FIRE_COMPLETE));

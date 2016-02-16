@@ -42,7 +42,7 @@ package ddt.utils
 		
 		public static function leaveToFill():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(ExternalInterface.available && PathManager.solveFillJSCommandEnable() && !LeavePage.IsDesktopApp)
 			{
 				ExternalInterface.call(PathManager.solveFillJSCommandValue());

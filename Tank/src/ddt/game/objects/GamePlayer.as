@@ -236,7 +236,7 @@ package ddt.game.objects
 			var using:MovieClipWrapper=new MovieClipWrapper(new EatPropAsset(), true, false);
 			using.addFrameScriptAt(12, headPropEffect);
 			using.addEventListener(Event.COMPLETE, __usingAnimationComplete);
-			SoundManager.instance.play("039");
+			SoundManager.Instance.play("039");
 			using.x=0;
 			using.y=-10;
 			addChild(using);
@@ -631,7 +631,7 @@ package ddt.game.objects
 		{
 			super.die();
 			player.isSpecialSkill=false;
-			SoundManager.instance.play("042");
+			SoundManager.Instance.play("042");
 			weaponMovie=null;
 			_player.rotation=0;
 			_player.y=25;

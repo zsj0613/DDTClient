@@ -862,24 +862,7 @@
 		 
 		 
 		 //世界BOSS
-		 public static const WORLDBOSS_INIT:String = "worldboss_init";
-		 public static const WORLDBOSS_OVER:String = "worldboss_over";
-		 public static const WORLDBOSS_ROOM:String = "worldboss_room";
-		 public static const WORLDBOSS_ROOM_LOGIN:String = "worldboss_room_login";
-		 public static const WORLDBOSS_MOVE:String = "worldboss_move";
-		 public static const WORLDBOSS_EXIT:String = "worldboss_exit";
-		 public static const WORLDBOSS_PLAYERSTAUTSUPDATE:String = "worldBoss_playerStautsUpdate";
-		 public static const WORLDBOSS_ROOMCLOSE:String = "worldBoss_roomclose";
-		 public static const WORLDBOSS_BLOOD_UPDATE:String = "boss_blood_update";
-		 public static const WORLDBOSS_ENTER:String = "worldboss_enter";
-		 public static const WORLDBOSS_FIGHTOVER:String = "worldboss_fightOver";
-		 public static const WORLDBOSS_RANKING:String = "worldboss_ranking";
-		 public static const WORLDBOSS_PLAYERREVIVE:String = "worldboss_revive";
-		 public static const WORLDBOSS_RANKING_INROOM:String = "worldboss_ranking_inroom";
-		 public static const WORLDBOSS_BUYBUFF:String = "worldboss_buy_buff";
-		 public static const WORLDBOSS_PRIVATE_INFO:String = "WORLDBOSS_PRIVATE_INFO";
-		 public static const WORLDBOSS_ASSISTANT:String = "WORLDBOSS_ASSISTANT";
-		 public static const WORLDBOSS_PLAYERFIGHTASSIATANT:String = "WORLDBOSS_PLAYERFIGHTASSIATANT";
+		 public static const WORLDBOSS_JOIN:String = "worldboss_join";
 
 		 
 		 

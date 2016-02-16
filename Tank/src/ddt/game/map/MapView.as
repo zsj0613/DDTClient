@@ -182,7 +182,7 @@
 		{
 			var skill:SpellSkillAnimation = new SpellSkillAnimation(player.x,player.y,Config.GAME_WIDTH,Config.GAME_HEIGHT,_info.ForegroundWidth,_info.ForegroundHeight,player,gameView);
 			animateSet.addAnimation(skill);	
-			SoundManager.instance.play("097");
+			SoundManager.Instance.play("097");
 		}
 		
 		

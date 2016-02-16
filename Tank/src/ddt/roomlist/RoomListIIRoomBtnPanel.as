@@ -81,13 +81,13 @@ package ddt.roomlist
 		}
 		private function __createRoomBtn(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_controller.showCreateView();
 		}
 		
 		private function __fastJoinClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(isClickJoin)
 			{
 				MyTimer.start();
@@ -99,21 +99,21 @@ package ddt.roomlist
 		
 		private function __fastCompeteClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 //			SocketManager.Instance.out.sendGameLogin(0);
 			SocketManager.Instance.out.sendGameLogin(1,0);
 		}
 		
 		private function __findRoomClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			evt.stopImmediatePropagation();
 			_controller.showFindRoom();
 		}
 		
 		private function __allClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_hadGetRoom)
 			{
 				GameInSocketOut.sendGetAllRoom();
@@ -125,7 +125,7 @@ package ddt.roomlist
 		
 		private function __waitingClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_controller.setRoomShowMode(1);
 		}
 		

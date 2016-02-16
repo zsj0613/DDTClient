@@ -45,9 +45,9 @@ package ddt.hotSpring.model
 		 */		
 		public function roomAddOrUpdate(roomVO:HotSpringRoomInfo):void
 		{
-			if(HotSpringManager.instance.roomCurrently && HotSpringManager.instance.roomCurrently.roomID==roomVO.roomID)
+			if(HotSpringManager.Instance.roomCurrently && HotSpringManager.Instance.roomCurrently.roomID==roomVO.roomID)
 			{//如果更新的房间是当前玩家所在的房间信息，则更新
-				HotSpringManager.instance.roomCurrently=roomVO;
+				HotSpringManager.Instance.roomCurrently=roomVO;
 			}
 			
 			if(_roomList[roomVO.roomID]!=null)

@@ -63,7 +63,7 @@ package ddt.invite
 	
 		private function __mouseClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var roominfo:RoomInfo = RoomManager.Instance.current;
 			if(_info is ConsortiaPlayerInfo && roominfo.roomType < 2)
 			{

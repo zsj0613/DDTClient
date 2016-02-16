@@ -16,7 +16,7 @@ package ddt.manager
 		private var _playerEnterRoomTime:Date;//玩家进入当前房间时间
 		
 		private static var  _instance:HotSpringManager;
-		public static function get instance():HotSpringManager
+		public static function get Instance():HotSpringManager
 		{
 			if(!_instance)
 			{

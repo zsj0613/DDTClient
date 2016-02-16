@@ -93,7 +93,7 @@ package ddt.view.transferProp
 		{
 			_itemCell.bagCell = evt.data;
 			(evt.data as BagCell).locked = true;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __itemCellChange(evt:Event):void
@@ -104,35 +104,35 @@ package ddt.view.transferProp
 		
 		private function __chooseBird(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_currentType = 1;
 			updateState();
 		}
 		
 		private function __chooseDragon(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_currentType = 3;
 			updateState();
 		}
 		
 		private function __chooseSnake(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_currentType = 2;
 			updateState();
 		}
 		
 		private function __chooseTiger(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_currentType = 4;
 			updateState();
 		}
 		
 		private function __transfer(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_currentType<0)
 			{
 				MessageTipManager.getInstance().show("请选择你要转换的类型");

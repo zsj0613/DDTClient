@@ -221,7 +221,7 @@
 		
 		private function __openBagLockedFrame(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var bagLocked :BagLockedExplainFrame = new BagLockedExplainFrame();
 			//BagLockedExplainFrame
 			//BagLockedHelpFrame
@@ -249,7 +249,7 @@
 		
 		private function __bagFinishingClick(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
  			btnBagFinishing.Click.visible=true;
 			btnBagFinishing.Normal.visible=false;
 			btnBagFinishing.Over.visible=false;
@@ -282,7 +282,7 @@
 		
 		private function __keySetFrameClick(e:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			if(_keySetFrame.parent)
 			{
 				var fun : Function = _keySetFrame.cancelFunction;
@@ -338,7 +338,7 @@
 			
 			if(_currentList == _lists[index])return;
 			index == 0 ? _breakBtn.enable = false : _breakBtn.enable = true;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			tabs.gotoAndStop(index + 1);
 			_currentList.visible = false;
 			_currentList = _lists[index];
@@ -362,7 +362,7 @@
 			
 			if(_currentList == _lists[index])return;
 			index == 0 ? _breakBtn.enable = false : _breakBtn.enable = true;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			tabs.gotoAndStop(index + 1);
 			_currentList.visible = false;
 			_currentList = _lists[index];
@@ -422,7 +422,7 @@
 		{
 			if(!(state&STATE_SELL)){
 				state|=STATE_SELL;
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				_sellBtn.dragStart(evt.stageX,evt.stageY);
 				dispatchEvent(new Event("sellstart"));
 				stage.addEventListener(MouseEvent.CLICK,__onStageClick_SellBtn);
@@ -445,7 +445,7 @@
 		{
 			if(_breakBtn.enable)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(PlayerManager.Instance.Self.bagLocked)
 				{
 					new BagLockedGetFrame().show();
@@ -478,7 +478,7 @@
 				if(!cell.locked)
 				{
 					
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					if(KeyboardManager.isDown(Keyboard.SHIFT) && info.Count > 1 && info.MaxCount > 1)
 					{
 						if(PlayerManager.Instance.Self.bagLocked)
@@ -545,7 +545,7 @@
 						temInfo = info;
 					}else
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 						if(PlayerManager.Instance.Self.canEquip(info))
 						{
 							var toPlace:int = PlayerManager.Instance.getDressEquipPlace(info);
@@ -558,7 +558,7 @@
 		private var temInfo:InventoryItemInfo;
 		private function sendDefy():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.canEquip(temInfo))
 			{
 				var toPlace:int = PlayerManager.Instance.getDressEquipPlace(temInfo);
@@ -605,7 +605,7 @@
 					if(cell.info.TemplateID == EquipType.ROULETTE_BOX)
 					{
 						evt.stopImmediatePropagation();
-						RouletteManager.instance.useRouletteBox(cell);
+						RouletteManager.Instance.useRouletteBox(cell);
 					}else
 					{
 						SocketManager.Instance.out.sendItemOpenUp(cell.itemInfo.BagType,cell["place"]);
@@ -672,7 +672,7 @@
 		
 		private function createBreakWin(cell:BagCell):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var win:BreakGoodsView = new BreakGoodsView(cell);
 			win.show();
 		}

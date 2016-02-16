@@ -76,7 +76,7 @@ package ddt.game
 			_timer.removeEventListener(TimerEvent.TIMER_COMPLETE,__timerComplete);
 			if(_timer.running)
 			{
-				SoundManager.instance.stop("067");
+				SoundManager.Instance.stop("067");
 			}
 			_timer.reset();
 		}
@@ -93,15 +93,15 @@ package ddt.game
 			{
 				if(_isPlayerSound)
 				{
-					SoundManager.instance.stop("067");
-					SoundManager.instance.play("067");
+					SoundManager.Instance.stop("067");
+					SoundManager.Instance.play("067");
 				}
 			}
 			else
 			{
 				if(_isPlayerSound)
 				{
-					SoundManager.instance.play("014");
+					SoundManager.Instance.play("014");
 				}
 			}
 		}

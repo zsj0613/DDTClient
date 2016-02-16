@@ -106,12 +106,12 @@ package ddt.view
 			}
 			if(e.keyCode == Keyboard.ENTER)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				__okClick();
 				_asset.nameInput_txt.stage.focus = _asset.nameInput_txt;
 			}else if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				if(__cancelClick != null)
 				{
 					__cancelClick(e);
@@ -124,7 +124,7 @@ package ddt.view
 		
 		private function __okClick():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_isCanRework = false;
 			if(_asset.nameInput_txt.text == "")
 			{
@@ -155,20 +155,20 @@ package ddt.view
 		
 		private function reworkNameComplete():void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			HAlertDialog.show(LanguageMgr.GetTranslation("ddt.room.RoomIIView2.notenoughmoney.title"),LanguageMgr.GetTranslation("ddt.view.ConsortiaReworkNameView.consortiaNameModifySuccess"));
 //			HAlertDialog.show("提示","改名成功，新公会名将在24小时内启用。");
 		}
 		
 		private function __cancelClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispose();
 		}
 		
 		private function __textInput(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(nameInputCheck())
 		    {
 			    new LoadCheckName(_asset.nameInput_txt.text,setCheckTxt,"ConsortiaNameCheck.ashx").loadSync();
@@ -184,7 +184,7 @@ package ddt.view
 		
 		private function __nameBtnClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_isCanRework = false;
 			if(nameInputCheck())
 			{

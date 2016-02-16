@@ -49,6 +49,7 @@ package
 	import ddt.manager.StatisticManager;
 	import ddt.manager.TaskManager;
 	import ddt.manager.TimeManager;
+	import ddt.manager.WorldBossManager;
 	import ddt.request.LoadLanguageAction;
 	import ddt.request.StatisticExitLoginTool;
 	import ddt.states.StateType;
@@ -106,7 +107,7 @@ package
 		private function setup():void
 		{
 			_startTime = getTimer();
-			if(StringHelper.isNullOrEmpty(_user))
+			if(StringHelper.IsNullOrEmpty(_user))
 			{
 				LeavePage.LeavePageTo(PathManager.solveLogin(),"_self");
 			}
@@ -117,17 +118,22 @@ package
 				var acc:AccountInfo = new AccountInfo();
 				acc.Account = _user;
 				acc.Password = _pass;
-				acc.Key = CrytoHelper.generateRsaKey(m1,m2);				
-				PlayerManager.Instance.setup(acc);	
+				acc.Key = CrytoHelper.GenerateRsaKey(m1,m2);				
+				PlayerManager.Instance.Setup(acc);	
 				
+				
+				//加载字体
 				for(var i:int = 1;i<=9;i++)
 				{
 					Font.registerFont(ClassUtils.getDefinition("ddt.view.common.Font"+i.toString()));
 				}
-				var a:Class = ClassUtils.getDefinition("ddt.Config");
-				a["ParseAll"](_config.child("setting")[0]);
 				
-				QueueManager.setup(stage);
+				
+				//加载config
+				var config:Class = ClassUtils.getDefinition("ddt.Config");
+				config["ParseAll"](_config.child("setting")[0]);
+				
+				QueueManager.Setup(stage);
 				StateManager.setup(this,new BaseStateCreator());
 				BellowStripViewII.Instance.setup(this);
 				UIManager.setup(this,Config.GAME_WIDTH,Config.GAME_HEIGHT);
@@ -139,15 +145,8 @@ package
 				HConfirmFrame.OK_LABEL = LanguageMgr.GetTranslation("ok");
 				HConfirmFrame.CANCEL_LABEL = LanguageMgr.GetTranslation("cancel");
 				HBlackFrame.OK_LABEL = LanguageMgr.GetTranslation("ok");
-				HBlackFrame.CANCEL_LABEL = LanguageMgr.GetTranslation("cancel")
-				
-				TipManager.setup(this,stage,Config.GAME_WIDTH,Config.GAME_HEIGHT);
-				
-				var guideLayer:Sprite = new Sprite();
-				addChild(guideLayer);
-				UserGuideControler.Instance.setup(guideLayer);
-				
-				
+				HBlackFrame.CANCEL_LABEL = LanguageMgr.GetTranslation("cancel")				
+				TipManager.setup(this,stage,Config.GAME_WIDTH,Config.GAME_HEIGHT);											
 				MapManager.setup();
 				ChatManager.Instance.setup();
 				BuggleView.instance.setup();
@@ -162,16 +161,14 @@ package
 				TimeManager.Instance.setup();
 				RoomManager.Instance.setup();
 				ChurchRoomManager.instance.setup();
-				SoundManager.instance.setup(_musicList,PathManager.SITE_MAIN);
+				SoundManager.Instance.setup(_musicList,PathManager.SITE_MAIN);
 				ConsortiaLevelUpManager.Instance.setup();
-				EnthrallManager.getInstance().setup();
 				MovementLeftView.Instance.setup();
-				StageFocusManager.getInstance().steup(stage);
+				StageFocusManager.Instance().steup(stage);
 				FightLibManager.Instance.setup();
-				HotSpringManager.instance.setup();
-				RouletteManager.instance.setup();
-				FeedbackManager.instance.setup();
-				//WorldBossManager.instance.setup();
+				HotSpringManager.Instance.setup();
+				RouletteManager.Instance.setup();
+				WorldBossManager.Instance.setup();
 				
 
 				

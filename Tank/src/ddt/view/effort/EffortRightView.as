@@ -152,7 +152,7 @@ package ddt.view.effort
 		
 		public function __itemClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_currentSelectItem)_currentSelectItem = evt.currentTarget as EffortRigthItemView;
 			if(_currentSelectItem != evt.currentTarget as EffortRigthItemView)
 			{

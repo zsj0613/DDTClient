@@ -49,7 +49,7 @@ package ddt.auctionHouse.view
 		{
 			if(evt.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				hide();
 			}
 		}

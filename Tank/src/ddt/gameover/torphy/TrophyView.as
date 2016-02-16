@@ -124,13 +124,13 @@ package ddt.gameover.torphy
 		
 		public function __selected(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			SocketManager.Instance.out.sendGetTropToBag(-1);
 		}
 		
 		public function __itemClick(event:CellEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var item:TrophyCell = event.data as TrophyCell;
 			SocketManager.Instance.out.sendGetTropToBag((item.info as InventoryItemInfo).Place);
 		} 

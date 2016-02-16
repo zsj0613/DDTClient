@@ -40,7 +40,7 @@ package ddt.manager
 		private var _btnFeedbackNavigation:HBaseButton;
 		
 		private static var _instance:FeedbackManager;
-		public static function get instance():FeedbackManager
+		public static function get Instance():FeedbackManager
 		{
 			if(_instance == null)
 			{
@@ -182,7 +182,7 @@ package ddt.manager
 				_btnFeedbackNavigation.y=posY;
 				displayObjectContainer.addChild(_btnFeedbackNavigation);
 				
-				FeedbackManager.instance.feedbackReplyByRequest();//取得投诉反馈回复列表数据
+				FeedbackManager.Instance.feedbackReplyByRequest();//取得投诉反馈回复列表数据
 				checkFeedbackReplyData();
 			}
 			else

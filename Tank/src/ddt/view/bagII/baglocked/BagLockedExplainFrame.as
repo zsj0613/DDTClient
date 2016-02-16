@@ -90,7 +90,7 @@ package ddt.view.bagII.baglocked
 		
 		private function onSetButtonClickHandler(event:MouseEvent):void{
 			close();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.questionOne == ""){
 				var frame:BagLockedSetPasswordFrame = new BagLockedSetPasswordFrame();
 				frame.show();	
@@ -103,7 +103,7 @@ package ddt.view.bagII.baglocked
 		
 		private function onDeleteButtonClikHandler(event:MouseEvent):void{
 			close();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.questionOne != ""){
 				var _frame:PasswordDeleteFrame = new PasswordDeleteFrame();
 				_frame.initText(PlayerManager.Instance.Self.questionOne,PlayerManager.Instance.Self.questionTwo,PlayerManager.Instance.Self.leftTimes);
@@ -117,14 +117,14 @@ package ddt.view.bagII.baglocked
 		private function onRemoveButtonClickHandler(event:MouseEvent):void{
 			close();
 			new BagLockedGetFrame().show();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function onUpdateButtonClickHandler(event:MouseEvent):void{
 			close();
 			var frame:PasswordUpdateFrame = new PasswordUpdateFrame();
 			frame.show();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		
@@ -135,7 +135,7 @@ package ddt.view.bagII.baglocked
 		private function keyDownHandler(event:KeyboardEvent):void{
 			if(event.keyCode == Keyboard.ESCAPE){
 				event.stopImmediatePropagation();
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				close();
 			}
 		}

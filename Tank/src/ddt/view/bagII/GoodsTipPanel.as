@@ -261,7 +261,7 @@
 		{
 			//===============================================装备插孔显示开始===============================================//
 			
-			if(!StringHelper.isNullOrEmpty(_info.Hole))
+			if(!StringHelper.IsNullOrEmpty(_info.Hole))
 			{
 				var holeList:Array = [];
 				var strHoleList:Array = _info.Hole.split("|");

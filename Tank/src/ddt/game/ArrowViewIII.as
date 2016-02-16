@@ -351,7 +351,7 @@ package ddt.game
 		
 		private function __hammer(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			var deputyEnergy:Number = Number(_info.currentDeputyWeaponInfo.energy);//取得使用副武器所需消耗的体力,默认为110
 			
@@ -443,7 +443,7 @@ package ddt.game
 		public static const FLY_ENERGY:int = 150;
 		private function __airplane(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(_flyEnable)
 			{
@@ -599,7 +599,7 @@ package ddt.game
 			}
 			
 			if(!angleChanged)_currentAngleChangeTime = 0;
-			if(playSound) SoundManager.instance.play("006");
+			if(playSound) SoundManager.Instance.play("006");
 		}
 		
 		private function __inputKeyDown(event:KeyboardEvent):void
@@ -616,7 +616,7 @@ package ddt.game
 					playSound = _info.setGunAngle(_info.gunAngle + WeaponInfo.ROTATITON_SPEED);
 					_currentAngleChangeTime = 0;
 				}
-				if(playSound) SoundManager.instance.play("006");
+				if(playSound) SoundManager.Instance.play("006");
 			}
 		}
 		

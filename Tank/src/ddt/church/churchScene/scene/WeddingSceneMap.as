@@ -44,7 +44,7 @@ package ddt.church.churchScene.scene
 		{
 			super(scene,data,bg,mesh,acticle,sky);
 			
-			SoundManager.instance.playMusic("3002");
+			SoundManager.Instance.playMusic("3002");
 			
 			initFather();
 		}

@@ -75,13 +75,13 @@ package ddt.view.common
 		private function __mouseClick(evt:MouseEvent):void
 		{
 			hide();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}
 		
 		private function __addpriceClick(evt:MouseEvent):void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
 				hide();
@@ -95,7 +95,7 @@ package ddt.view.common
 		private function __moveClick(evt:MouseEvent):void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispatchEvent(new Event(MOVE));
 			hide();
 		}
@@ -103,7 +103,7 @@ package ddt.view.common
 		private function __openClick(evt:MouseEvent):void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(PlayerManager.Instance.Self.bagLocked)
 			{
 				hide();
@@ -117,7 +117,7 @@ package ddt.view.common
 		private function __useClick(evt:MouseEvent):void
 		{
 			evt.stopImmediatePropagation();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispatchEvent(new Event(USE));
 			hide();
 		}

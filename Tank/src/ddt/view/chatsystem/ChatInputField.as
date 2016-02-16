@@ -89,7 +89,7 @@
 				{
 					if(allLowString.indexOf("/"+CHANNEL_KEY_SET[i]) == 0)
 					{
-						SoundManager.instance.play("008");
+						SoundManager.Instance.play("008");
 						_inputField.text = allLowString.substring(2);
 						dispatchEvent(new ChatEvent(ChatEvent.INPUT_CHANNEL_CHANNGED,CHANNEL_SET[i]));
 						
@@ -182,7 +182,7 @@
 					if(isFocus()){
 						if(ChatManager.Instance.state != ChatManager.CHAT_SHOP_STATE)
 						{
-							SoundManager.instance.play("008");
+							SoundManager.Instance.play("008");
 							sendCurrnetText();
 							_currentHistoryOffset = ChatManager.Instance.model.resentChats.length;
 						}
@@ -203,7 +203,7 @@
 						}
 						if(ChatManager.Instance.visibleSwitchEnable)
 						{
-							SoundManager.instance.play("008");
+							SoundManager.Instance.play("008");
 						}
 //					}
 				}

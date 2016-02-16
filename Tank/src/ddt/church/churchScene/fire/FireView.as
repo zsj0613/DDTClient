@@ -96,7 +96,7 @@ package ddt.church.churchScene.fire
 		
 		private function closeHandler(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(parent)
 			{
 				parent.removeChild(this);
@@ -141,7 +141,7 @@ package ddt.church.churchScene.fire
 		{
 			if(PlayerManager.Instance.Self.Gold<200)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				new FastPurchaseGoldBox(LanguageMgr.GetTranslation("ddt.room.RoomIIView2.notenoughmoney.title"),LanguageMgr.GetTranslation("ddt.view.GoldInadequate"),EquipType.GOLD_BOX).show();
 //				MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("shop.ShopIIBtnPanel.gold"));
 				//MessageTipManager.getInstance().show("金币不足");

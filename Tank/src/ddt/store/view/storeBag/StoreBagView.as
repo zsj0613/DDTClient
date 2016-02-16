@@ -179,7 +179,7 @@ package ddt.store.view.storeBag
 			if(info == null) { return; }
 			if(!cell.locked)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				/* if(KeyboardManager.isDown(Keyboard.SHIFT) && info.Count > 1 && info.MaxCount > 1)
 				{
 					createBreakWin(cell);
@@ -195,7 +195,7 @@ package ddt.store.view.storeBag
 		
 		private function createBreakWin(cell:BagCell):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var win:BreakGoodsView = new BreakGoodsView(cell);
 			win.show();
 		}
@@ -212,7 +212,7 @@ package ddt.store.view.storeBag
 		
 		private function __cellMove(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var cell:BagCell = CellMenu.instance.cell;
 			if(cell)
 				cell.dragStart();

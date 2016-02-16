@@ -65,7 +65,7 @@ package ddt.civil.view
 		}
 		private function __clickHandle(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			dispatchEvent(new CivilDataEvent(CivilDataEvent.SELECT_CLICK_ITEM,this));
 		}
 		private function __overHandle(e:MouseEvent):void

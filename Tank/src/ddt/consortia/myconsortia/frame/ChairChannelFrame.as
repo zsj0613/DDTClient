@@ -60,7 +60,7 @@ package ddt.consortia.myconsortia.frame
 		
 		private function __onClickHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			switch(evt.target.name) {
 				case "consortiaUpgradeBtnAccect":
 					//公会升级

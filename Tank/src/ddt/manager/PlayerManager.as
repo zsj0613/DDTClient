@@ -277,7 +277,7 @@
 			BossBoxManager.instance.setup();
 		}
 		
-		public function setup(account:AccountInfo):void
+		public function Setup(account:AccountInfo):void
 		{
 			_account = account;
 			initEvent();
@@ -1287,7 +1287,7 @@
 		        	
 		        	if(str != intviteName)
 		        	{
-						SoundManager.instance.play("018");
+						SoundManager.Instance.play("018");
 		        		var context : String = intviteName + LanguageMgr.GetTranslation("ddt.manager.PlayerManager.come",consortiaName);
 		        		context = StringHelper.rePlaceHtmlTextField(context);
 		        		HConfirmDialog.show(LanguageMgr.GetTranslation("ddt.manager.PlayerManager.request"),context,true,accpetConsortiaInvent,rejectConsortiaInvent,true,LanguageMgr.GetTranslation("ddt.manager.PlayerManager.sure"),LanguageMgr.GetTranslation("ddt.manager.PlayerManager.refuse"),380);
@@ -1334,7 +1334,7 @@
 		        	PlayerManager.Instance.Self.ConsortiaLevel  = myLevel;
 		        	ChatManager.Instance.sysChatYellow(LanguageMgr.GetTranslation("ddt.manager.PlayerManager.upgrade",myLevel,ConsortiaLevelUpManager.Instance.getLevelData(myLevel).Count));
 		        	TaskManager.requestClubTask();//加载任务模板
-		        	SoundManager.instance.play("1001");
+		        	SoundManager.Instance.play("1001");
 		        	Self.sendGetMyConsortiaData();/**更新公会数据**/
 		        //	TaskManager.onGuildUpdate();
 		        }
@@ -1463,7 +1463,7 @@
 		        }else if(subType == 8 )
 		        {
 		        	updateConsortiaMemberDuty(playerId,dutyLeve,dName,rights);
-		        	SoundManager.instance.play("1001");
+		        	SoundManager.Instance.play("1001");
 		        }else if(subType == 9 )
 		        {
 		        	updateConsortiaMemberDuty(playerId,dutyLeve,dName,rights);
@@ -1472,7 +1472,7 @@
 		        	//msg9.msg = playerName+ "升级成为"+dName;
 		        	msgTxt9 = StringHelper.rePlaceHtmlTextField(msgTxt9);
 		        	ChatManager.Instance.sysChatYellow(msgTxt9);
-		        	SoundManager.instance.play("1001");
+		        	SoundManager.Instance.play("1001");
 		        }
 
 		        break;
@@ -1534,7 +1534,7 @@ import ddt.view.common.church.DialogueRejectPropose;
 		private function __consortiaIIUpLevel(type : int,id:int,name:String,level:int) : void
 		{
 			if(id != Self.ConsortiaID)return;
-			SoundManager.instance.play("1001");
+			SoundManager.Instance.play("1001");
 			var tipText:String = "";
 		    if(type == 10)
 		    {
@@ -1772,10 +1772,10 @@ import ddt.view.common.church.DialogueRejectPropose;
 			
 			if(checkCodeState == 1)
 			{
-				SoundManager.instance.play("058");
+				SoundManager.Instance.play("058");
 			}else if(checkCodeState == 2)
 			{
-				SoundManager.instance.play("057");
+				SoundManager.Instance.play("057");
 			}
 			
 			if(backType)
@@ -1981,7 +1981,7 @@ import ddt.view.common.church.DialogueRejectPropose;
 			}
 			if(checkMarryApplyList(answerId))return;
 			marryApplyList.push(answerId);
-			SoundManager.instance.play("018");
+			SoundManager.Instance.play("018");
 			var proposeResposeFrame:ProposeResponseFrame = new ProposeResponseFrame(spouseID,spouseName,answerId,str);
 			
 			UIManager.AddDialog(proposeResposeFrame,true);
@@ -2075,7 +2075,7 @@ import ddt.view.common.church.DialogueRejectPropose;
 				
 				if(!isActive)
 				{
-					SoundManager.instance.play("018");
+					SoundManager.Instance.play("018");
 					var dialogueUnmarried:DialogueUnmarried = new DialogueUnmarried();
 					TipManager.AddTippanel(dialogueUnmarried,true);
 				}else
@@ -2105,7 +2105,7 @@ import ddt.view.common.church.DialogueRejectPropose;
 			
 			var invitePanel:InvitePanelForChurch = new InvitePanelForChurch();
 			invitePanel.info = obj;
-			SoundManager.instance.play("018");
+			SoundManager.Instance.play("018");
 		}
 		
 		private function __marryPropGet(event:CrazyTankSocketEvent):void
@@ -2187,7 +2187,7 @@ import ddt.view.common.church.DialogueRejectPropose;
 			
 			var hotSpringRoomInviteView:HotSpringRoomInviteView = new HotSpringRoomInviteView(obj);
 			hotSpringRoomInviteView.show();
-			SoundManager.instance.play("018");
+			SoundManager.Instance.play("018");
 		}	
 		
 		/**

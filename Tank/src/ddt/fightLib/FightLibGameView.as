@@ -121,14 +121,14 @@ package ddt.fightLib
 		private function __reAnswer(evt:MouseEvent):void
 		{
 			_reAnswerBtn.visible = false;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			GameInSocketOut.sendFightLibReanswer();
 			FightLibManager.Instance.reAnswerNum --;
 		}
 		
 		private function __viewTutorial(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_viewTutorialBtn.visible = false;
 			FightLibManager.Instance.script.restart();
 			GameInSocketOut.sendClientScriptStart();

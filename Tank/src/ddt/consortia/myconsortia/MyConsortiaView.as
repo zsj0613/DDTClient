@@ -150,7 +150,7 @@ package ddt.consortia.myconsortia
 		}
 		private function __consortiaEventListHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_myConsortiaEventList.visible = true;
 			consortiaEventBtnAsset.gotoAndStop(2);
 			displayBoardBtnAccect.gotoAndStop(1);
@@ -174,7 +174,7 @@ package ddt.consortia.myconsortia
 		}
 		private function __displayerBoardHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			this._myConsortiaEventList.visible = false;
 			consortiaEventBtnAsset.gotoAndStop(1);
 			displayBoardBtnAccect.gotoAndStop(2);
@@ -317,7 +317,7 @@ package ddt.consortia.myconsortia
 		 }
 		 private function __openHelp(evt : MouseEvent) : void
 		 {
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 			if(!_helpPage)initHelpPage();
 			_helpPage.show();
 		 }

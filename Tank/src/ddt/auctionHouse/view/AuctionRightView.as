@@ -332,7 +332,7 @@ package ddt.auctionHouse.view
 		
 		private function sortHandler(e:MouseEvent):void
 		{
-			SoundManager.instance.play("047");
+			SoundManager.Instance.play("047");
 //			if(!_list || !_list.items || _list.items.length == 0)return;
 // 			var _index:uint = int(e.currentTarget.name.charAt(e.currentTarget.name.length - 1));
  			var _index:uint = int(e.target.name.charAt(e.target.name.length - 1));

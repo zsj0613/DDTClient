@@ -75,7 +75,7 @@ package ddt.view.common
 			_typeTimer.start();
 			
 			if(paopaoType == 1){
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				_typeTimer.stop();
 				drawFullMask();
 			}
@@ -91,7 +91,7 @@ package ddt.view.common
 		}
 		private function __onTypeTimerTick(e:TimerEvent):void{
 			if(_count<15)
-			SoundManager.instance.play("120");
+			SoundManager.Instance.play("120");
 			while(!_text.charAt(_count)){
 				_count--;
 				_typeTimer.stop();

@@ -56,14 +56,6 @@ package ddt.roomlist
 			addChild(_chat);
 		}
 		
-		private function __trainerClick(event:Event):void
-		{
-			if(PathManager.solveTrainerPage())
-			{
-				navigateToURL(new URLRequest(PathManager.solveTrainerPage()));
-			}
-		}
-		
 		public function sendGointoRoom(info:SimpleRoomInfo):void
 		{
 			_roomlist.gotoIntoRoom(info);

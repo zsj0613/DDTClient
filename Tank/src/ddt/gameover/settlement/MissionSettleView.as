@@ -208,7 +208,7 @@ package ddt.gameover.settlement
 		{
 			if(_kickTimer.currentCount == 30 && _game.isAllReady() && _room.players.length != 1)
 			{
-				SoundManager.instance.play("007",false,true,10000);
+				SoundManager.Instance.play("007",false,true,10000);
 			}
 			if(_kickTimer.currentCount < 60)return;//是否超过1分钟了
 			
@@ -260,7 +260,7 @@ package ddt.gameover.settlement
 		private function __changeHandler(e:Event):void
 		{
 			_kickTimer.reset();
-			SoundManager.instance.stop("007");
+			SoundManager.Instance.stop("007");
 			// TODO 更新开始或准备按钮
 			if(_game.selfGamePlayer.isReady||_game.isAllReady())
 			{
@@ -357,7 +357,7 @@ package ddt.gameover.settlement
 			BellowStripViewII.Instance.goFriendListBtn.enable = true;
 			BellowStripViewII.Instance.goTaskBtn.enable = true;
 			
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(_self.info.WeaponID <= 0)
 			{
@@ -381,7 +381,7 @@ package ddt.gameover.settlement
 		 */
 		private function __preparationClickHandler(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			
 			if(_self.info.WeaponID <= 0)
 			{
@@ -400,7 +400,7 @@ package ddt.gameover.settlement
 		 */		
 		private function __cancelClickHandler(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			setSelfReadyState(false);
 //			leaveroom_Btn.enable = true;
 			invite_Btn.enable = true;
@@ -423,7 +423,7 @@ package ddt.gameover.settlement
 		 */
 		private function __inviteClickHandler(e:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			showInvite();
 //			_controller.showInvite();
 		}
@@ -440,7 +440,7 @@ package ddt.gameover.settlement
 			{
 				if(!_self.hasWeapon())
 				{
-					SoundManager.instance.play("008");
+					SoundManager.Instance.play("008");
 					MessageTipManager.getInstance().show(LanguageMgr.GetTranslation("ddt.room.RoomIIController.weapon"));
 					return false;
 				}

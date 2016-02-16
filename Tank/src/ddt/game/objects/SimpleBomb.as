@@ -226,7 +226,7 @@ package ddt.game.objects
 			//隐藏炮弹的形状
 			if(!fastModel)
 			{
-				if(_isLiving)SoundManager.instance.play(_info.Template.BombSound);
+				if(_isLiving)SoundManager.Instance.play(_info.Template.BombSound);
 //				if(visible)
 //				{
 					_blastMC.x = x;

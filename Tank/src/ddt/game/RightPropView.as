@@ -190,7 +190,7 @@ package ddt.game
 				}
 			}else
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 		    	BuyBuffCardFrame.Instance.setInfo(ItemManager.Instance.getTemplateById(EquipType.FREE_PROP_CARD));
 		    	BuyBuffCardFrame.Instance.show();
 			}

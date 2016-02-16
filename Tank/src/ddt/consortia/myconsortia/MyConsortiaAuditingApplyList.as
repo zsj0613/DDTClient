@@ -183,7 +183,7 @@ package ddt.consortia.myconsortia
 		
 		private function __sortBtnClick(evt:Event):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.target.name == "fightPowerSort")
 			{
 				_lastSort = "FightPower";
@@ -215,7 +215,7 @@ package ddt.consortia.myconsortia
 		private function full():void
 		{
 			_isSelected = !_isSelected;
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(allHasSelected())
 			{
 				for(var i:int= 0;i<_items.length;i++)
@@ -247,7 +247,7 @@ package ddt.consortia.myconsortia
 		
 		private function agree():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var noChoice:Boolean = true;
 			for(var i:int= 0;i<_items.length;i++)
 			{
@@ -268,7 +268,7 @@ package ddt.consortia.myconsortia
 		
 		private function reject():void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			var noChoice:Boolean = true;
 			for(var i:int= 0;i<_items.length;i++)
 			{
@@ -351,7 +351,7 @@ package ddt.consortia.myconsortia
 		
 		private function __gotoPageHandler(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(evt.target.name == "prePageBtnAsset")
 			{
 				if(_currentPage > 1)
@@ -423,20 +423,20 @@ package ddt.consortia.myconsortia
 		
 		private function  __recruitHandler(evt : MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_recruitMemberFrame = new RecruitMemberFrame(_model);
 			TipManager.AddTippanel(_recruitMemberFrame,true);
 		}
 		
 		private function __seeClick(id:int):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			PersonalInfoManager.instance.addPersonalInfo(id,PlayerManager.Instance.Self.ZoneID);
 		}
 		
 		private function __okClick(id:int):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_control.sendTryinPass(id);
 			_model.deleteMyConsortiaAuditingData(id);
 			items();
@@ -445,7 +445,7 @@ package ddt.consortia.myconsortia
 		
 		private function __cancelClick(id:int):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_control.sendDeleteTryinRecord(id);
 			_model.deleteMyConsortiaAuditingData(id);
 			items();
@@ -454,7 +454,7 @@ package ddt.consortia.myconsortia
 		}
 		private function __closing(evt : MouseEvent) : void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			this.removeEvent();
 			if(this.parent)this.parent.removeChild(this);
 		}
@@ -463,7 +463,7 @@ package ddt.consortia.myconsortia
 		{
 			if(e.keyCode == Keyboard.ESCAPE)
 			{
-				SoundManager.instance.play("008");
+				SoundManager.Instance.play("008");
 				e.stopPropagation();
 				removeEvent();
 				if(this.parent)this.parent.removeChild(this);

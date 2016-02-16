@@ -206,7 +206,7 @@ package ddt.view.im
 		
 		private function __titleClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(!_isExpand)
 			{
 				if(!_onlineList)
@@ -262,7 +262,7 @@ package ddt.view.im
 			if(!_fr){
 				_fr= new AddFriendFrame(_controller);	
 			}
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_fr.parent)
 			{
 				_fr.hide();
@@ -281,7 +281,7 @@ package ddt.view.im
 		private function __cancel(evt:MouseEvent):void
 		{
 			_controller.hide();
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 		}		
 		
 		private function menuClickHandler(e:Event):void
@@ -365,7 +365,7 @@ package ddt.view.im
 		
 		private function __itemClick(evt:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			if(_onlineList.selectedItem) 
 			{
 				(_onlineList.selectedItem as IMFriendItem).selected = false;

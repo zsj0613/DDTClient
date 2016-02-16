@@ -199,7 +199,7 @@ package ddt.game.objects
 		{
 			var p:Point = _map.globalToLocal(new Point(event.stageX,event.stageY));
 			_map.addChild(mouseAsset);
-			SoundManager.instance.play("041");
+			SoundManager.Instance.play("041");
 			mouseAsset.x = p.x;
 			mouseAsset.y = p.y;
 			mouseAsset.visible = true;

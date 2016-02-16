@@ -368,7 +368,7 @@ package ddt.auctionHouse.view
 		
 		private function __searchCondition(event:MouseEvent):void
 		{
-			SoundManager.instance.play("008");
+			SoundManager.Instance.play("008");
 			_searchValue = "";
 			searchIIBtn.search_mc.visible = false; //bret 09.8.6
 				
