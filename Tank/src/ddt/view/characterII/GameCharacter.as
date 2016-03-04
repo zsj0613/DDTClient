@@ -162,8 +162,14 @@ package ddt.view.characterII
 			{
 				if(leftWing && rightWing)
 				{
+					try{
 					leftWing["movie"].play();
 					rightWing["movie"].play();
+					}
+					catch
+					{
+					}
+					}
 				}
 			}
 			_isPlaying = true;

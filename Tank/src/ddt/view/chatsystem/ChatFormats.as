@@ -51,7 +51,7 @@ package ddt.view.chatsystem
 			var senderClickTag:String = creatSenderTag(data);
 			var contentClickTag:String = creatContentTag(data);
 			var serverstr:String = "";
-			if(data.type ==ChatInputView.CROSS_BUGLE)
+			if(data.channel ==ChatInputView.CROSS_BUGLE)
 			{
 				serverstr = Helpers.enCodeString("["+data.server+"]");
 			}

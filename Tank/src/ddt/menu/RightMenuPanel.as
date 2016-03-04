@@ -176,12 +176,12 @@ package ddt.menu
 			btnInvite.useBackgoundPos = true;
 			mc_bg2.addChild(btnInvite);
 		
-		//	btnFire = new HBaseButton(mc_bg2.mc_chat,LanguageMgr.GetTranslation("ddt.menu.fire"));
-		//	btnFire.textField.textColor = 0xffffff;
-		//	btnFire.addEventListener(MouseEvent.CLICK,__buttonsClick);
-		//	btnFire.useBackgoundPos = true;
-		//	mc_bg2.addChild(btnFire);
-		//	btnFire.enable = false;
+			btnFire = new HBaseButton(mc_bg2.mc_chat,LanguageMgr.GetTranslation("ddt.menu.fire"));
+			btnFire.textField.textColor = 0xffffff;
+			btnFire.addEventListener(MouseEvent.CLICK,__buttonsClick);
+			btnFire.useBackgoundPos = true;
+			mc_bg2.addChild(btnFire);
+			btnFire.enable = false;
 			
 			graphics.beginFill(0,0);
 			graphics.drawRect(-3000,-3000,6000,6000);
@@ -270,8 +270,8 @@ package ddt.menu
 			{
 				if(_info.ConsortiaID != 0 && _info.ConsortiaID == PlayerManager.Instance.Self.ConsortiaID)
 				{
-					//btnFire.visible = ConsortiaDutyManager.GetRight(PlayerManager.Instance.Self.Right,ConsortiaDutyType._6_Expel);
-					//btnFire.enable = true;
+					btnFire.visible = ConsortiaDutyManager.GetRight(PlayerManager.Instance.Self.Right,ConsortiaDutyType._6_Expel);
+					btnFire.enable = true;
 			
 					
 					btnUp.visible = ConsortiaDutyManager.GetRight(PlayerManager.Instance.Self.Right,ConsortiaDutyType._12_UpGrade);
@@ -282,7 +282,7 @@ package ddt.menu
 					btnInvite.visible = false;
 				}else
 				{
-					//btnFire.visible = false;
+					btnFire.visible = false;
 					btnInvite.visible = false;
 					btnDown.visible = false;
 					
@@ -293,7 +293,7 @@ package ddt.menu
 			else
 			{
 				
-				//btnFire.visible = false;
+				btnFire.visible = false;
 				btnInvite.visible = false;
 				btnDown.visible = false;
 				btnUp.visible = false;
@@ -317,7 +317,7 @@ package ddt.menu
 			{
 				btnUp.enable = _info.DutyLevel != 2;
 				btnDown.enable = _info.DutyLevel != 5;
-				//btnFire.enable = ConsortiaDutyManager.GetRight(PlayerManager.Instance.Self.Right,ConsortiaDutyType._6_Expel);
+				btnFire.enable = ConsortiaDutyManager.GetRight(PlayerManager.Instance.Self.Right,ConsortiaDutyType._6_Expel);
 			}
 		}
 		

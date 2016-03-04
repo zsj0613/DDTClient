@@ -29,7 +29,7 @@
         </excludedEntries>
       </libraryPathEntry>
       <libraryPathEntry kind="3" linkType="1" path="/NewProject_Loader/bin/NewProject_Loader.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="1" linkType="1" path="D:/NewProject/DDTClientAsset/loadingasset"/>
+      <libraryPathEntry kind="1" linkType="1" path="D:/src/DDTClientAsset/loadingasset"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
