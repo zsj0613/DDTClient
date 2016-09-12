@@ -252,9 +252,9 @@ package
 
 			 
 
-			_path.FILL_PATH = "login.do?method=pay&username="+_user;
+			_path.FILL_PATH = "Default.aspx?method=pay&username="+_user;
 			
-			_path.LOGIN_PATH = "login.aspx";
+			_path.LOGIN_PATH = "Default.aspx";
 			
 			_path.OFFICIAL_SITE = "";
 			_path.GAME_FORUM = "";

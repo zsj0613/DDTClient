@@ -10,7 +10,7 @@
         </excludedEntries>
       </libraryPathEntry>
       <libraryPathEntry kind="1" linkType="1" path="asset"/>
-      <libraryPathEntry kind="3" linkType="1" path="/NewProject_Loader/bin/NewProject_Loader.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="/Loader/bin/Loader.swc" useDefaultLinkType="false"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
@@ -22,4 +22,3 @@
   <buildCSSFiles/>
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
 </actionScriptProperties>
-

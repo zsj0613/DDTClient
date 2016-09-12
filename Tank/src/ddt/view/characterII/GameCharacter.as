@@ -155,21 +155,23 @@ package ddt.view.characterII
 					leftWing["movie"].gotoAndStop(1);
 					rightWing["movie"].gotoAndStop(1);
 				}
-			}else if(_currentAction == SOUL)
+			}
+			else if(_currentAction == SOUL)
 			{
 				switchWingVisible(false);
-			}else
+			}
+			else
 			{
 				if(leftWing && rightWing)
 				{
-					try{
-					leftWing["movie"].play();
-					rightWing["movie"].play();
-					}
-					catch
+					try
 					{
+						leftWing["movie"].play();
+						rightWing["movie"].play();
 					}
-					}
+					catch(e:Error)
+					{
+					}					
 				}
 			}
 			_isPlaying = true;

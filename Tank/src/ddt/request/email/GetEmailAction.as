@@ -25,7 +25,7 @@ package ddt.request.email
 		{
 			_type=type;
 			var mailKey:String = MD5.hash(PlayerManager.Instance.Account.Password);
-			super(PathManager.solveRequestPath(_type), {id: id,key:mailKey,rnd:Math.random()});
+			super(PathManager.solveRequestPath(_type), {ID: id,key:mailKey,rnd:Math.random()});
 		}
 
 		override protected function onTextReturn(xml:String):void

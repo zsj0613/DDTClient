@@ -12,11 +12,11 @@
           <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/core.swc" useDefaultLinkType="false"/>
         </excludedEntries>
       </libraryPathEntry>
-      <libraryPathEntry kind="3" linkType="1" path="/NewProject_Road/bin/NewProject_Road.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="asset/ChoiceFigure.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="/NewProject_Loader/bin/NewProject_Loader.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="1" linkType="1" path="D:/src/DDTClientAsset/asset"/>
-      <libraryPathEntry kind="3" linkType="1" path="D:/src/DDTClientAsset/lib/as3crypto.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="1" linkType="1" path="D:/My Project/DDTClientAsset/asset"/>
+      <libraryPathEntry kind="3" linkType="1" path="D:/My Project/DDTClientAsset/lib/as3crypto.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="/Loader/bin/Loader.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="/Road/bin/Road.swc" useDefaultLinkType="false"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>

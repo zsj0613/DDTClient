@@ -68,7 +68,7 @@ package ddt.register
 			_config = config;
 			_username = username;
 			_password = password;			
-			_loginRequest = new URLRequest("login.do?method=logout");
+			_loginRequest = new URLRequest("login.aspx?method=logout");
 			init();			
 		}
 		

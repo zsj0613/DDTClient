@@ -16,7 +16,7 @@ package ddt.request
 	
 	public class LoadUserBoxInfo extends RequestLoader
 	{
-		private static const PATH:String = "LoadUserBox.xml";
+		private static const PATH:String = "Box.xml";
 		private var _goodsList:XMLList;
 		
 		public var timeBoxList:DictionaryData;
